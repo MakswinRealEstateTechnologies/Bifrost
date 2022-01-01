@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="/Users/alkincakiralar/Desktop/Bifrost/shared"
+    name=":shared"
+    type="LIBRARY"
+    maven="Bifrost:shared:"
+    gradle="7.0.4"
+    buildFolder="build"
+    bootClassPath="/Users/alkincakiralar/Library/Android/sdk/platforms/android-30/android.jar:/Users/alkincakiralar/Library/Android/sdk/build-tools/30.0.2/core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-30"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="debug"/>
+</lint-module>

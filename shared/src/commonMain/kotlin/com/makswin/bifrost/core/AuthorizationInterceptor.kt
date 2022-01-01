@@ -1,0 +1,23 @@
+package com.makswin.bifrost.core
+
+import com.apollographql.apollo3.api.ApolloRequest
+import com.apollographql.apollo3.api.ApolloResponse
+import com.apollographql.apollo3.api.Operation
+import com.apollographql.apollo3.interceptor.ApolloInterceptor
+import com.apollographql.apollo3.interceptor.ApolloInterceptorChain
+import kotlinx.coroutines.flow.Flow
+
+private class AuthorizationInterceptor : ApolloInterceptor {
+
+    override fun <D : Operation.Data> intercept(
+        request: ApolloRequest<D>,
+        chain: ApolloInterceptorChain
+    ): Flow<ApolloResponse<D>> {
+
+        request.newBuilder().addHttpHeader("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiZTQ1OGY5NjY1ODE0NmI0YWFjZmZmNGIzYjEwZTYzZjJlMzFjY2RkOTkyNjg0ZDUyMzRhZmFkMjYxYzU3OTU5Nzg5YjRmMzQ0OTRlZWNkN2MiLCJpYXQiOjE2Mzg4ODIyMDMuNTA2NDcxLCJuYmYiOjE2Mzg4ODIyMDMuNTA2NDc2LCJleHAiOjE2NDE1NjA2MDMuMzk1NjYyLCJzdWIiOiIxMTM1NjMiLCJzY29wZXMiOltdfQ.XcWKRehPtQl-1xdDybEBn8s55hyGcmJjheIbUGQtrpwQXyQfFPKDCc1zXuLd8rDJwz0YLBevTVC3DpFTRDwDXyS6HOk74PU_GvnJ0vDJv0vqTDzsZgHWXJjt02nA2J4YL1nQBAKzlMZ4pwGpyBekBbL68pOTvEVVdaJRBqBX_i3gSBz5SLZxozL9Z2bgX1_mb6ro1OlnZsF-T7DYBS_7Jn8Pi0JzLc1UM8zM3_5rodorsDi5KO4E03uysxEUX9rgBGodcM-VUUfSzbq9r3y1vEzXMAJnrozYAMNyzZFMnIxDhEspIuuCwgQtl2DpBB6saf7U2gc4WfzhGBOF7y5B-8QTvRXU4hPPWNPDxqmFn-N-vWd_KPIJLxlTtyrgP60Mtja9m1s4J93LN_tfhorEHHa3OmGCMRXuvKdK_EvoGoBiA1Ix0RaGBbfQGrEw0ZxODShINYbLmcUQIQblIJsn0mZYpcrOeghifE_l6SCi3SriCQlFqSHKRBZKH-Y5h114YNc_Dp3tjAXTsXBP2BYdLHH0eO8G7y9gCz3YWaJyCm9zeZVDA878TwefIgGpFadsomGrpXf3geUZ3R7MHH__2mrJRl-oOwzAjBzjbyN1wd39iXuBUiVcONg3hJkz5ZJMj_YlVyME6Wa6VYDEryKPL6IBXdvjbqScWEYgI3xAp8w")
+
+        return chain.proceed(request)
+
+    }
+
+}
