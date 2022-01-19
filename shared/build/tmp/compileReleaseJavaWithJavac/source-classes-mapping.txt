@@ -1,2 +1,0 @@
-com/makswin/bifrost/BuildConfig.java
- com.makswin.bifrost.BuildConfig

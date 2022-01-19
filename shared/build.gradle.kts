@@ -5,6 +5,7 @@ plugins {
     kotlin("native.cocoapods")
     id("com.android.library")
     id("com.apollographql.apollo3").version("3.0.0")
+    id("com.chromaticnoise.multiplatform-swiftpackage") version "2.0.3"
 }
 
 version = "1.0"
@@ -21,7 +22,15 @@ kotlin {
         binaries.framework(iosFrameworkName)
     }
 
-    //iosX64 { binaries.framework(iosFrameworkName) }
+    multiplatformSwiftPackage {
+        swiftToolsVersion("5.3")
+        targetPlatforms {
+            iOS { v("13") }
+        }
+        packageName("FizbotBifrost")
+        outputDirectory(File(projectDir, "FizbotIOSPackage"))
+        buildConfiguration { debug() }
+    }
 
     sourceSets {
         val commonMain by getting {

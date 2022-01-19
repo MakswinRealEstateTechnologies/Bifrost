@@ -29,4 +29,10 @@ class MiscService : BaseService() {
 
     }
 
+    fun test() {
+
+        print("TEST")
+
+    }
+
 }

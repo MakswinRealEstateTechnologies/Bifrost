@@ -1,6 +1,0 @@
-framework module FizbotBifrost {
-    umbrella header "FizbotBifrost.h"
-
-    export *
-    module * { export * }
-}

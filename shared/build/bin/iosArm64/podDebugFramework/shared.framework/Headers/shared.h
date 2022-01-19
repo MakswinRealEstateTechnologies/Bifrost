@@ -184,6 +184,7 @@ __attribute__((swift_name("MiscService")))
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 - (void)getCallingCodesCompletion:(void (^)(SharedResponseType *, NSArray<SharedCallingCode *> *))completion __attribute__((swift_name("getCallingCodes(completion:)")));
+- (void)test __attribute__((swift_name("test()")));
 @end;
 
 __attribute__((swift_name("KotlinComparable")))
