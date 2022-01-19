@@ -1,6 +1,6 @@
 <lint-module
     format="1"
-    dir="/Users/alkincakiralar/Desktop/Bifrost/shared"
+    dir="/Users/alkincakiralar/Desktop/makswin/Bifrost/shared"
     name=":shared"
     type="LIBRARY"
     maven="Bifrost:shared:"

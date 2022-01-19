@@ -48,10 +48,10 @@
       jars="/Users/alkincakiralar/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar"
       resolved="org.jetbrains:annotations:13.0"/>
   <library
-      name="/Users/alkincakiralar/Desktop/Bifrost@@:shared::debug"
-      jars="/Users/alkincakiralar/Desktop/Bifrost/shared/build/.transforms/a6b493aa7be0985fe05eb4ed9b26bcd3/transformed/out/jars/classes.jar"
+      name="/Users/alkincakiralar/Desktop/makswin/Bifrost@@:shared::debug"
+      jars="/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/build/.transforms/3463113e261ef5e084aa1a25d7907d99/transformed/out/jars/classes.jar"
       resolved="Bifrost:shared:unspecified"
-      folder="/Users/alkincakiralar/Desktop/Bifrost/shared/build/.transforms/a6b493aa7be0985fe05eb4ed9b26bcd3/transformed/out"
+      folder="/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/build/.transforms/3463113e261ef5e084aa1a25d7907d99/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"

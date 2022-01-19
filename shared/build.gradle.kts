@@ -11,26 +11,32 @@ version = "1.0"
 
 kotlin {
 
+    val iosFrameworkName = "FizbotBifrost"
+
     android()
 
     jvm()
 
     iosArm64 {
-        binaries {
-            framework {
-                baseName = "Bifrost"
-            }
-        }
+        binaries.framework(iosFrameworkName)
     }
 
+    //iosX64 { binaries.framework(iosFrameworkName) }
+
     sourceSets {
-        commonMain {
+        val commonMain by getting {
             dependencies {
                 implementation("com.apollographql.apollo3:apollo-runtime:3.0.0")
-                //implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0")
-                //implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.2.0-alpha02")
             }
         }
+        val iosMain by creating {
+            dependencies { }
+        }
+        val iosTest by creating {
+            dependencies { }
+        }
+        getByName("iosArm64Main") { dependsOn(iosMain) }
+        getByName("iosArm64Test") { dependsOn(iosTest) }
     }
 
 }

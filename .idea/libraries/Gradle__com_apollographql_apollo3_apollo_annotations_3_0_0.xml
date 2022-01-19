@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.apollographql.apollo3:apollo-annotations:3.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-annotations/3.0.0/a644ea636a7760ce7f37bc2694fecc6813f2d854/apollo-annotations-metadata-3.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-annotations/3.0.0/bc1e96a517a9ac4604b308b02d2383a580fc539d/apollo-annotations-3.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
