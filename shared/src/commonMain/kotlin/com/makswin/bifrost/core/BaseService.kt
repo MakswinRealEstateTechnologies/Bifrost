@@ -1,20 +1,22 @@
 package com.makswin.bifrost.core
 
 import com.apollographql.apollo3.ApolloClient
-import com.apollographql.apollo3.api.ApolloResponse
-import com.apollographql.apollo3.api.Query
+import com.apollographql.apollo3.api.*
+import kotlinx.coroutines.CoroutineScope
 
 open class BaseService {
 
     private var graphQLNetwork: GraphQLNetwork = GraphQLNetwork()
 
+    val scope = CoroutineScope(MainLoopDispatcher)
+
     private fun getApolloClient(): ApolloClient {
         return graphQLNetwork.getApolloClient()
     }
 
-    /*fun <D : Query.Data> executeQuery(query: Query<D>): ApolloResponse<D> {
+    suspend fun <D : Query.Data> executeQuery(query: Query<D>): ApolloResponse<D> {
         return getApolloClient().query(query).execute()
-    }*/
+    }
 
     fun <D : Query.Data> checkResponse(response: ApolloResponse<D>): Boolean {
 

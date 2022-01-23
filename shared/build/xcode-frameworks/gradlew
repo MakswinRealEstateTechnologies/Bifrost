@@ -1,4 +1,0 @@
-#!/bin/bash
-export 'JAVA_HOME=/Users/alkincakiralar/Library/Java/JavaVirtualMachines/openjdk-16.0.1/Contents/Home'
-cd '/Users/alkincakiralar/Desktop/makswin/Bifrost'
-./gradlew $@

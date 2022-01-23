@@ -13,12 +13,11 @@ open class GraphQLNetwork {
         }
 
         instance = ApolloClient.Builder()
-            //.addInterceptor(com.makswin.fizbotmobilelibrary.Core.AuthorizationInterceptor())
             .serverUrl("https://zeus.fizbot.net/graphql")
+            .addHttpInterceptor(AuthorizationInterceptor())
             .build()
 
         return instance!!
 
     }
-
 }

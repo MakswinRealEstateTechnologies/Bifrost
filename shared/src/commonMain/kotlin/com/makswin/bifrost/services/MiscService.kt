@@ -3,42 +3,52 @@ package com.makswin.bifrost.services
 import com.makswin.bifrost.core.BaseService
 import com.makswin.bifrost.models.CallingCode
 import com.makswin.bifrost.enums.ResponseType
+import com.makswin.bifrost.models.Language
+import com.makswin.fizbot.CallingCodesQuery
+import com.makswin.fizbot.LanguagesQuery
+import kotlinx.coroutines.*
 
 class MiscService : BaseService() {
 
-    fun getCallingCodes(
-        completion: (ResponseType, List<CallingCode>) -> Unit
-    ) {
+    fun getCallingCodes(completion: (ResponseType, List<CallingCode>) -> Unit) {
 
-        /*val response = executeQuery(CallingCodesQuery())
+        scope.launch {
 
-        if (!checkResponse(response)) {
-            completion(ResponseType.Error, listOf())
-            return
+            val response = executeQuery(CallingCodesQuery())
+
+            if (!checkResponse(response)) {
+                completion(ResponseType.Error, listOf())
+                return@launch
+            }
+
+            val data = arrayListOf<CallingCode>()
+
+            response.data?.calling_codes?.data?.forEach { data.add(CallingCode(it.fragmentCallingCode)) }
+
+            completion(ResponseType.Success, data)
+
         }
-
-        val data = arrayListOf<CallingCode>()
-
-        response.data?.calling_codes?.data?.forEach {
-            data.add(CallingCode(it.fragmentCallingCode))
-        }
-
-        */
-
-        val asd = CallingCode()
-
-        asd.countryCode = "t"
-        asd.countryName = "t"
-        asd.flag = "t"
-        asd.id = 4
-
-        completion(ResponseType.Success, arrayListOf(asd, asd))
 
     }
 
-    fun test() {
+    fun getLanguages(completion: (ResponseType, List<Language>) -> Unit) {
 
-        print("TEST")
+        scope.launch {
+
+            val response = executeQuery(LanguagesQuery())
+
+            if (!checkResponse(response)) {
+                completion(ResponseType.Error, listOf())
+                return@launch
+            }
+
+            val data = arrayListOf<Language>()
+
+            response.data?.languages?.data?.forEach { data.add(Language(it.fragmentLanguage)) }
+
+            completion(ResponseType.Success, data)
+
+        }
 
     }
 

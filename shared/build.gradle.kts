@@ -29,7 +29,7 @@ kotlin {
         targetPlatforms {
             iOS { v("12") }
         }
-        outputDirectory(File(rootDir, "swift-package"))
+        outputDirectory(File("/Users/alkincakiralar/Desktop/makswin/Bifrost-IOS-SDK", ""))
         buildConfiguration { debug() }
     }
 
@@ -37,6 +37,7 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation("com.apollographql.apollo3:apollo-runtime:3.0.0")
+                implementation("com.apollographql.apollo3:apollo-api:3.0.0")
             }
         }
     }

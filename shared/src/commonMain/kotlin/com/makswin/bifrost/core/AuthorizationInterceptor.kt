@@ -1,22 +1,23 @@
 package com.makswin.bifrost.core
 
-import com.apollographql.apollo3.api.ApolloRequest
-import com.apollographql.apollo3.api.ApolloResponse
-import com.apollographql.apollo3.api.Operation
-import com.apollographql.apollo3.interceptor.ApolloInterceptor
-import com.apollographql.apollo3.interceptor.ApolloInterceptorChain
-import kotlinx.coroutines.flow.Flow
+import com.apollographql.apollo3.api.http.HttpRequest
+import com.apollographql.apollo3.api.http.HttpResponse
+import com.apollographql.apollo3.network.http.HttpInterceptor
+import com.apollographql.apollo3.network.http.HttpInterceptorChain
 
-private class AuthorizationInterceptor : ApolloInterceptor {
+class AuthorizationInterceptor() : HttpInterceptor {
 
-    override fun <D : Operation.Data> intercept(
-        request: ApolloRequest<D>,
-        chain: ApolloInterceptorChain
-    ): Flow<ApolloResponse<D>> {
+    override suspend fun intercept(
+        request: HttpRequest,
+        chain: HttpInterceptorChain
+    ): HttpResponse {
 
-        request.newBuilder().addHttpHeader("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiZTQ1OGY5NjY1ODE0NmI0YWFjZmZmNGIzYjEwZTYzZjJlMzFjY2RkOTkyNjg0ZDUyMzRhZmFkMjYxYzU3OTU5Nzg5YjRmMzQ0OTRlZWNkN2MiLCJpYXQiOjE2Mzg4ODIyMDMuNTA2NDcxLCJuYmYiOjE2Mzg4ODIyMDMuNTA2NDc2LCJleHAiOjE2NDE1NjA2MDMuMzk1NjYyLCJzdWIiOiIxMTM1NjMiLCJzY29wZXMiOltdfQ.XcWKRehPtQl-1xdDybEBn8s55hyGcmJjheIbUGQtrpwQXyQfFPKDCc1zXuLd8rDJwz0YLBevTVC3DpFTRDwDXyS6HOk74PU_GvnJ0vDJv0vqTDzsZgHWXJjt02nA2J4YL1nQBAKzlMZ4pwGpyBekBbL68pOTvEVVdaJRBqBX_i3gSBz5SLZxozL9Z2bgX1_mb6ro1OlnZsF-T7DYBS_7Jn8Pi0JzLc1UM8zM3_5rodorsDi5KO4E03uysxEUX9rgBGodcM-VUUfSzbq9r3y1vEzXMAJnrozYAMNyzZFMnIxDhEspIuuCwgQtl2DpBB6saf7U2gc4WfzhGBOF7y5B-8QTvRXU4hPPWNPDxqmFn-N-vWd_KPIJLxlTtyrgP60Mtja9m1s4J93LN_tfhorEHHa3OmGCMRXuvKdK_EvoGoBiA1Ix0RaGBbfQGrEw0ZxODShINYbLmcUQIQblIJsn0mZYpcrOeghifE_l6SCi3SriCQlFqSHKRBZKH-Y5h114YNc_Dp3tjAXTsXBP2BYdLHH0eO8G7y9gCz3YWaJyCm9zeZVDA878TwefIgGpFadsomGrpXf3geUZ3R7MHH__2mrJRl-oOwzAjBzjbyN1wd39iXuBUiVcONg3hJkz5ZJMj_YlVyME6Wa6VYDEryKPL6IBXdvjbqScWEYgI3xAp8w")
+        val token =
+            "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiMTQwOGQ5N2U2ZjMwMzlhODFiM2FkOGIwNmU4NThkYWExYjg3NzYwNTE3ZGJiOGRiNjUxYTVkMDQ3OTBkNmNiY2E0MTRmNWFkMDZmYjZhNDIiLCJpYXQiOjE2NDI5NzIzNDEuNDM1OTkzLCJuYmYiOjE2NDI5NzIzNDEuNDM1OTk3LCJleHAiOjE2NDU2NTA3NDEuMzM4MjkxLCJzdWIiOiIxMTM1NjMiLCJzY29wZXMiOltdfQ.gJdHX60LjPTTIQ2hTgfmh5P9HBeNtioV_h5PFaTPZC9icNoYfHjEw6L__yLKA5TE3vWYT-K2C1JVjJv_UO09kDH5v01uMiHquZxXyuDPldpzjC98M8VSHW-IejAZdwp9YOAmVNk6tB3i3Ns6BKJspO7qJrYGD4S48gTND0-4zK5oSvJjTalaFApA_aB2fNuyS_k2E05mo3SMLB-rf3Qrmi9vf9HXX1Xas4znOR6q7BIcBD7PSZKF1Cx5rH5F_mtIJuIsQWCLMn_7YnS6zZlrpWb5DtKGZRVF8EB5smE2wCBfoVS_C9DL_X44EaIsJPw9FbqG9mHIBpGCrDS9R6xyNG8o3DCijp7O1cZFm03a_eNZFi0UMtMorTKfR-iEbIO6gPR-8F_CqBbpTSMToQKTwmt60WbZ9vIt9qcQK5SwwmD08IAoX-htBXKAMmix_P9xe8L80wlys_ExC1sqIE5AAT_c741VESjwf5LOIYFvPPxgPd3PfIWB35F4Vi4b4_fzdeC4acsUD8uvzJHBG3LaogjrTe0RMI5pgpKSgqCn-KXqgtfQ-Oe9sGFWTZT1JdYgOl-zSidt631uUOafOpSxRhEdoV_rdM03HEc6AnGn5DMuOM6uLY3WIaPvXXeMIWYAlF6W0DFyTuv8ts9MRhO8HylW5UrXvIi5v1VXMHiRg4w"
 
-        return chain.proceed(request)
+        return chain.proceed(
+            request.newBuilder().addHeader("Authorization", "Bearer $token").build()
+        )
 
     }
 
