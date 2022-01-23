@@ -2,7 +2,6 @@ import com.android.build.gradle.internal.tasks.factory.dependsOn
 
 plugins {
     kotlin("multiplatform")
-    kotlin("native.cocoapods")
     id("com.android.library")
     id("com.apollographql.apollo3").version("3.0.0")
     id("com.chromaticnoise.multiplatform-swiftpackage") version "2.0.3"
@@ -12,23 +11,25 @@ version = "1.0"
 
 kotlin {
 
-    val iosFrameworkName = "FizbotBifrost"
-
     android()
 
     jvm()
 
-    iosArm64 {
-        binaries.framework(iosFrameworkName)
+    ios {
+        binaries {
+            framework {
+                baseName = "Bifrost"
+            }
+        }
     }
 
     multiplatformSwiftPackage {
+        packageName("Bifrost")
         swiftToolsVersion("5.3")
         targetPlatforms {
-            iOS { v("13") }
+            iOS { v("12") }
         }
-        packageName("FizbotBifrost")
-        outputDirectory(File(projectDir, "FizbotIOSPackage"))
+        outputDirectory(File(rootDir, "swift-package"))
         buildConfiguration { debug() }
     }
 
@@ -38,14 +39,6 @@ kotlin {
                 implementation("com.apollographql.apollo3:apollo-runtime:3.0.0")
             }
         }
-        val iosMain by creating {
-            dependencies { }
-        }
-        val iosTest by creating {
-            dependencies { }
-        }
-        getByName("iosArm64Main") { dependsOn(iosMain) }
-        getByName("iosArm64Test") { dependsOn(iosTest) }
     }
 
 }

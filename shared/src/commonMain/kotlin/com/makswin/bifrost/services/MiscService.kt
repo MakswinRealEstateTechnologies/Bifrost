@@ -25,7 +25,14 @@ class MiscService : BaseService() {
 
         */
 
-        completion(ResponseType.Success, arrayListOf(CallingCode()))
+        val asd = CallingCode()
+
+        asd.countryCode = "t"
+        asd.countryName = "t"
+        asd.flag = "t"
+        asd.id = 4
+
+        completion(ResponseType.Success, arrayListOf(asd, asd))
 
     }
 

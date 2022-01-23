@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Gradle: org.jetbrains.kotlinx:atomicfu:commonMain:0.16.3" type="kotlin.common">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosArm64Main/implementation/org.jetbrains.kotlinx-atomicfu/org.jetbrains.kotlinx-atomicfu-commonMain.klib!/" />
+      <root url="jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosMain/implementation/org.jetbrains.kotlinx-atomicfu/org.jetbrains.kotlinx-atomicfu-commonMain.klib!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
