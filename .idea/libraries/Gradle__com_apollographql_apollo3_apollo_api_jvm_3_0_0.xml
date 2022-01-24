@@ -3,9 +3,7 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-api-jvm/3.0.0/521033cf89f9669f301efa265e48080581bd96c5/apollo-api-jvm-3.0.0.jar!/" />
     </CLASSES>
-    <JAVADOC>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-api-jvm/3.0.0/5de62019685567df79db15d4667b5a5dd19f34a2/apollo-api-jvm-3.0.0-javadoc.jar!/" />
-    </JAVADOC>
+    <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-api-jvm/3.0.0/87cfa50ef984cb0b3c8272cedf523942373097ef/apollo-api-jvm-3.0.0-sources.jar!/" />
     </SOURCES>

@@ -40,6 +40,12 @@ kotlin {
                 implementation("com.apollographql.apollo3:apollo-api:3.0.0")
             }
         }
+        val commonTest by getting {
+            dependencies {
+                implementation(kotlin("test-common"))
+                implementation(kotlin("test-annotations-common"))
+            }
+        }
     }
 
 }

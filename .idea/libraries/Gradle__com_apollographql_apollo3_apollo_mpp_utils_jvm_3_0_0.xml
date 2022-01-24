@@ -3,9 +3,7 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-mpp-utils-jvm/3.0.0/c201585d7e3cd2b082a439e5e0eff08b255ffed5/apollo-mpp-utils-jvm-3.0.0.jar!/" />
     </CLASSES>
-    <JAVADOC>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-mpp-utils-jvm/3.0.0/e2f37bc08b4007bc1064cfbc438ca49d50271772/apollo-mpp-utils-jvm-3.0.0-javadoc.jar!/" />
-    </JAVADOC>
+    <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-mpp-utils-jvm/3.0.0/2b27021b6e9cd463b9134851e9b0149885a11f3d/apollo-mpp-utils-jvm-3.0.0-sources.jar!/" />
     </SOURCES>

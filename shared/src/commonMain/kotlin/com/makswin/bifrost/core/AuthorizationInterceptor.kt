@@ -5,7 +5,7 @@ import com.apollographql.apollo3.api.http.HttpResponse
 import com.apollographql.apollo3.network.http.HttpInterceptor
 import com.apollographql.apollo3.network.http.HttpInterceptorChain
 
-class AuthorizationInterceptor() : HttpInterceptor {
+class AuthorizationInterceptor : HttpInterceptor {
 
     override suspend fun intercept(
         request: HttpRequest,
