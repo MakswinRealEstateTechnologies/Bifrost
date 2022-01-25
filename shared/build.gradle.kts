@@ -13,8 +13,6 @@ kotlin {
 
     android()
 
-    jvm()
-
     ios {
         binaries {
             framework {
@@ -38,10 +36,13 @@ kotlin {
             dependencies {
                 implementation("com.apollographql.apollo3:apollo-runtime:3.0.0")
                 implementation("com.apollographql.apollo3:apollo-api:3.0.0")
+                implementation("org.awaitility:awaitility-kotlin:4.1.1")
             }
         }
         val commonTest by getting {
             dependencies {
+                implementation(kotlin("test"))
+                implementation(kotlin("test-junit"))
                 implementation(kotlin("test-common"))
                 implementation(kotlin("test-annotations-common"))
             }

@@ -2,7 +2,7 @@
 <module external.linked.project.id=":shared:commonMain" external.linked.project.path="$MODULE_DIR$/../../../shared" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="Bifrost" external.system.module.type="sourceSet" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="4" platform="Common (experimental) " allPlatforms="JVM [1.8]/Native []/Native [general]" useProjectSettings="false" isTestModule="false" externalProjectId=":shared" isHmppProject="true" pureKotlinSourceFolders="$MODULE_DIR$/../../../shared/src/androidDebug/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/debug/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/debug/java;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/androidDebugAndroidTest/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/androidDebugUnitTest/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/androidRelease/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/release/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/release/java;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/androidReleaseUnitTest/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/iosArm64Main/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/iosArm64Main/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/iosX64Main/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/iosX64Main/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/jvmMain/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/jvmTest/kotlin">
+      <configuration version="4" platform="Common (experimental) " allPlatforms="JVM [1.8]/Native []/Native [general]" useProjectSettings="false" isTestModule="false" externalProjectId=":shared" isHmppProject="true" pureKotlinSourceFolders="$MODULE_DIR$/../../../shared/src/androidDebug/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/debug/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/debug/java;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/androidDebugAndroidTest/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/androidDebugUnitTest/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/androidRelease/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/release/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/release/java;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/androidReleaseUnitTest/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/iosArm64Main/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/iosArm64Main/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/iosX64Main/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/iosX64Main/kotlin">
         <newMppModelJpsModuleKind>SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
         <compilerSettings />
         <compilerArguments>
@@ -57,10 +57,15 @@
     <orderEntry type="library" name="Gradle: com.apollographql.apollo3:apollo-runtime:3.0.0" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.6.10" level="project" />
     <orderEntry type="library" name="Gradle: com.apollographql.apollo3:apollo-api:3.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.awaitility:awaitility-kotlin:4.1.1" level="project" />
     <orderEntry type="library" name="Gradle: com.apollographql.apollo3:apollo-mpp-utils:3.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.okio:okio:3.0.0" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:commonMain:1.5.2" level="project" />
     <orderEntry type="library" name="Gradle: com.benasher44:uuid:commonMain:0.3.1" level="project" />
     <orderEntry type="library" name="Gradle: com.apollographql.apollo3:apollo-annotations:3.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.awaitility:awaitility:4.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest:2.1" level="project" />
   </component>
 </module>

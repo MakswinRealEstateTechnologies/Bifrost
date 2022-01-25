@@ -2,7 +2,7 @@
 <module external.linked.project.id=":shared:iosX64Main" external.linked.project.path="$MODULE_DIR$/../../../shared" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="Bifrost" external.system.module.type="sourceSet" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="4" platform="Native (ios_x64) " allPlatforms="Native []/Native [ios_x64]" useProjectSettings="false" isTestModule="false" externalProjectId=":shared" isHmppProject="true" pureKotlinSourceFolders="$MODULE_DIR$/../../../shared/src/androidDebug/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/debug/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/debug/java;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/androidDebugAndroidTest/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/androidDebugUnitTest/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/androidRelease/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/release/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/release/java;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/androidReleaseUnitTest/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/iosArm64Main/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/iosArm64Main/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/iosX64Main/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/iosX64Main/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/jvmMain/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/jvmTest/kotlin">
+      <configuration version="4" platform="Native (ios_x64) " allPlatforms="Native []/Native [ios_x64]" useProjectSettings="false" isTestModule="false" externalProjectId=":shared" isHmppProject="true" pureKotlinSourceFolders="$MODULE_DIR$/../../../shared/src/androidDebug/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/debug/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/debug/java;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/androidDebugAndroidTest/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/androidDebugUnitTest/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/androidRelease/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/release/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/release/java;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/androidReleaseUnitTest/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/iosArm64Main/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/iosArm64Main/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/iosX64Main/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/iosX64Main/kotlin">
         <dependsOnModuleNames>
           <dependsOn>:shared:commonMain</dependsOn>
           <dependsOn>:shared:iosMain</dependsOn>
@@ -197,8 +197,13 @@
     <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - objc [ios_x64]" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - posix [ios_x64]" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - zlib [ios_x64]" level="project" />
+    <orderEntry type="library" name="Gradle: org.awaitility:awaitility-kotlin:4.1.1" level="project" />
     <orderEntry type="library" name="Gradle: com.apollographql.apollo3:apollo-runtime-iosx64:klib:3.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.apollographql.apollo3:apollo-api-iosx64:klib:3.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.awaitility:awaitility:4.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest:2.1" level="project" />
     <orderEntry type="library" name="Gradle: com.apollographql.apollo3:apollo-mpp-utils-iosx64:klib:3.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.okio:okio-iosx64:klib:3.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.benasher44:uuid-iosx64:klib:0.3.1" level="project" />
