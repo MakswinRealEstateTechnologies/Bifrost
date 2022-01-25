@@ -1,6 +1,7 @@
 package com.makswin.bifrost
 
 import com.makswin.bifrost.core.MainLoopDispatcher
+import com.makswin.bifrost.enums.ResponseType
 import com.makswin.bifrost.services.MiscService
 import kotlinx.coroutines.*
 import kotlin.coroutines.CoroutineContext
@@ -27,24 +28,23 @@ class MiscServiceTest {
 
     private val service = MiscService()
 
+    //
+
+    //
     @Test
     fun testCallingCodes() = runBlocking {
-
-        val coroutineTestCase = CoroutineTestCase()
-        coroutineTestCase.testFunction().await()
-        assertEquals(2, coroutineTestCase.value)
-
-    }
-}
-
-/*
-
 
         val scope = CoroutineScope(MainLoopDispatcher)
 
         scope.launch {
 
             service.getCallingCodes { responseType, list ->
+
+                assertEquals(responseType == ResponseType.Success, "ERROr")
+
+                //list.count() > 0
+
+                //
 
                 assertTrue("Hello".contains("Heasdsal"), "Check 'Hello' is mentioned")
 
@@ -53,4 +53,13 @@ class MiscServiceTest {
             delay(15000)
 
         }
+
+    }
+
+}
+
+/*
+
+
+
  */

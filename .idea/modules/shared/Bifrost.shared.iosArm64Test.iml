@@ -28,8 +28,8 @@
           <sourceSet>Bifrost.shared.commonTest</sourceSet>
           <sourceSet>Bifrost.shared.iosTest</sourceSet>
           <sourceSet>Bifrost.shared.iosArm64Main</sourceSet>
-          <sourceSet>Bifrost.shared.commonMain</sourceSet>
           <sourceSet>Bifrost.shared.iosMain</sourceSet>
+          <sourceSet>Bifrost.shared.commonMain</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
         <compilerSettings />

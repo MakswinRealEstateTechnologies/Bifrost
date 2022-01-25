@@ -13,8 +13,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Bifrost.shared.iosTest.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Bifrost.shared.iosTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Bifrost.shared.iosX64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Bifrost.shared.iosX64Main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Bifrost.shared.iosX64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Bifrost.shared.iosX64Test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Bifrost.shared.jvmMain.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Bifrost.shared.jvmMain.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Bifrost.shared.jvmTest.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Bifrost.shared.jvmTest.iml" />
     </modules>
   </component>
 </project>
