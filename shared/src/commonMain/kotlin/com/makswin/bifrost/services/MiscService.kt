@@ -10,45 +10,37 @@ import kotlinx.coroutines.*
 
 class MiscService : BaseService() {
 
-    fun getCallingCodes(completion: (ResponseType, List<CallingCode>) -> Unit) {
+    fun getCallingCodes(completion: (ResponseType, List<CallingCode>) -> Unit) = runBlocking {
 
-        scope.launch {
+        val response = executeQuery(CallingCodesQuery())
 
-            val response = executeQuery(CallingCodesQuery())
-
-            if (!checkResponse(response)) {
-                completion(ResponseType.Error, listOf())
-                return@launch
-            }
-
-            val data = arrayListOf<CallingCode>()
-
-            response.data?.calling_codes?.data?.forEach { data.add(CallingCode(it.fragmentCallingCode)) }
-
-            completion(ResponseType.Success, data)
-
+        if (!checkResponse(response)) {
+            completion(ResponseType.Error, listOf())
+            return@runBlocking
         }
+
+        val data = arrayListOf<CallingCode>()
+
+        response.data?.calling_codes?.data?.forEach { data.add(CallingCode(it.fragmentCallingCode)) }
+
+        completion(ResponseType.Success, data)
 
     }
 
-    fun getLanguages(completion: (ResponseType, List<Language>) -> Unit) {
+    fun getLanguages(completion: (ResponseType, List<Language>) -> Unit) = runBlocking {
 
-        scope.launch {
+        val response = executeQuery(LanguagesQuery())
 
-            val response = executeQuery(LanguagesQuery())
-
-            if (!checkResponse(response)) {
-                completion(ResponseType.Error, listOf())
-                return@launch
-            }
-
-            val data = arrayListOf<Language>()
-
-            response.data?.languages?.data?.forEach { data.add(Language(it.fragmentLanguage)) }
-
-            completion(ResponseType.Success, data)
-
+        if (!checkResponse(response)) {
+            completion(ResponseType.Error, listOf())
+            return@runBlocking
         }
+
+        val data = arrayListOf<Language>()
+
+        response.data?.languages?.data?.forEach { data.add(Language(it.fragmentLanguage)) }
+
+        completion(ResponseType.Success, data)
 
     }
 

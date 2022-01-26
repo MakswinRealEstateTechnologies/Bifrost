@@ -1550,6 +1550,16 @@
             "description": null,
             "args": [
               {
+                "name": "scopeIsCreatedByOfficeAssistantsOrBrokers",
+                "description": null,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Boolean",
+                  "ofType": null
+                },
+                "defaultValue": null
+              },
+              {
                 "name": "where",
                 "description": null,
                 "type": {
@@ -3925,6 +3935,16 @@
             "description": null,
             "args": [
               {
+                "name": "scopeIsCreatedByOfficeAssistantsOrBrokers",
+                "description": null,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Boolean",
+                  "ofType": null
+                },
+                "defaultValue": null
+              },
+              {
                 "name": "where",
                 "description": null,
                 "type": {
@@ -5212,6 +5232,16 @@
             "description": null,
             "args": [
               {
+                "name": "scopeIsCreatedByOfficeAssistantsOrBrokers",
+                "description": null,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Boolean",
+                  "ofType": null
+                },
+                "defaultValue": null
+              },
+              {
                 "name": "where",
                 "description": null,
                 "type": {
@@ -6128,6 +6158,18 @@
             "type": {
               "kind": "SCALAR",
               "name": "Int",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "type_group",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
               "ofType": null
             },
             "isDeprecated": false,
@@ -11016,6 +11058,30 @@
             "deprecationReason": null
           },
           {
+            "name": "created_by",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Int",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "creator",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "User",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "caller",
             "description": null,
             "args": [],
@@ -14950,6 +15016,18 @@
             "deprecationReason": null
           },
           {
+            "name": "creator",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "User",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "notes",
             "description": null,
             "args": [],
@@ -18370,6 +18448,12 @@
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
+          },
+          {
+            "name": "CREATED_BY",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
           }
         ],
         "possibleTypes": null
@@ -20267,7 +20351,7 @@
             "description": "The column that is used for the condition.",
             "type": {
               "kind": "ENUM",
-              "name": "QueryListingTransactionsExportWhereColumn",
+              "name": "TransactionColumn",
               "ofType": null
             },
             "defaultValue": null
@@ -20345,14 +20429,14 @@
       },
       {
         "kind": "ENUM",
-        "name": "QueryListingTransactionsExportWhereColumn",
-        "description": "Allowed column names for the `where` argument on field `listing_transactions_export` on type `Query`.",
+        "name": "TransactionColumn",
+        "description": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
         "enumValues": [
           {
-            "name": "CLOSED_AT",
+            "name": "ID",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -20371,6 +20455,12 @@
           },
           {
             "name": "SCOPE_ID",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "CREATED_BY",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -26343,6 +26433,30 @@
             "deprecationReason": null
           },
           {
+            "name": "published_at",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Date",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "unpublished_at",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Date",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "competition",
             "description": null,
             "args": [],
@@ -26581,7 +26695,31 @@
             "deprecationReason": null
           },
           {
+            "name": "revenue",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Float",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "transaction_portfoy",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Int",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "calls",
             "description": null,
             "args": [],
             "type": {
@@ -32482,7 +32620,7 @@
             "description": "The column that is used for the condition.",
             "type": {
               "kind": "ENUM",
-              "name": "QueryListingTransactionsWhereColumn",
+              "name": "TransactionColumn",
               "ofType": null
             },
             "defaultValue": null
@@ -32556,41 +32694,6 @@
         ],
         "interfaces": null,
         "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "ENUM",
-        "name": "QueryListingTransactionsWhereColumn",
-        "description": "Allowed column names for the `where` argument on field `listing_transactions` on type `Query`.",
-        "fields": null,
-        "inputFields": null,
-        "interfaces": null,
-        "enumValues": [
-          {
-            "name": "CLOSED_AT",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "USER_ID",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "OFFICE_ID",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "SCOPE_ID",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          }
-        ],
         "possibleTypes": null
       },
       {
@@ -40461,6 +40564,26 @@
             "defaultValue": null
           },
           {
+            "name": "callee_type",
+            "description": null,
+            "type": {
+              "kind": "ENUM",
+              "name": "UserCallCalleeType",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "callee_id",
+            "description": null,
+            "type": {
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
             "name": "status",
             "description": null,
             "type": {
@@ -40493,6 +40616,35 @@
         ],
         "interfaces": null,
         "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "UserCallCalleeType",
+        "description": null,
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "USER",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "LISTING",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "BUYER_DEMAND",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
         "possibleTypes": null
       },
       {

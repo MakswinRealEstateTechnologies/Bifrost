@@ -1,65 +1,43 @@
 package com.makswin.bifrost
 
-import com.makswin.bifrost.core.MainLoopDispatcher
-import com.makswin.bifrost.enums.ResponseType
+import com.makswin.bifrost.core.isFailed
 import com.makswin.bifrost.services.MiscService
 import kotlinx.coroutines.*
-import kotlin.coroutines.CoroutineContext
-import kotlin.test.Test
-import kotlin.test.assertEquals
-import kotlin.test.assertTrue
-
-class CoroutineTestCase : CoroutineScope {
-    val job = Job()
-    var value = 1
-    override val coroutineContext: CoroutineContext
-        get() = job + Dispatchers.Unconfined
-
-
-    fun testFunction(): Deferred<Unit> {
-        return async {
-            delay(20000)
-            value = 2
-        }
-    }
-}
+import kotlin.test.*
 
 class MiscServiceTest {
 
-    private val service = MiscService()
+    private lateinit var miscService: MiscService
 
-    //
+    @BeforeTest
+    fun onSetup() {
+        miscService = MiscService()
+    }
 
-    //
     @Test
     fun testCallingCodes() = runBlocking {
 
-        val scope = CoroutineScope(MainLoopDispatcher)
+        miscService.getCallingCodes { responseType, list ->
 
-        scope.launch {
+            if (responseType.isFailed()) fail("Calling Code Failed Response")
 
-            service.getCallingCodes { responseType, list ->
+            if (list.isEmpty()) fail("Calling Code List Is Empty")
 
-                assertEquals(responseType == ResponseType.Success, "ERROr")
+        }
 
-                //list.count() > 0
+    }
 
-                //
+    @Test
+    fun testLanguages() = runBlocking {
 
-                assertTrue("Hello".contains("Heasdsal"), "Check 'Hello' is mentioned")
+        miscService.getLanguages { responseType, list ->
 
-            }
+            if (responseType.isFailed()) fail("Language Failed Response")
 
-            delay(15000)
+            if (list.isEmpty()) fail("Language List Is Empty")
 
         }
 
     }
 
 }
-
-/*
-
-
-
- */

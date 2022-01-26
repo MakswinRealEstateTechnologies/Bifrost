@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.makswin.bifrost.MiscServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-24T22:05:42" hostname="alkns-mbp" time="0.31">
+<testsuite name="com.makswin.bifrost.MiscServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-01-25T23:04:03" hostname="alkns-mbp" time="1.404">
   <properties/>
-  <testcase name="testCallingCodes" classname="com.makswin.bifrost.MiscServiceTest" time="0.31"/>
+  <testcase name="testLanguages" classname="com.makswin.bifrost.MiscServiceTest" time="1.0"/>
+  <testcase name="testCallingCodes" classname="com.makswin.bifrost.MiscServiceTest" time="0.403"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -2,13 +2,10 @@ package com.makswin.bifrost.core
 
 import com.apollographql.apollo3.ApolloClient
 import com.apollographql.apollo3.api.*
-import kotlinx.coroutines.CoroutineScope
 
 open class BaseService {
 
     private var graphQLNetwork: GraphQLNetwork = GraphQLNetwork()
-
-    val scope = CoroutineScope(MainLoopDispatcher)
 
     private fun getApolloClient(): ApolloClient {
         return graphQLNetwork.getApolloClient()

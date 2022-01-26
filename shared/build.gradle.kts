@@ -37,6 +37,7 @@ kotlin {
                 implementation("com.apollographql.apollo3:apollo-runtime:3.0.0")
                 implementation("com.apollographql.apollo3:apollo-api:3.0.0")
                 implementation("org.awaitility:awaitility-kotlin:4.1.1")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0")
             }
         }
         val commonTest by getting {
@@ -45,6 +46,11 @@ kotlin {
                 implementation(kotlin("test-junit"))
                 implementation(kotlin("test-common"))
                 implementation(kotlin("test-annotations-common"))
+                implementation("org.jetbrains.kotlin:kotlin-test-common:1.6.10")
+                implementation("org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.10")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-common:1.3.0-M2")
+                implementation("io.mockk:mockk-common:1.9.3")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0")
             }
         }
     }
