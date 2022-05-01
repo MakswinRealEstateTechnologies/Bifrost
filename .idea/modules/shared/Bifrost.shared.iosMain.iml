@@ -19,7 +19,7 @@
       </configuration>
     </facet>
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="4" platform="Common (experimental) " allPlatforms="Native []/Native [ios_arm64]/Native [ios_x64]" useProjectSettings="false" isTestModule="false" externalProjectId=":shared" isHmppProject="true" pureKotlinSourceFolders="$MODULE_DIR$/../../../shared/src/androidDebug/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/debug/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/debug/java;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/androidDebugAndroidTest/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/androidDebugUnitTest/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/androidRelease/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/release/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/release/java;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/androidReleaseUnitTest/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/iosArm64Main/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/iosArm64Main/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/iosX64Main/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/iosX64Main/kotlin">
+      <configuration version="4" platform="Common (experimental) " allPlatforms="Native []/Native [ios_arm64]/Native [ios_x64]" useProjectSettings="false" isTestModule="false" externalProjectId=":shared" isHmppProject="true">
         <dependsOnModuleNames>:shared:commonMain</dependsOnModuleNames>
         <newMppModelJpsModuleKind>SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
         <compilerSettings />
@@ -73,8 +73,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:commonMain:1.6.0" level="project" />
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.0" level="project" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -84,6 +82,8 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:commonMain:1.6.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.0" level="project" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -93,6 +93,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Gradle: com.russhwolf:multiplatform-settings-no-arg:commonMain:0.8.1" level="project" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -120,7 +121,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="Gradle: com.benasher44:uuid:commonMain:0.3.1" level="project" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -139,6 +139,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Gradle: com.benasher44:uuid:commonMain:0.3.1" level="project" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -157,6 +158,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Gradle: dev.icerock.moko:mvvm-state-deprecated:commonMain:0.11.0" level="project" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -166,6 +168,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Gradle: com.russhwolf:multiplatform-settings:commonMain:0.8.1" level="project" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -193,6 +196,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Gradle: dev.icerock.moko:mvvm-livedata:commonMain:0.11.0" level="project" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -220,6 +224,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Gradle: dev.icerock.moko:mvvm-core:commonMain:0.11.0" level="project" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -229,6 +234,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Gradle: dev.icerock.moko:resources:commonMain:0.16.0" level="project" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -238,6 +244,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Gradle: dev.icerock.moko:parcelize:commonMain:0.7.0" level="project" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -247,6 +254,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Gradle: dev.icerock.moko:graphics:commonMain:0.7.0" level="project" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -1320,7 +1328,29 @@
     </orderEntry>
     <orderEntry type="library" name="Gradle: com.apollographql.apollo3:apollo-runtime:3.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.apollographql.apollo3:apollo-api:3.0.0" level="project" />
+    <orderEntry type="module-library">
+      <library name="Gradle: dev.icerock.moko:mvvm:iosMain:0.11.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosMain/implementation/dev.icerock.moko-mvvm/dev.icerock.moko-mvvm-iosMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm/0.11.0/fbed857ca3966d30863782129b037d37f92cb/mvvm-0.11.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.0" level="project" />
+    <orderEntry type="module-library">
+      <library name="Gradle: com.russhwolf:multiplatform-settings-no-arg:appleMain:0.8.1">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosMain/implementation/com.russhwolf-multiplatform-settings-no-arg/com.russhwolf-multiplatform-settings-no-arg-appleMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.russhwolf/multiplatform-settings-no-arg/0.8.1/4e61393548b387cb7f84886f089751d7bc26e153/multiplatform-settings-no-arg-0.8.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="Gradle: org.awaitility:awaitility-kotlin:4.1.1" level="project" />
     <orderEntry type="library" name="Gradle: com.apollographql.apollo3:apollo-mpp-utils:3.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.okio:okio:3.0.0" level="project" />
@@ -1328,9 +1358,108 @@
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:atomicfu:commonMain:0.17.0" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:atomicfu:nativeInterop:0.17.0" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:atomicfu:nativeMain:0.17.0" level="project" />
+    <orderEntry type="module-library">
+      <library name="Gradle: com.russhwolf:multiplatform-settings:apple64Main:0.8.1">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosMain/implementation/com.russhwolf-multiplatform-settings/com.russhwolf-multiplatform-settings-apple64Main.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.russhwolf/multiplatform-settings/0.8.1/cc674780c2f0d82e6568b697efc724aaab9f0b5f/multiplatform-settings-0.8.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Gradle: com.russhwolf:multiplatform-settings:appleMain:0.8.1">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosMain/implementation/com.russhwolf-multiplatform-settings/com.russhwolf-multiplatform-settings-appleMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.russhwolf/multiplatform-settings/0.8.1/cc674780c2f0d82e6568b697efc724aaab9f0b5f/multiplatform-settings-0.8.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.5.0" level="project" />
     <orderEntry type="library" name="Gradle: org.awaitility:awaitility:4.1.1" level="project" />
+    <orderEntry type="module-library">
+      <library name="Gradle: dev.icerock.moko:mvvm-livedata:iosMain:0.11.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosMain/implementation/dev.icerock.moko-mvvm-livedata/dev.icerock.moko-mvvm-livedata-iosMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-livedata/0.11.0/8bd879d30d73fc0d8543c735567aabd152494fe0/mvvm-livedata-0.11.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
     <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest:2.1" level="project" />
+    <orderEntry type="module-library">
+      <library name="Gradle: dev.icerock.moko:mvvm-core:iosMain:0.11.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosMain/implementation/dev.icerock.moko-mvvm-core/dev.icerock.moko-mvvm-core-iosMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-core/0.11.0/544535814680c5209031685ad37c04ff52859882/mvvm-core-0.11.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Gradle: dev.icerock.moko:resources:appleMain:0.16.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosMain/implementation/dev.icerock.moko-resources/dev.icerock.moko-resources-appleMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/resources/0.16.0/1061f108b2f5d8fe28156fc3b646040420b237d3/resources-0.16.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Gradle: dev.icerock.moko:resources:iosMain:0.16.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosMain/implementation/dev.icerock.moko-resources/dev.icerock.moko-resources-iosMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/resources/0.16.0/1061f108b2f5d8fe28156fc3b646040420b237d3/resources-0.16.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Gradle: dev.icerock.moko:mvvm-internal:commonMain:0.11.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosMain/implementation/dev.icerock.moko-mvvm-internal/dev.icerock.moko-mvvm-internal-commonMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-internal/0.11.0/9b6f9f3751a3d7f95374cd8ff908e8774f4a5daf/mvvm-internal-0.11.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Gradle: dev.icerock.moko:parcelize:notAndroidMain:0.7.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosMain/implementation/dev.icerock.moko-parcelize/dev.icerock.moko-parcelize-notAndroidMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/parcelize/0.7.0/f01bad0fde1a0820d4d0b11cd89b76613c599954/parcelize-0.7.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Gradle: dev.icerock.moko:graphics:iosMain:0.7.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosMain/implementation/dev.icerock.moko-graphics/dev.icerock.moko-graphics-iosMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/graphics/0.7.0/c70a5cca414fc8f72190e132872719e041c972d8/graphics-0.7.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>

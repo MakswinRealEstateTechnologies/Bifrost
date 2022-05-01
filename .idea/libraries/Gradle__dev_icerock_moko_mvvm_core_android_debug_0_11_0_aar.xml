@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: dev.icerock.moko:mvvm-core-android-debug:0.11.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/fbf4a48116fb624d3713fd10b20a7ed6/transformed/mvvm-core-debug/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fbf4a48116fb624d3713fd10b20a7ed6/transformed/mvvm-core-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fbf4a48116fb624d3713fd10b20a7ed6/transformed/mvvm-core-debug/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-core-android-debug/0.11.0/47a5f1c9276ce97850373cfbc038dcb22ce5d04e/mvvm-core-android-debug-0.11.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-core-android-debug/0.11.0/81e8c6660559cce327fcc2e5b737ee7d872b69cd/mvvm-core-android-debug-0.11.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

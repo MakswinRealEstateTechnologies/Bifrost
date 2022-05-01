@@ -37,7 +37,9 @@ kotlin {
                 implementation("com.apollographql.apollo3:apollo-runtime:3.0.0")
                 implementation("com.apollographql.apollo3:apollo-api:3.0.0")
                 implementation("org.awaitility:awaitility-kotlin:4.1.1")
+                implementation ("dev.icerock.moko:mvvm:0.11.0")
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0")
+                implementation("com.russhwolf:multiplatform-settings-no-arg:0.8.1")
             }
         }
         val commonTest by getting {

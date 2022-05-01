@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: dev.icerock.moko:resources-iosarm64:klib:0.16.0" type="kotlin.native">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/resources-iosarm64/0.16.0/af752235f866660ed788584ab6c9abac0db8e1b0/resources.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/resources-iosarm64/0.16.0/704b9deefac835ee91be4409c2309aaba6084d73/resources-iosarm64-0.16.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

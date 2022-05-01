@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: dev.icerock.moko:resources:appleMain:0.16.0" type="kotlin.native">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/shared.Bifrost/commonTest/implementation/dev.icerock.moko-resources/dev.icerock.moko-resources-appleMain.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/resources/0.16.0/1061f108b2f5d8fe28156fc3b646040420b237d3/resources-0.16.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

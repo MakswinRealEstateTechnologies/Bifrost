@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: dev.icerock.moko:graphics:iosMain:0.7.0" type="kotlin.native">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/shared.Bifrost/commonTest/implementation/dev.icerock.moko-graphics/dev.icerock.moko-graphics-iosMain.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/graphics/0.7.0/c70a5cca414fc8f72190e132872719e041c972d8/graphics-0.7.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -19,7 +19,7 @@
       </configuration>
     </facet>
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="4" platform="Native (ios_arm64) " allPlatforms="Native []/Native [ios_arm64]" useProjectSettings="false" isTestModule="true" externalProjectId=":shared" isHmppProject="true" pureKotlinSourceFolders="$MODULE_DIR$/../../../shared/src/androidDebug/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/debug/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/debug/java;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/androidDebugAndroidTest/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/androidDebugUnitTest/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/androidRelease/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/release/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/release/java;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/androidReleaseUnitTest/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/iosArm64Main/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/iosArm64Main/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/iosX64Main/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/shared/src/iosX64Main/kotlin">
+      <configuration version="4" platform="Native (ios_arm64) " allPlatforms="Native []/Native [ios_arm64]" useProjectSettings="false" isTestModule="true" externalProjectId=":shared" isHmppProject="true">
         <dependsOnModuleNames>
           <dependsOn>:shared:commonTest</dependsOn>
           <dependsOn>:shared:iosTest</dependsOn>
@@ -213,7 +213,9 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.apollographql.apollo3:apollo-api-iosarm64:klib:3.0.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.5.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.awaitility:awaitility:4.1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: dev.icerock.moko:mvvm-iosarm64:klib:0.11.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-iosarm64:klib:1.6.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.russhwolf:multiplatform-settings-no-arg-iosarm64:klib:0.8.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.12" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: io.mockk:mockk-dsl:1.9.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
@@ -223,8 +225,17 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.okio:okio-iosarm64:klib:3.0.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.benasher44:uuid-iosarm64:klib:0.3.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.apollographql.apollo3:apollo-annotations-iosarm64:klib:3.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: dev.icerock.moko:mvvm-state-deprecated-iosarm64:klib:0.11.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:atomicfu-iosarm64:klib:0.17.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:atomicfu-iosarm64:klib:cinterop-interop:0.17.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.russhwolf:multiplatform-settings-iosarm64:klib:0.8.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: dev.icerock.moko:mvvm-livedata-iosarm64:klib:0.11.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: dev.icerock.moko:mvvm-core-iosarm64:klib:0.11.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: dev.icerock.moko:resources-iosarm64:klib:0.16.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: dev.icerock.moko:resources-iosarm64:klib:cinterop-pluralizedString:0.16.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: dev.icerock.moko:mvvm-internal-iosarm64:klib:0.11.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: dev.icerock.moko:parcelize-iosarm64:klib:0.7.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: dev.icerock.moko:graphics-iosarm64:klib:0.7.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.apollographql.apollo3:apollo-runtime:3.0.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.apollographql.apollo3:apollo-api:3.0.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.apollographql.apollo3:apollo-mpp-utils:3.0.0" level="project" />

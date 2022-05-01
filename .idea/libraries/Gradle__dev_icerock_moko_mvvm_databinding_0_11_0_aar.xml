@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: dev.icerock.moko:mvvm-databinding:0.11.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/4b90c72fd4e963492a363ad7e2895546/transformed/mvvm-databinding-0.11.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4b90c72fd4e963492a363ad7e2895546/transformed/mvvm-databinding-0.11.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4b90c72fd4e963492a363ad7e2895546/transformed/mvvm-databinding-0.11.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-databinding/0.11.0/47a5f1c9276ce97850373cfbc038dcb22ce5d04e/mvvm-databinding-0.11.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

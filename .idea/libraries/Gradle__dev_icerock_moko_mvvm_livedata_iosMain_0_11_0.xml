@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: dev.icerock.moko:mvvm-livedata:iosMain:0.11.0" type="kotlin.native">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/shared.Bifrost/commonTest/implementation/dev.icerock.moko-mvvm-livedata/dev.icerock.moko-mvvm-livedata-iosMain.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-livedata/0.11.0/8bd879d30d73fc0d8543c735567aabd152494fe0/mvvm-livedata-0.11.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

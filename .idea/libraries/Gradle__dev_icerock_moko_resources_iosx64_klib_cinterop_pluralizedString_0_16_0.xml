@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: dev.icerock.moko:resources-iosx64:klib:cinterop-pluralizedString:0.16.0" type="kotlin.native">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/resources-iosx64/0.16.0/bafcac9f1dce19489d63d3aa599a839b0d80b912/resources-cinterop-pluralizedString.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/resources-iosx64/0.16.0/3c4928ef3a7a1cd2a02e4d259965cd3ad67d7fe3/resources-iosx64-0.16.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

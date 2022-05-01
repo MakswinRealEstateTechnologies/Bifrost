@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: dev.icerock.moko:mvvm-state-deprecated-android-debug:0.11.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e13d5ec173b44455a26f523cc025f3d0/transformed/mvvm-state-deprecated-debug/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e13d5ec173b44455a26f523cc025f3d0/transformed/mvvm-state-deprecated-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e13d5ec173b44455a26f523cc025f3d0/transformed/mvvm-state-deprecated-debug/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-state-deprecated-android-debug/0.11.0/4f80e1c35c209134f139ed9c876ebb186833117/mvvm-state-deprecated-android-debug-0.11.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-state-deprecated-android-debug/0.11.0/55d1a89be4d030fa7e8ca3a45e89431a1ebb848f/mvvm-state-deprecated-android-debug-0.11.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

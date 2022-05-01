@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: dev.icerock.moko:parcelize:commonMain:0.7.0" type="kotlin.common">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/shared.Bifrost/commonMain/implementation/dev.icerock.moko-parcelize/dev.icerock.moko-parcelize-commonMain.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/parcelize/0.7.0/f01bad0fde1a0820d4d0b11cd89b76613c599954/parcelize-0.7.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

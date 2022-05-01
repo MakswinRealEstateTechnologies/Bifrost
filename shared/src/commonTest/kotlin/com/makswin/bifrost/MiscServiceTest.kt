@@ -1,13 +1,12 @@
 package com.makswin.bifrost
 
 import com.makswin.bifrost.core.isFailed
-import com.makswin.bifrost.services.MiscService
 import kotlinx.coroutines.*
 import kotlin.test.*
 
 class MiscServiceTest {
 
-    private lateinit var miscService: MiscService
+    /*private lateinit var miscService: MiscService
 
     @BeforeTest
     fun onSetup() {
@@ -38,6 +37,6 @@ class MiscServiceTest {
 
         }
 
-    }
+    }*/
 
 }

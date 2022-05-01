@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: dev.icerock.moko:graphics-android-debug:0.7.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/10bbc4caa20f8643d63c407c8afec683/transformed/graphics-debug/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/10bbc4caa20f8643d63c407c8afec683/transformed/graphics-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/10bbc4caa20f8643d63c407c8afec683/transformed/graphics-debug/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/graphics-android-debug/0.7.0/b88079fdb09fece8e0c6fcc3f2543d6b78cc6a66/graphics-android-debug-0.7.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/graphics-android-debug/0.7.0/40ad0b6e2f366bbafda1c90e79dc8d0e541624f0/graphics-android-debug-0.7.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

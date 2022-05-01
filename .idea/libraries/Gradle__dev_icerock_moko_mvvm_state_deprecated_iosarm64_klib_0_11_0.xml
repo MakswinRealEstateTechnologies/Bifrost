@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: dev.icerock.moko:mvvm-state-deprecated-iosarm64:klib:0.11.0" type="kotlin.native">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-state-deprecated-iosarm64/0.11.0/ea2582cd5849ef9cb538b4f799faa23accf8aa3e/mvvm-state-deprecated.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-state-deprecated-iosarm64/0.11.0/9172fb38e45226a46428aeaa70a6dbdd8e5f0031/mvvm-state-deprecated-iosarm64-0.11.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
