@@ -8,6 +8,18 @@ import com.makswin.fizbot.CreateInsuranceMutation
 import com.makswin.fizbot.type.KoalayDefineDealerInput
 import kotlinx.coroutines.launch
 
+class AntiService : BaseService() {
+
+    fun testIUnit() {
+
+    }
+
+    fun testIUni2t() {
+
+    }
+
+}
+
 class InsuranceService : BaseService() {
 
     /**

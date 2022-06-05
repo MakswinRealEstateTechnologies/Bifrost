@@ -15,33 +15,26 @@ import kotlinx.coroutines.launch
 class HelpService : BaseService() {
 
     /**
-     * Adding feedback
+     * Getting some feedback or bug from user about app
      * @author alkincakiralar
      */
-    fun addFeedback(model: AddFeedBackModel, completion: (ResponseType) -> Unit) {
+    suspend fun addFeedback(model: AddFeedBackModel): ResponseType {
 
-        scope.launch {
-
-            val feedBackType = if (model.type == AddFeedBackType.Bug) {
-                FeedbackType.BUG
-            } else {
-                FeedbackType.FEEDBACK
-            }
-
-            val input = AddFeedbackInput(model.note, Optional.presentIfNotNull(feedBackType))
-
-            val mutation = AddFeedbackMutation(input)
-
-            val response = executeMutation(mutation)
-
-            if (!checkMutationResponse(response)) {
-                completion(ResponseType.Error)
-                return@launch
-            }
-
-            completion(ResponseType.Success)
-
+        val feedBackType = if (model.type == AddFeedBackType.Bug) {
+            FeedbackType.BUG
+        } else {
+            FeedbackType.FEEDBACK
         }
+
+        val input = AddFeedbackInput(model.note, Optional.presentIfNotNull(feedBackType))
+
+        val mutation = AddFeedbackMutation(input)
+
+        val response = executeMutation(mutation)
+
+        if (!checkMutationResponse(response)) return ResponseType.Error
+
+        return ResponseType.Success
 
     }
 
@@ -49,75 +42,59 @@ class HelpService : BaseService() {
      *
      * @author alkincakiralar
      */
-    fun getLastTraining(
-        completion: (ResponseType, TrainingModel?) -> Unit
-    ) {
+    suspend fun getLastTraining(): Pair<ResponseType, TrainingModel?> {
 
-        scope.launch {
+        val orderBy = listOf(
+            QueryTrainingsForUserOrderByOrderByClause(
+                column = TrainingColumn.ENDS_AT,
+                order = SortOrder.ASC
+            )
+        )
 
-            val orderBy = listOf(
-                QueryTrainingsForUserOrderByOrderByClause(
-                    column = TrainingColumn.ENDS_AT,
-                    order = SortOrder.ASC
+        val isPublished = QueryTrainingsForUserWhereWhereConditions(
+            column = Optional.presentIfNotNull(TrainingColumn.IS_PUBLISHED),
+            operator = Optional.presentIfNotNull(SQLOperator.EQ),
+            value = Optional.presentIfNotNull("true")
+        )
+
+        val officeId = QueryTrainingsForUserWhereWhereConditions(
+            column = Optional.presentIfNotNull(TrainingColumn.OFFICE_ID),
+            operator = Optional.presentIfNotNull(SQLOperator.IS_NULL)
+        )
+
+        val dateQuery = QueryTrainingsForUserWhereWhereConditions(
+            column = Optional.presentIfNotNull(TrainingColumn.STARTS_AT),
+            operator = Optional.presentIfNotNull(SQLOperator.GT),
+            value = Optional.presentIfNotNull("2022-05-02 00:15:00")
+        )
+
+        val whereQuery = QueryTrainingsForUserWhereWhereConditions(
+            AND = Optional.presentIfNotNull(
+                listOf(
+                    isPublished,
+                    officeId,
+                    dateQuery
                 )
             )
+        )
 
-            val isPublished = QueryTrainingsForUserWhereWhereConditions(
-                column = Optional.presentIfNotNull(TrainingColumn.IS_PUBLISHED),
-                operator = Optional.presentIfNotNull(SQLOperator.EQ),
-                value = Optional.presentIfNotNull("true")
-            )
+        val query = TrainingsQuery(whereQuery, orderBy, 1, 1)
 
-            val officeId = QueryTrainingsForUserWhereWhereConditions(
-                column = Optional.presentIfNotNull(TrainingColumn.OFFICE_ID),
-                operator = Optional.presentIfNotNull(SQLOperator.IS_NULL)
-            )
+        val response = executeQuery(query)
 
-            val dateQuery = QueryTrainingsForUserWhereWhereConditions(
-                column = Optional.presentIfNotNull(TrainingColumn.STARTS_AT),
-                operator = Optional.presentIfNotNull(SQLOperator.GT),
-                value = Optional.presentIfNotNull("2022-05-02 00:15:00")
-            )
+        if (!checkQueryResponse(response)) return Pair(ResponseType.Error, null)
 
-            val whereQuery = QueryTrainingsForUserWhereWhereConditions(
-                AND = Optional.presentIfNotNull(
-                    listOf(
-                        isPublished,
-                        officeId,
-                        dateQuery
-                    )
-                )
-            )
+        val data = response.data?.trainings_for_user?.data ?: return Pair(ResponseType.Error, null)
 
-            val query = TrainingsQuery(whereQuery, orderBy, 1, 1)
+        return if (data.count() > 0) {
 
-            val response = executeQuery(query)
+            val training = TrainingModel(data.first().fragmentTraining)
 
-            if (!checkQueryResponse(response)) {
-                completion(ResponseType.Error, null)
-                return@launch
-            }
+            Pair(ResponseType.Success, training)
 
-            val data = response.data?.trainings_for_user?.data
+        } else {
 
-            if (data == null) {
-                completion(ResponseType.Error, null)
-                return@launch
-            }
-
-            if (data.count() > 0) {
-
-                val training = TrainingModel(data.first().fragmentTraining)
-
-                completion(ResponseType.Success, training)
-
-            } else {
-
-                completion(ResponseType.Error, null)
-
-                return@launch
-
-            }
+            Pair(ResponseType.Error, null)
 
         }
 

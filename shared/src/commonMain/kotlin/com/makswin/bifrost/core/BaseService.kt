@@ -2,6 +2,8 @@ package com.makswin.bifrost.core
 
 import com.apollographql.apollo3.ApolloClient
 import com.apollographql.apollo3.api.*
+import com.makswin.bifrost.enums.ResponseType
+import com.makswin.bifrost.modules.misc.ResponseModel
 import kotlinx.coroutines.CoroutineScope
 
 open class BaseService {
@@ -49,5 +51,11 @@ open class BaseService {
         return true
 
     }
+
+    fun <T> onError(): ResponseModel<T> = ResponseModel(ResponseType.Error, null)
+
+    fun onSuccess(): ResponseModel<Any> = ResponseModel(ResponseType.Success, null)
+
+    fun <T> onSuccess(data: T): ResponseModel<T> = ResponseModel(ResponseType.Success, data)
 
 }
