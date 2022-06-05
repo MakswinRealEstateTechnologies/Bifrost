@@ -69,7 +69,7 @@
       <excludeFolder url="file://$MODULE_DIR$/../../../shared/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../../shared/build" />
     </content>
-    <orderEntry type="jdk" jdkName="Android API 30 Platform" jdkType="Android SDK" />
+    <orderEntry type="jdk" jdkName="Android API 32 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Bifrost.shared.androidAndroidTestRelease" scope="TEST" />
     <orderEntry type="module" module-name="Bifrost.shared.commonMain" scope="TEST" />
