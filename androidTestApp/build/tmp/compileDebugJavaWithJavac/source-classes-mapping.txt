@@ -1,0 +1,2 @@
+com/makswin/androidtestapp/BuildConfig.java
+ com.makswin.androidtestapp.BuildConfig
