@@ -3,7 +3,9 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.awaitility/awaitility-kotlin/4.1.1/87ee62efd6f113a8fa915479435e9d749b213668/awaitility-kotlin-4.1.1.jar!/" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.awaitility/awaitility-kotlin/4.1.1/c9ab1982da1221f4cc3d073e0aa21fcd6a894eec/awaitility-kotlin-4.1.1-javadoc.jar!/" />
+    </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.awaitility/awaitility-kotlin/4.1.1/9926bd3782024943dab3dcd0728035fa6eb49af/awaitility-kotlin-4.1.1-sources.jar!/" />
     </SOURCES>

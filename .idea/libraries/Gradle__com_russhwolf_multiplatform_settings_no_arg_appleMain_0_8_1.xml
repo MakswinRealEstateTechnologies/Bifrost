@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Gradle: com.russhwolf:multiplatform-settings-no-arg:appleMain:0.8.1" type="kotlin.native">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/shared.Bifrost/commonTest/implementation/com.russhwolf-multiplatform-settings-no-arg/com.russhwolf-multiplatform-settings-no-arg-appleMain.klib!/" />
+      <root url="jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosArm64Test/implementation/com.russhwolf-multiplatform-settings-no-arg/com.russhwolf-multiplatform-settings-no-arg-appleMain.klib!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
