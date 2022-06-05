@@ -25,56 +25,112 @@
         </compilerArguments>
       </configuration>
     </facet>
-    <facet type="android" name="Android">
-      <configuration>
-        <option name="SELECTED_BUILD_VARIANT" value="debug" />
-        <option name="ASSEMBLE_TASK_NAME" value="assembleDebug" />
-        <option name="COMPILE_JAVA_TASK_NAME" value="compileDebugSources" />
-        <afterSyncTasks>
-          <task>generateDebugSources</task>
-        </afterSyncTasks>
-        <option name="ALLOW_USER_CONFIGURATION" value="false" />
-        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/androidMain/AndroidManifest.xml" />
-        <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
-        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../shared/src/main/res;file://$MODULE_DIR$/../../../shared/src/androidMain/res;file://$MODULE_DIR$/../../../shared/src/debug/res;file://$MODULE_DIR$/../../../shared/src/androidDebug/res;file://$MODULE_DIR$/../../../shared/build/generated/res/rs/debug;file://$MODULE_DIR$/../../../shared/build/generated/res/resValues/debug" />
-        <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../shared/src/androidTest/res;file://$MODULE_DIR$/../../../shared/src/androidAndroidTest/res;file://$MODULE_DIR$/../../../shared/src/androidTestDebug/res;file://$MODULE_DIR$/../../../shared/src/androidAndroidTestDebug/res;file://$MODULE_DIR$/../../../shared/build/generated/res/rs/androidTest/debug;file://$MODULE_DIR$/../../../shared/build/generated/res/resValues/androidTest/debug" />
-        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
-        <option name="PROJECT_TYPE" value="1" />
-      </configuration>
-    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../shared/build/generated/source/apollo/service">
       <sourceFolder url="file://$MODULE_DIR$/../../../shared/build/generated/source/apollo/service" type="kotlin-source" />
     </content>
-    <content url="file://$MODULE_DIR$/../../../shared/src/commonMain/kotlin">
+    <content url="file://$MODULE_DIR$/../../../shared/src/commonMain">
       <sourceFolder url="file://$MODULE_DIR$/../../../shared/src/commonMain/kotlin" type="kotlin-source" />
     </content>
-    <content url="file://$MODULE_DIR$/../../../shared/src/commonMain/resources" />
-    <orderEntry type="jdk" jdkName="Android API 30 Platform" jdkType="Android SDK" />
+    <orderEntry type="jdk" jdkName="Kotlin SDK" jdkType="KotlinSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Gradle: com.apollographql.apollo3:apollo-runtime:3.0.0" level="project" />
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.6.10" level="project" />
-    <orderEntry type="library" name="Gradle: com.apollographql.apollo3:apollo-api:3.0.0" level="project" />
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:commonMain:1.6.0" level="project" />
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.russhwolf:multiplatform-settings-no-arg:commonMain:0.8.1" level="project" />
+    <orderEntry type="module-library">
+      <library name="Gradle: com.apollographql.apollo3:apollo-runtime:commonMain:3.3.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/commonMain/api/com.apollographql.apollo3-apollo-runtime/com.apollographql.apollo3-apollo-runtime-commonMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-runtime/3.3.0/5a7c2dccb55d630b2a6fa5a8f798d4fa809f3b97/apollo-runtime-3.3.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Gradle: com.apollographql.apollo3:apollo-api:commonMain:3.3.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/commonMain/api/com.apollographql.apollo3-apollo-api/com.apollographql.apollo3-apollo-api-commonMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-api/3.3.0/a887cca42c6e2e1751252fe579a50527277f03d7/apollo-api-3.3.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="Gradle: org.awaitility:awaitility-kotlin:4.1.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.apollographql.apollo3:apollo-mpp-utils:3.0.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.squareup.okio:okio:3.0.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.benasher44:uuid:commonMain:0.3.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.apollographql.apollo3:apollo-annotations:3.0.0" level="project" />
-    <orderEntry type="library" name="Gradle: dev.icerock.moko:mvvm-state-deprecated:commonMain:0.11.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.russhwolf:multiplatform-settings:commonMain:0.8.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:commonMain:1.6.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.1" level="project" />
+    <orderEntry type="module-library">
+      <library name="Gradle: com.russhwolf:multiplatform-settings-no-arg:commonMain:0.8.1">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/commonMain/api/com.russhwolf-multiplatform-settings-no-arg/com.russhwolf-multiplatform-settings-no-arg-commonMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.russhwolf/multiplatform-settings-no-arg/0.8.1/4e61393548b387cb7f84886f089751d7bc26e153/multiplatform-settings-no-arg-0.8.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.6.21" level="project" />
+    <orderEntry type="module-library">
+      <library name="Gradle: com.apollographql.apollo3:apollo-mpp-utils:commonMain:3.3.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/commonMain/api/com.apollographql.apollo3-apollo-mpp-utils/com.apollographql.apollo3-apollo-mpp-utils-commonMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-mpp-utils/3.3.0/ebe36a9f6ae14ca7f62060e16a79f3bb0e7319aa/apollo-mpp-utils-3.3.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Gradle: com.squareup.okio:okio:commonMain:3.1.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/commonMain/api/com.squareup.okio-okio/com.squareup.okio-okio-commonMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/3.1.0/15b0d6a4e75d5e3a47ab8f717aebb48f372eeaf3/okio-3.1.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Gradle: com.benasher44:uuid:commonMain:0.3.1">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/commonMain/api/com.benasher44-uuid/com.benasher44-uuid-commonMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.benasher44/uuid/0.3.1/340e21fb50aac944ddf40758dddf817e133d6687/uuid-0.3.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Gradle: com.apollographql.apollo3:apollo-annotations:commonMain:3.3.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/commonMain/api/com.apollographql.apollo3-apollo-annotations/com.apollographql.apollo3-apollo-annotations-commonMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-annotations/3.3.0/d4aabeb652ffb4360a9604ee5c85bdc5fb8c6dd/apollo-annotations-3.3.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.5.0" level="project" />
     <orderEntry type="library" name="Gradle: org.awaitility:awaitility:4.1.1" level="project" />
-    <orderEntry type="library" name="Gradle: dev.icerock.moko:mvvm-livedata:commonMain:0.11.0" level="project" />
+    <orderEntry type="module-library">
+      <library name="Gradle: com.russhwolf:multiplatform-settings:commonMain:0.8.1">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/commonMain/api/com.russhwolf-multiplatform-settings/com.russhwolf-multiplatform-settings-commonMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.russhwolf/multiplatform-settings/0.8.1/cc674780c2f0d82e6568b697efc724aaab9f0b5f/multiplatform-settings-0.8.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
     <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest:2.1" level="project" />
-    <orderEntry type="library" name="Gradle: dev.icerock.moko:mvvm-core:commonMain:0.11.0" level="project" />
-    <orderEntry type="library" name="Gradle: dev.icerock.moko:resources:commonMain:0.16.0" level="project" />
-    <orderEntry type="library" name="Gradle: dev.icerock.moko:parcelize:commonMain:0.7.0" level="project" />
-    <orderEntry type="library" name="Gradle: dev.icerock.moko:graphics:commonMain:0.7.0" level="project" />
   </component>
 </module>
