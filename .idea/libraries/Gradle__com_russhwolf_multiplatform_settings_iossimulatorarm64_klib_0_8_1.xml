@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.russhwolf:multiplatform-settings-iossimulatorarm64:klib:0.8.1" type="kotlin.native">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.russhwolf/multiplatform-settings-iossimulatorarm64/0.8.1/822b4a3635e66295ef1d521203b42c677921f1b8/multiplatform-settings.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.russhwolf/multiplatform-settings-iossimulatorarm64/0.8.1/e8f153d6a171919e12d083e771588a40262cc191/multiplatform-settings-iossimulatorarm64-0.8.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
