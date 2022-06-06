@@ -1,24 +1,14 @@
 package com.makswin.bifrost.modules.help
 
-import com.apollographql.apollo3.api.Optional
-import com.makswin.bifrost.core.BaseService
-import com.makswin.bifrost.enums.AddFeedBackType
-import com.makswin.bifrost.enums.ResponseType
-import com.makswin.bifrost.enums.TrainingsTimeType
-import com.makswin.bifrost.modules.help.requestModels.AddFeedBackModel
-import com.makswin.bifrost.modules.help.responseModels.TrainingModel
-import com.makswin.fizbot.AddFeedbackMutation
-import com.makswin.fizbot.TrainingsQuery
-import com.makswin.fizbot.type.*
-import kotlinx.coroutines.launch
+import com.makswin.bifrost.core.utils.BaseRepository
 
-class HelpService : BaseService() {
+class HelpService : BaseRepository() {
 
     /**
      * Getting some feedback or bug from user about app
      * @author alkincakiralar
      */
-    suspend fun addFeedback(model: AddFeedBackModel): ResponseType {
+    /*suspend fun addFeedback(model: AddFeedBackModel): ResponseType {
 
         val feedBackType = if (model.type == AddFeedBackType.Bug) {
             FeedbackType.BUG
@@ -36,13 +26,13 @@ class HelpService : BaseService() {
 
         return ResponseType.Success
 
-    }
+    }*/
 
     /**
      *
      * @author alkincakiralar
      */
-    suspend fun getLastTraining(): Pair<ResponseType, TrainingModel?> {
+    /*suspend fun getLastTraining(): Pair<ResponseType, TrainingModel?> {
 
         val orderBy = listOf(
             QueryTrainingsForUserOrderByOrderByClause(
@@ -98,13 +88,13 @@ class HelpService : BaseService() {
 
         }
 
-    }
+    }*/
 
     /**
      *
      * @author alkincakiralar
      */
-    fun getTrainingList(
+    /*fun getTrainingList(
         type: TrainingsTimeType,
         completion: (ResponseType, List<TrainingModel>) -> Unit
     ) {
@@ -172,6 +162,6 @@ class HelpService : BaseService() {
 
         }
 
-    }
+    }*/
 
 }

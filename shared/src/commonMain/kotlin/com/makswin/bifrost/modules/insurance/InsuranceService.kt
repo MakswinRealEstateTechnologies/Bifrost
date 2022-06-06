@@ -1,32 +1,14 @@
 package com.makswin.bifrost.modules.insurance
 
-import com.makswin.bifrost.core.BaseService
-import com.makswin.bifrost.enums.ResponseType
-import com.makswin.bifrost.modules.insurance.responseModels.InsuranceModel
-import com.makswin.fizbot.CheckInsuranceQuery
-import com.makswin.fizbot.CreateInsuranceMutation
-import com.makswin.fizbot.type.KoalayDefineDealerInput
-import kotlinx.coroutines.launch
+import com.makswin.bifrost.core.utils.BaseRepository
 
-class AntiService : BaseService() {
-
-    fun testIUnit() {
-
-    }
-
-    fun testIUni2t() {
-
-    }
-
-}
-
-class InsuranceService : BaseService() {
+class InsuranceService : BaseRepository() {
 
     /**
      *
      * @author alkincakiralar
      */
-    fun checkInsurance(userId: String, completion: (ResponseType, InsuranceModel?) -> Unit) {
+    /*fun checkInsurance(userId: String, completion: (ResponseType, InsuranceModel?) -> Unit) {
 
         scope.launch {
 
@@ -57,13 +39,13 @@ class InsuranceService : BaseService() {
 
         }
 
-    }
+    }*/
 
     /**
      *
      * @author alkincakiralar
      */
-    fun createInsuranceUser(identityNumber: String, completion: (ResponseType) -> Unit) {
+    /*fun createInsuranceUser(identityNumber: String, completion: (ResponseType) -> Unit) {
 
         scope.launch {
 
@@ -89,6 +71,6 @@ class InsuranceService : BaseService() {
 
         }
 
-    }
+    }*/
 
 }

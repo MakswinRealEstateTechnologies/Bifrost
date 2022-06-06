@@ -1,7 +1,8 @@
 package com.makswin.bifrost.core
 
-import com.makswin.bifrost.enums.ResponseType
+import com.makswin.bifrost.core.models.BaseResponseModel
+import com.makswin.bifrost.core.models.ResponseStatus
 
-fun ResponseType.isFailed(): Boolean {
-    return this == ResponseType.Error
+fun <T> BaseResponseModel<T>.isFailed(): Boolean {
+    return this.status == ResponseStatus.Error
 }

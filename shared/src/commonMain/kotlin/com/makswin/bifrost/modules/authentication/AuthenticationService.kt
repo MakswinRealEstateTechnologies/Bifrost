@@ -1,15 +1,9 @@
 package com.makswin.bifrost.modules.authentication
 
-import com.makswin.bifrost.core.BaseService
-import com.makswin.bifrost.enums.ResponseType
-import com.makswin.bifrost.modules.authentication.requestModels.Login
-import com.makswin.bifrost.modules.authentication.responseModels.Auth
-import com.makswin.fizbot.ForgotPasswordOTPMutation
-import com.makswin.fizbot.LoginMutation
+import com.makswin.bifrost.core.utils.BaseRepository
 import com.russhwolf.settings.Settings
-import kotlinx.coroutines.launch
 
-class AuthenticationService : BaseService() {
+class AuthenticationService : BaseRepository() {
 
     /**
      * Stores the user current token
@@ -30,7 +24,7 @@ class AuthenticationService : BaseService() {
      * @param input has login parameters
      * @author alkincakiralar
      */
-    fun forgotPasswordOTP(input: Login, completion: (ResponseType) -> Unit) {
+    /*fun forgotPasswordOTP(input: Login, completion: (ResponseType) -> Unit) {
 
         scope.launch {
 
@@ -47,7 +41,7 @@ class AuthenticationService : BaseService() {
 
         }
 
-    }
+    }*/
 
     /**
      * Used to login with sms code
@@ -55,7 +49,7 @@ class AuthenticationService : BaseService() {
      * @return The user model has logged in
      * @author alkincakiralar
      */
-    fun login(input: Login, completion: (ResponseType, Auth?) -> Unit) {
+    /*fun login(input: Login, completion: (ResponseType, Auth?) -> Unit) {
 
         scope.launch {
 
@@ -86,6 +80,6 @@ class AuthenticationService : BaseService() {
 
         }
 
-    }
+    }*/
 
 }
