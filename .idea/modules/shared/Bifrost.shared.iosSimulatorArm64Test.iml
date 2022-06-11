@@ -5,7 +5,7 @@
       <configuration version="4" platform="Native (ios_simulator_arm64) " allPlatforms="Native []/Native [ios_simulator_arm64]" useProjectSettings="false" isTestModule="true" externalProjectId=":shared" isHmppProject="true">
         <dependsOnModuleNames>:shared:commonTest</dependsOnModuleNames>
         <sourceSets>
-          <sourceSet>makswin.Bifrost.shared.commonTest</sourceSet>
+          <sourceSet>GitHub.Bifrost.shared.commonTest</sourceSet>
           <sourceSet>Bifrost.shared.iosSimulatorArm64Main</sourceSet>
           <sourceSet>Bifrost.shared.commonMain</sourceSet>
           <sourceSet>Bifrost.shared.iosMain</sourceSet>
@@ -37,7 +37,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - stdlib" level="project" />
     <orderEntry type="module" module-name="Bifrost.shared.commonMain" scope="TEST" />
-    <orderEntry type="module" module-name="makswin.Bifrost.shared.commonTest" scope="TEST" production-on-test="" />
+    <orderEntry type="module" module-name="GitHub.Bifrost.shared.commonTest" scope="TEST" production-on-test="" />
     <orderEntry type="module" module-name="Bifrost.shared.iosMain" scope="TEST" />
     <orderEntry type="module" module-name="Bifrost.shared.iosSimulatorArm64Main" scope="TEST" />
     <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - ARKit | ios_simulator_arm64" level="project" />
