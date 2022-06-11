@@ -76,7 +76,7 @@ kotlin {
 
 android {
 
-    project.tasks.preBuild.dependsOn("graphqlSchemaDownloadTask")
+    //project.tasks.preBuild.dependsOn("graphqlSchemaDownloadTask")
 
     compileSdk = 32
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
@@ -91,7 +91,7 @@ dependencies {
     implementation("com.google.android.play:core-ktx:1.8.1")
 }
 
-tasks.register("graphqlSchemaDownloadTask") {
+/*tasks.register("graphqlSchemaDownloadTask") {
     doFirst {
         exec {
             commandLine(
@@ -100,7 +100,7 @@ tasks.register("graphqlSchemaDownloadTask") {
             )
         }
     }
-}
+}*/
 
 apollo {
     packageName.set("com.makswin.fizbot")
