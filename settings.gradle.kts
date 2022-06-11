@@ -7,5 +7,4 @@ pluginManagement {
 }
 
 rootProject.name = "Bifrost"
-include(":androidTestApp")
 include(":shared")

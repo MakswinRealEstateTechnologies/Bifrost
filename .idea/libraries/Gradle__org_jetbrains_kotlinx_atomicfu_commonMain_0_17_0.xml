@@ -2,6 +2,7 @@
   <library name="Gradle: org.jetbrains.kotlinx:atomicfu:commonMain:0.17.0" type="kotlin.common">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosArm64Test/implementation/org.jetbrains.kotlinx-atomicfu/org.jetbrains.kotlinx-atomicfu-commonMain.klib!/" />
+      <root url="jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosMain/api/org.jetbrains.kotlinx-atomicfu/org.jetbrains.kotlinx-atomicfu-commonMain.klib!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
