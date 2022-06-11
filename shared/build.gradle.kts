@@ -1,6 +1,7 @@
 import com.android.build.gradle.internal.tasks.factory.dependsOn
 
 plugins {
+    id("maven-publish")
     kotlin("multiplatform")
     id("com.android.library")
     id("com.apollographql.apollo3").version("3.3.0")
@@ -12,14 +13,6 @@ version = "1.0"
 kotlin {
 
     android()
-
-    /*8ios {
-        binaries {
-            framework {
-                baseName = "Bifrost"
-            }
-        }
-    }*/
 
     listOf(
         iosX64(),
