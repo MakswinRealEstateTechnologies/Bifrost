@@ -30,7 +30,7 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+  <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../shared/build/classes/kotlin/iosX64/main/klib" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../shared/src/iosX64Main" />

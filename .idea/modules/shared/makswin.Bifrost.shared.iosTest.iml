@@ -182,7 +182,7 @@
     <orderEntry type="module-library" scope="TEST">
       <library name="Gradle: com.apollographql.apollo3:apollo-runtime:appleMain:3.3.0">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosMain/api/com.apollographql.apollo3-apollo-runtime/com.apollographql.apollo3-apollo-runtime-appleMain.klib!/" />
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/commonTest/api/com.apollographql.apollo3-apollo-runtime/com.apollographql.apollo3-apollo-runtime-appleMain.klib!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
@@ -226,7 +226,7 @@
     <orderEntry type="module-library" scope="TEST">
       <library name="Gradle: com.apollographql.apollo3:apollo-api:appleMain:3.3.0">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosMain/api/com.apollographql.apollo3-apollo-api/com.apollographql.apollo3-apollo-api-appleMain.klib!/" />
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/commonTest/api/com.apollographql.apollo3-apollo-api/com.apollographql.apollo3-apollo-api-appleMain.klib!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
@@ -253,7 +253,7 @@
     <orderEntry type="module-library" scope="TEST">
       <library name="Gradle: com.russhwolf:multiplatform-settings-no-arg:appleMain:0.8.1">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosMain/api/com.russhwolf-multiplatform-settings-no-arg/com.russhwolf-multiplatform-settings-no-arg-appleMain.klib!/" />
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/commonTest/api/com.russhwolf-multiplatform-settings-no-arg/com.russhwolf-multiplatform-settings-no-arg-appleMain.klib!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
@@ -277,7 +277,7 @@
     <orderEntry type="module-library" scope="TEST">
       <library name="Gradle: com.apollographql.apollo3:apollo-mpp-utils:appleMain:3.3.0">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosMain/api/com.apollographql.apollo3-apollo-mpp-utils/com.apollographql.apollo3-apollo-mpp-utils-appleMain.klib!/" />
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/commonTest/api/com.apollographql.apollo3-apollo-mpp-utils/com.apollographql.apollo3-apollo-mpp-utils-appleMain.klib!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
@@ -300,7 +300,7 @@
     <orderEntry type="module-library" scope="TEST">
       <library name="Gradle: com.squareup.okio:okio:appleMain:3.1.0">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosMain/api/com.squareup.okio-okio/com.squareup.okio-okio-appleMain.klib!/" />
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/commonTest/api/com.squareup.okio-okio/com.squareup.okio-okio-appleMain.klib!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
@@ -322,7 +322,7 @@
     <orderEntry type="module-library" scope="TEST">
       <library name="Gradle: com.squareup.okio:okio:hashFunctions:3.1.0">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosMain/api/com.squareup.okio-okio/com.squareup.okio-okio-hashFunctions.klib!/" />
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/commonTest/api/com.squareup.okio-okio/com.squareup.okio-okio-hashFunctions.klib!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
@@ -333,7 +333,7 @@
     <orderEntry type="module-library" scope="TEST">
       <library name="Gradle: com.squareup.okio:okio:nativeMain:3.1.0">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosMain/api/com.squareup.okio-okio/com.squareup.okio-okio-nativeMain.klib!/" />
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/commonTest/api/com.squareup.okio-okio/com.squareup.okio-okio-nativeMain.klib!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
@@ -344,7 +344,7 @@
     <orderEntry type="module-library" scope="TEST">
       <library name="Gradle: com.squareup.okio:okio:nonJvmMain:3.1.0">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosMain/api/com.squareup.okio-okio/com.squareup.okio-okio-nonJvmMain.klib!/" />
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/commonTest/api/com.squareup.okio-okio/com.squareup.okio-okio-nonJvmMain.klib!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
@@ -355,7 +355,7 @@
     <orderEntry type="module-library" scope="TEST">
       <library name="Gradle: com.squareup.okio:okio:unixMain:3.1.0">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosMain/api/com.squareup.okio-okio/com.squareup.okio-okio-unixMain.klib!/" />
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/commonTest/api/com.squareup.okio-okio/com.squareup.okio-okio-unixMain.klib!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
@@ -391,6 +391,28 @@
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.5.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.awaitility:awaitility:4.1.1" level="project" />
     <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: com.russhwolf:multiplatform-settings:apple64Main:0.8.1">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/commonTest/api/com.russhwolf-multiplatform-settings/com.russhwolf-multiplatform-settings-apple64Main.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.russhwolf/multiplatform-settings/0.8.1/cc674780c2f0d82e6568b697efc724aaab9f0b5f/multiplatform-settings-0.8.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: com.russhwolf:multiplatform-settings:appleMain:0.8.1">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/commonTest/api/com.russhwolf-multiplatform-settings/com.russhwolf-multiplatform-settings-appleMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.russhwolf/multiplatform-settings/0.8.1/cc674780c2f0d82e6568b697efc724aaab9f0b5f/multiplatform-settings-0.8.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
       <library name="Gradle: com.russhwolf:multiplatform-settings:commonMain:0.8.1">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/commonMain/api/com.russhwolf-multiplatform-settings/com.russhwolf-multiplatform-settings-commonMain.klib!/" />
@@ -404,28 +426,6 @@
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:atomicfu:commonMain:0.17.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:atomicfu:nativeInterop:0.17.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:atomicfu:nativeMain:0.17.0" level="project" />
-    <orderEntry type="module-library" scope="TEST">
-      <library name="Gradle: com.russhwolf:multiplatform-settings:apple64Main:0.8.1">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosMain/api/com.russhwolf-multiplatform-settings/com.russhwolf-multiplatform-settings-apple64Main.klib!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.russhwolf/multiplatform-settings/0.8.1/cc674780c2f0d82e6568b697efc724aaab9f0b5f/multiplatform-settings-0.8.1-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
-      <library name="Gradle: com.russhwolf:multiplatform-settings:appleMain:0.8.1">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosMain/api/com.russhwolf-multiplatform-settings/com.russhwolf-multiplatform-settings-appleMain.klib!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.russhwolf/multiplatform-settings/0.8.1/cc674780c2f0d82e6568b697efc724aaab9f0b5f/multiplatform-settings-0.8.1-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest:2.1" level="project" />
   </component>

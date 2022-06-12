@@ -35,6 +35,7 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../shared/build/generated/source/apolloTest/service">
       <sourceFolder url="file://$MODULE_DIR$/../../../shared/build/generated/source/apolloTest/service" type="kotlin-test" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../shared/build/generated/source/apolloTest/service" type="kotlin-test" />
     </content>
     <content url="file://$MODULE_DIR$/../../../shared/src/commonTest">
       <sourceFolder url="file://$MODULE_DIR$/../../../shared/src/commonTest/kotlin" type="kotlin-test" />

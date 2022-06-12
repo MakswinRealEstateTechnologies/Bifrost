@@ -26,9 +26,10 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="true">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../shared/build/generated/source/apollo/service">
+      <sourceFolder url="file://$MODULE_DIR$/../../../shared/build/generated/source/apollo/service" type="kotlin-source" />
       <sourceFolder url="file://$MODULE_DIR$/../../../shared/build/generated/source/apollo/service" type="kotlin-source" />
     </content>
     <content url="file://$MODULE_DIR$/../../../shared/src/commonMain">

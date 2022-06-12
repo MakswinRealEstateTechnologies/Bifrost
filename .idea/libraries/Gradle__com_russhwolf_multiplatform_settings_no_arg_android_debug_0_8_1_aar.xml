@@ -1,9 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.russhwolf:multiplatform-settings-no-arg-android-debug:0.8.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e9ad5dfc5757a0024ffd51e784fb267a/transformed/multiplatform-settings-no-arg-debug/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e9ad5dfc5757a0024ffd51e784fb267a/transformed/multiplatform-settings-no-arg-debug/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e9ad5dfc5757a0024ffd51e784fb267a/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4f30f7c943fad6a4d1dea4ae0a9f27be/transformed/multiplatform-settings-no-arg-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bdcdefa96b532ba480a335a2f0f28acd/transformed/multiplatform-settings-no-arg-debug/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/69f9e1bc1384825d3015ee2d86165bc2/transformed/multiplatform-settings-no-arg-debug/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/69f9e1bc1384825d3015ee2d86165bc2/transformed/multiplatform-settings-no-arg-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/69f9e1bc1384825d3015ee2d86165bc2/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.russhwolf/multiplatform-settings-no-arg-android-debug/0.8.1/2177e871ef52cb47bbafcd95a6b64d7622f56611/multiplatform-settings-no-arg-android-debug-0.8.1-javadoc.jar!/" />

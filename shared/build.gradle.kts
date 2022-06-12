@@ -2,8 +2,8 @@ plugins {
     kotlin("multiplatform")
     id("com.android.library")
     id("maven-publish")
-    id("com.apollographql.apollo3").version("3.3.0")
     id("com.chromaticnoise.multiplatform-swiftpackage") version "2.0.3"
+    id("com.apollographql.apollo3").version("3.3.0")
 }
 
 version = "1.0"
@@ -76,9 +76,9 @@ android {
     }
 
 }
-dependencies {
-    implementation("com.google.android.play:core-ktx:1.8.1")
-}
+//dependencies {
+  //  implementation("com.google.android.play:core-ktx:1.8.1")
+//}
 
 /*tasks.register("graphqlSchemaDownloadTask") {
     doFirst {
@@ -93,5 +93,4 @@ dependencies {
 
 apollo {
     packageName.set("com.makswin.fizbot")
-    generateKotlinModels.set(true)
 }
