@@ -28,7 +28,6 @@ kotlin {
         }
         outputDirectory(File("/Users/alkincakiralar/Desktop/makswin/Bifrost-IOS-SDK", ""))
         buildConfiguration { debug() }
-        //buildConfiguration { release() }
     }
 
     sourceSets {
