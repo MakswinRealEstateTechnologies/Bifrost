@@ -1,7 +1,7 @@
 plugins {
-    id("maven-publish")
     kotlin("multiplatform")
     id("com.android.library")
+    id("maven-publish")
     id("com.apollographql.apollo3").version("3.3.0")
     id("com.chromaticnoise.multiplatform-swiftpackage") version "2.0.3"
 }
@@ -10,7 +10,9 @@ version = "1.0"
 
 kotlin {
 
-    android()
+    android {
+        publishLibraryVariants("release")
+    }
 
     ios {
         binaries {
@@ -31,15 +33,19 @@ kotlin {
     }
 
     sourceSets {
-        val commonMain by getting {
-            dependencies {
-                api("com.apollographql.apollo3:apollo-runtime:3.3.0")
-                api("com.apollographql.apollo3:apollo-api:3.3.0")
-                api("org.awaitility:awaitility-kotlin:4.1.1")
-                api("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1")
-                api("com.russhwolf:multiplatform-settings-no-arg:0.8.1")
-            }
+        sourceSets["commonMain"].dependencies {
+            implementation("org.jetbrains.kotlin:kotlin-stdlib-common")
+            api("com.apollographql.apollo3:apollo-runtime:3.3.0")
+            api("com.apollographql.apollo3:apollo-api:3.3.0")
+            api("org.awaitility:awaitility-kotlin:4.1.1")
+            api("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1")
+            api("com.russhwolf:multiplatform-settings-no-arg:0.8.1")
         }
+
+        sourceSets["androidMain"].dependencies {
+            implementation("org.jetbrains.kotlin:kotlin-stdlib")
+        }
+        val commonMain by getting
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test"))
