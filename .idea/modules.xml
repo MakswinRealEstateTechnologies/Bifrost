@@ -3,10 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Bifrost.iml" filepath="$PROJECT_DIR$/.idea/modules/Bifrost.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidTestApp/Bifrost.androidTestApp.iml" filepath="$PROJECT_DIR$/.idea/modules/androidTestApp/Bifrost.androidTestApp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidTestApp/Bifrost.androidTestApp.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/androidTestApp/Bifrost.androidTestApp.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidTestApp/Bifrost.androidTestApp.main.iml" filepath="$PROJECT_DIR$/.idea/modules/androidTestApp/Bifrost.androidTestApp.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidTestApp/Bifrost.androidTestApp.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/androidTestApp/Bifrost.androidTestApp.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Bifrost.shared.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Bifrost.shared.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Bifrost.shared.androidAndroidTestRelease.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Bifrost.shared.androidAndroidTestRelease.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Bifrost.shared.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Bifrost.shared.androidTest.iml" />
@@ -23,12 +19,12 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Bifrost.shared.iosX64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Bifrost.shared.iosX64Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Bifrost.shared.main.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Bifrost.shared.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Bifrost.shared.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Bifrost.shared.unitTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/makswin.Bifrost.shared.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/makswin.Bifrost.shared.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/makswin.Bifrost.shared.commonTest.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/makswin.Bifrost.shared.commonTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/makswin.Bifrost.shared.iosArm64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/makswin.Bifrost.shared.iosArm64Test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/makswin.Bifrost.shared.iosTest.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/makswin.Bifrost.shared.iosTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/makswin.Bifrost.shared.iosX64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/makswin.Bifrost.shared.iosX64Test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/makswin.Bifrost.shared.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/makswin.Bifrost.shared.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/GitHub.Bifrost.shared.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/GitHub.Bifrost.shared.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/GitHub.Bifrost.shared.commonTest.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/GitHub.Bifrost.shared.commonTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/GitHub.Bifrost.shared.iosArm64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/GitHub.Bifrost.shared.iosArm64Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/GitHub.Bifrost.shared.iosTest.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/GitHub.Bifrost.shared.iosTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/GitHub.Bifrost.shared.iosX64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/GitHub.Bifrost.shared.iosX64Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/GitHub.Bifrost.shared.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/GitHub.Bifrost.shared.unitTest.iml" />
     </modules>
   </component>
 </project>

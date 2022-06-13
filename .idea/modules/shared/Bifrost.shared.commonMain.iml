@@ -30,7 +30,6 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../shared/build/generated/source/apollo/service">
       <sourceFolder url="file://$MODULE_DIR$/../../../shared/build/generated/source/apollo/service" type="kotlin-source" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../shared/build/generated/source/apollo/service" type="kotlin-source" />
     </content>
     <content url="file://$MODULE_DIR$/../../../shared/src/commonMain">
       <sourceFolder url="file://$MODULE_DIR$/../../../shared/src/commonMain/kotlin" type="kotlin-source" />

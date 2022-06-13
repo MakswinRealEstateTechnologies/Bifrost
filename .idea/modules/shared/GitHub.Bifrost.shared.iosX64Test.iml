@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":shared:iosX64Test" external.linked.project.path="$MODULE_DIR$/../../../shared" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="Bifrost" external.system.module.type="sourceSet" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="5" platform="Native (ios_x64) " allPlatforms="Native []/Native [ios_x64]" useProjectSettings="false" isTestModule="true" externalProjectId=":shared" isHmppProject="true">
+        <dependsOnModuleNames>
+          <dependsOn>:shared:commonTest</dependsOn>
+          <dependsOn>:shared:iosTest</dependsOn>
+        </dependsOnModuleNames>
+        <sourceSets>
+          <sourceSet>GitHub.Bifrost.shared.commonTest</sourceSet>
+          <sourceSet>GitHub.Bifrost.shared.iosTest</sourceSet>
+          <sourceSet>Bifrost.shared.iosX64Main</sourceSet>
+          <sourceSet>Bifrost.shared.commonMain</sourceSet>
+          <sourceSet>Bifrost.shared.iosMain</sourceSet>
+        </sourceSets>
+        <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
+        <externalSystemTestTasks>
+          <externalSystemTestTask>iosX64Test|:shared|iosX64</externalSystemTestTask>
+        </externalSystemTestTasks>
+        <compilerSettings />
+        <compilerArguments>
+          <flagArguments>
+            <flagArg name="multiPlatform" arg="true" />
+          </flagArguments>
+          <stringArguments>
+            <stringArg name="apiVersion" arg="1.6" />
+            <stringArg name="languageVersion" arg="1.6" />
+          </stringArguments>
+          <arrayArguments>
+            <arrayArg name="pluginClasspaths" />
+            <arrayArg name="pluginOptions" />
+          </arrayArguments>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output-test url="file://$MODULE_DIR$/../../../shared/build/classes/kotlin/iosX64/test/klib" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../shared/src/iosX64Test" />
+    <orderEntry type="jdk" jdkName="Kotlin SDK" jdkType="KotlinSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - stdlib" level="project" />
+    <orderEntry type="module" module-name="Bifrost.shared.commonMain" scope="TEST" />
+    <orderEntry type="module" module-name="GitHub.Bifrost.shared.commonTest" scope="TEST" production-on-test="" />
+    <orderEntry type="module" module-name="Bifrost.shared.iosMain" scope="TEST" />
+    <orderEntry type="module" module-name="GitHub.Bifrost.shared.iosTest" scope="TEST" production-on-test="" />
+    <orderEntry type="module" module-name="Bifrost.shared.iosX64Main" scope="TEST" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - ARKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - AVFoundation | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - AVKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - Accelerate | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - Accessibility | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - Accounts | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - AdSupport | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - AddressBook | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - AddressBookUI | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - AppClip | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - AppTrackingTransparency | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - AssetsLibrary | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - AudioToolbox | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - AuthenticationServices | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - AutomaticAssessmentConfiguration | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - BackgroundTasks | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - BusinessChat | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - CFNetwork | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - CallKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - CarPlay | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - ClassKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - ClockKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - CloudKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - CommonCrypto | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - Contacts | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - ContactsUI | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - CoreAudio | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - CoreAudioKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - CoreAudioTypes | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - CoreBluetooth | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - CoreData | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - CoreFoundation | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - CoreGraphics | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - CoreHaptics | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - CoreImage | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - CoreLocation | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - CoreMIDI | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - CoreML | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - CoreMedia | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - CoreMotion | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - CoreNFC | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - CoreServices | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - CoreSpotlight | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - CoreTelephony | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - CoreText | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - CoreVideo | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - CryptoTokenKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - DeviceCheck | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - EAGL | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - EventKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - EventKitUI | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - ExposureNotification | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - ExternalAccessory | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - FileProvider | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - FileProviderUI | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - Foundation | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - GLKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - GSS | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - GameController | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - GameKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - GameplayKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - HealthKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - HealthKitUI | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - HomeKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - IOSurface | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - IdentityLookup | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - IdentityLookupUI | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - ImageCaptureCore | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - ImageIO | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - Intents | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - IntentsUI | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - JavaScriptCore | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - LinkPresentation | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - LocalAuthentication | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - MLCompute | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - MapKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - MediaAccessibility | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - MediaPlayer | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - MediaSetup | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - MediaToolbox | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - MessageUI | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - Messages | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - Metal | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - MetalKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - MetalPerformanceShaders | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - MetalPerformanceShadersGraph | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - MetricKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - MobileCoreServices | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - ModelIO | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - MultipeerConnectivity | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - NaturalLanguage | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - NearbyInteraction | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - Network | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - NetworkExtension | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - NewsstandKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - NotificationCenter | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - OpenAL | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - OpenGLES | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - OpenGLES2 | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - OpenGLES3 | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - OpenGLESCommon | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - PDFKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - PassKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - PencilKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - Photos | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - PhotosUI | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - PushKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - QuartzCore | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - QuickLook | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - QuickLookThumbnailing | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - ReplayKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - SafariServices | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - SceneKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - ScreenTime | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - Security | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - SensorKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - Social | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - SoundAnalysis | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - Speech | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - SpriteKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - StoreKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - SystemConfiguration | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - Twitter | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - UIKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - UniformTypeIdentifiers | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - UserNotifications | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - UserNotificationsUI | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - VideoSubscriberAccount | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - VideoToolbox | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - Vision | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - VisionKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - WatchConnectivity | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - WebKit | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - builtin | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - darwin | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - iAd | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - iconv | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - objc | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - posix | ios_x64" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.6.0 - zlib | ios_x64" level="project" />
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: com.apollographql.apollo3:apollo-runtime:appleMain:3.3.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosX64Test/implementation/com.apollographql.apollo3-apollo-runtime/com.apollographql.apollo3-apollo-runtime-appleMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-runtime/3.3.0/5a7c2dccb55d630b2a6fa5a8f798d4fa809f3b97/apollo-runtime-3.3.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: com.apollographql.apollo3:apollo-runtime:commonMain:3.3.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosX64Test/implementation/com.apollographql.apollo3-apollo-runtime/com.apollographql.apollo3-apollo-runtime-commonMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-runtime/3.3.0/5a7c2dccb55d630b2a6fa5a8f798d4fa809f3b97/apollo-runtime-3.3.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" scope="TEST" name="Gradle: org.awaitility:awaitility-kotlin:4.1.1" level="project" />
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: com.apollographql.apollo3:apollo-api:appleMain:3.3.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosX64Test/implementation/com.apollographql.apollo3-apollo-api/com.apollographql.apollo3-apollo-api-appleMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-api/3.3.0/a887cca42c6e2e1751252fe579a50527277f03d7/apollo-api-3.3.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: com.apollographql.apollo3:apollo-api:commonMain:3.3.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosX64Test/implementation/com.apollographql.apollo3-apollo-api/com.apollographql.apollo3-apollo-api-commonMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-api/3.3.0/a887cca42c6e2e1751252fe579a50527277f03d7/apollo-api-3.3.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.6.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test-common:1.6.21" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21" level="project" />
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: com.russhwolf:multiplatform-settings-no-arg:appleMain:0.8.1">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosX64Test/implementation/com.russhwolf-multiplatform-settings-no-arg/com.russhwolf-multiplatform-settings-no-arg-appleMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.russhwolf/multiplatform-settings-no-arg/0.8.1/4e61393548b387cb7f84886f089751d7bc26e153/multiplatform-settings-no-arg-0.8.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: com.russhwolf:multiplatform-settings-no-arg:commonMain:0.8.1">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosX64Test/implementation/com.russhwolf-multiplatform-settings-no-arg/com.russhwolf-multiplatform-settings-no-arg-commonMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.russhwolf/multiplatform-settings-no-arg/0.8.1/4e61393548b387cb7f84886f089751d7bc26e153/multiplatform-settings-no-arg-0.8.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-common:1.3.0-M2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.mockk:mockk-common:1.9.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.apollographql.apollo3:apollo-runtime-iosx64:klib:3.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.apollographql.apollo3:apollo-api-iosx64:klib:3.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.5.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.awaitility:awaitility:4.1.1" level="project" />
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: com.apollographql.apollo3:apollo-mpp-utils:appleMain:3.3.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosX64Test/implementation/com.apollographql.apollo3-apollo-mpp-utils/com.apollographql.apollo3-apollo-mpp-utils-appleMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-mpp-utils/3.3.0/ebe36a9f6ae14ca7f62060e16a79f3bb0e7319aa/apollo-mpp-utils-3.3.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: com.apollographql.apollo3:apollo-mpp-utils:commonMain:3.3.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosX64Test/implementation/com.apollographql.apollo3-apollo-mpp-utils/com.apollographql.apollo3-apollo-mpp-utils-commonMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-mpp-utils/3.3.0/ebe36a9f6ae14ca7f62060e16a79f3bb0e7319aa/apollo-mpp-utils-3.3.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-iosx64:klib:1.6.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.russhwolf:multiplatform-settings-no-arg-iosx64:klib:0.8.1" level="project" />
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: com.squareup.okio:okio:appleMain:3.1.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosX64Test/implementation/com.squareup.okio-okio/com.squareup.okio-okio-appleMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/3.1.0/15b0d6a4e75d5e3a47ab8f717aebb48f372eeaf3/okio-3.1.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: com.squareup.okio:okio:commonMain:3.1.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosX64Test/implementation/com.squareup.okio-okio/com.squareup.okio-okio-commonMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/3.1.0/15b0d6a4e75d5e3a47ab8f717aebb48f372eeaf3/okio-3.1.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: com.squareup.okio:okio:hashFunctions:3.1.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosX64Test/implementation/com.squareup.okio-okio/com.squareup.okio-okio-hashFunctions.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/3.1.0/15b0d6a4e75d5e3a47ab8f717aebb48f372eeaf3/okio-3.1.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: com.squareup.okio:okio:nativeMain:3.1.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosX64Test/implementation/com.squareup.okio-okio/com.squareup.okio-okio-nativeMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/3.1.0/15b0d6a4e75d5e3a47ab8f717aebb48f372eeaf3/okio-3.1.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: com.squareup.okio:okio:nonJvmMain:3.1.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosX64Test/implementation/com.squareup.okio-okio/com.squareup.okio-okio-nonJvmMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/3.1.0/15b0d6a4e75d5e3a47ab8f717aebb48f372eeaf3/okio-3.1.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: com.squareup.okio:okio:unixMain:3.1.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosX64Test/implementation/com.squareup.okio-okio/com.squareup.okio-okio-unixMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/3.1.0/15b0d6a4e75d5e3a47ab8f717aebb48f372eeaf3/okio-3.1.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: com.benasher44:uuid:commonMain:0.3.1">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosX64Test/implementation/com.benasher44-uuid/com.benasher44-uuid-commonMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.benasher44/uuid/0.3.1/340e21fb50aac944ddf40758dddf817e133d6687/uuid-0.3.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.12" level="project" />
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: com.apollographql.apollo3:apollo-annotations:commonMain:3.3.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosX64Test/implementation/com.apollographql.apollo3-apollo-annotations/com.apollographql.apollo3-apollo-annotations-commonMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-annotations/3.3.0/d4aabeb652ffb4360a9604ee5c85bdc5fb8c6dd/apollo-annotations-3.3.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" scope="TEST" name="Gradle: io.mockk:mockk-dsl:1.9.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest:2.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.apollographql.apollo3:apollo-mpp-utils-iosx64:klib:3.3.0" level="project" />
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: com.russhwolf:multiplatform-settings:apple64Main:0.8.1">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosX64Test/implementation/com.russhwolf-multiplatform-settings/com.russhwolf-multiplatform-settings-apple64Main.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.russhwolf/multiplatform-settings/0.8.1/cc674780c2f0d82e6568b697efc724aaab9f0b5f/multiplatform-settings-0.8.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: com.russhwolf:multiplatform-settings:appleMain:0.8.1">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosX64Test/implementation/com.russhwolf-multiplatform-settings/com.russhwolf-multiplatform-settings-appleMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.russhwolf/multiplatform-settings/0.8.1/cc674780c2f0d82e6568b697efc724aaab9f0b5f/multiplatform-settings-0.8.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: com.russhwolf:multiplatform-settings:commonMain:0.8.1">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Bifrost/iosX64Test/implementation/com.russhwolf-multiplatform-settings/com.russhwolf-multiplatform-settings-commonMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.russhwolf/multiplatform-settings/0.8.1/cc674780c2f0d82e6568b697efc724aaab9f0b5f/multiplatform-settings-0.8.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.okio:okio-iosx64:klib:3.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.benasher44:uuid-iosx64:klib:0.3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.apollographql.apollo3:apollo-annotations-iosx64:klib:3.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:atomicfu-iosx64:klib:0.17.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:atomicfu-iosx64:klib:cinterop-interop:0.17.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.russhwolf:multiplatform-settings-iosx64:klib:0.8.1" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="Bifrost.shared.iosX64Main" />
+</module>
