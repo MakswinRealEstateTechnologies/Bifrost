@@ -85,4 +85,5 @@ android {
 
 apollo {
     packageName.set("com.makswin.bifrost")
+    generateKotlinModels.set(true)
 }
