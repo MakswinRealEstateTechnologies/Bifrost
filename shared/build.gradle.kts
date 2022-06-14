@@ -1,8 +1,8 @@
 plugins {
     kotlin("multiplatform")
+    id("com.chromaticnoise.multiplatform-swiftpackage") version "2.0.3"
     id("com.android.library")
     id("maven-publish")
-    id("com.chromaticnoise.multiplatform-swiftpackage") version "2.0.3"
     id("com.apollographql.apollo3").version("3.3.0")
 }
 
@@ -31,8 +31,9 @@ kotlin {
         outputDirectory(File("/Users/alkincakiralar/Desktop/makswin/Bifrost-IOS-SDK", ""))
         buildConfiguration { debug() }
     }
-
+    
     sourceSets {
+
         sourceSets["commonMain"].dependencies {
             implementation("org.jetbrains.kotlin:kotlin-stdlib-common")
             api("com.apollographql.apollo3:apollo-runtime:3.3.0")
@@ -45,6 +46,7 @@ kotlin {
         sourceSets["androidMain"].dependencies {
             implementation("org.jetbrains.kotlin:kotlin-stdlib")
         }
+
         val commonMain by getting
         val commonTest by getting {
             dependencies {
@@ -59,50 +61,19 @@ kotlin {
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1")
             }
         }
-    }
 
+    }
 }
 
 android {
-
-//    project.tasks.preBuild.dependsOn("graphqlSchemaDownloadTask")
-
     compileSdk = 32
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
-
     defaultConfig {
         minSdk = 21
         targetSdk = 32
-    }
-
-}
-dependencies {
-    implementation("com.google.android.play:core-ktx:1.8.1")
-}
-
-tasks.register("graphqlSchemaDownloadTask") {
-    doFirst {
-        exec {
-            commandLine(
-                "sh", "-c",
-                "apollo schema:download --endpoint=https://zeus.fizbot.net/graphql $workingDir/src/commonMain/graphql/schema.json"
-            )
-        }
     }
 }
 
 apollo {
     packageName.set("com.makswin.fizbot")
-}
-
-publishing {
-    publications {
-        create<MavenPublication>("bifrost") {
-            groupId = "com.github.MakswinRealEstateTechnologies"
-            artifactId = "Bifrost"
-            version = "1.0"
-
-            from(components["kotlin"])
-        }
-    }
 }

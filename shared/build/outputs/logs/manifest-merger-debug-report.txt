@@ -1,25 +1,25 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/ugurguner/Documents/GitHub/Bifrost/shared/src/androidMain/AndroidManifest.xml:2:1-43
-INJECTED from /Users/ugurguner/Documents/GitHub/Bifrost/shared/src/androidMain/AndroidManifest.xml:2:1-43
-INJECTED from /Users/ugurguner/Documents/GitHub/Bifrost/shared/src/androidMain/AndroidManifest.xml:2:1-43
+ADDED from /Users/alkincakiralar/Desktop/kmmLibraryTest/shared/src/androidMain/AndroidManifest.xml:2:1-53
+INJECTED from /Users/alkincakiralar/Desktop/kmmLibraryTest/shared/src/androidMain/AndroidManifest.xml:2:1-53
+INJECTED from /Users/alkincakiralar/Desktop/kmmLibraryTest/shared/src/androidMain/AndroidManifest.xml:2:1-53
 	package
-		ADDED from /Users/ugurguner/Documents/GitHub/Bifrost/shared/src/androidMain/AndroidManifest.xml:2:11-40
-		INJECTED from /Users/ugurguner/Documents/GitHub/Bifrost/shared/src/androidMain/AndroidManifest.xml
-		INJECTED from /Users/ugurguner/Documents/GitHub/Bifrost/shared/src/androidMain/AndroidManifest.xml
+		ADDED from /Users/alkincakiralar/Desktop/kmmLibraryTest/shared/src/androidMain/AndroidManifest.xml:2:11-50
+		INJECTED from /Users/alkincakiralar/Desktop/kmmLibraryTest/shared/src/androidMain/AndroidManifest.xml
+		INJECTED from /Users/alkincakiralar/Desktop/kmmLibraryTest/shared/src/androidMain/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/ugurguner/Documents/GitHub/Bifrost/shared/src/androidMain/AndroidManifest.xml:2:1-43
+		ADDED from /Users/alkincakiralar/Desktop/kmmLibraryTest/shared/src/androidMain/AndroidManifest.xml:2:1-53
 uses-sdk
-INJECTED from /Users/ugurguner/Documents/GitHub/Bifrost/shared/src/androidMain/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/ugurguner/Documents/GitHub/Bifrost/shared/src/androidMain/AndroidManifest.xml
-INJECTED from /Users/ugurguner/Documents/GitHub/Bifrost/shared/src/androidMain/AndroidManifest.xml
-INJECTED from /Users/ugurguner/Documents/GitHub/Bifrost/shared/src/androidMain/AndroidManifest.xml
-INJECTED from /Users/ugurguner/Documents/GitHub/Bifrost/shared/src/androidMain/AndroidManifest.xml
+INJECTED from /Users/alkincakiralar/Desktop/kmmLibraryTest/shared/src/androidMain/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/alkincakiralar/Desktop/kmmLibraryTest/shared/src/androidMain/AndroidManifest.xml
+INJECTED from /Users/alkincakiralar/Desktop/kmmLibraryTest/shared/src/androidMain/AndroidManifest.xml
+INJECTED from /Users/alkincakiralar/Desktop/kmmLibraryTest/shared/src/androidMain/AndroidManifest.xml
+INJECTED from /Users/alkincakiralar/Desktop/kmmLibraryTest/shared/src/androidMain/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/ugurguner/Documents/GitHub/Bifrost/shared/src/androidMain/AndroidManifest.xml
-		ADDED from /Users/ugurguner/Documents/GitHub/Bifrost/shared/src/androidMain/AndroidManifest.xml
-		INJECTED from /Users/ugurguner/Documents/GitHub/Bifrost/shared/src/androidMain/AndroidManifest.xml
+		INJECTED from /Users/alkincakiralar/Desktop/kmmLibraryTest/shared/src/androidMain/AndroidManifest.xml
+		ADDED from /Users/alkincakiralar/Desktop/kmmLibraryTest/shared/src/androidMain/AndroidManifest.xml
+		INJECTED from /Users/alkincakiralar/Desktop/kmmLibraryTest/shared/src/androidMain/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/ugurguner/Documents/GitHub/Bifrost/shared/src/androidMain/AndroidManifest.xml
-		ADDED from /Users/ugurguner/Documents/GitHub/Bifrost/shared/src/androidMain/AndroidManifest.xml
-		INJECTED from /Users/ugurguner/Documents/GitHub/Bifrost/shared/src/androidMain/AndroidManifest.xml
+		INJECTED from /Users/alkincakiralar/Desktop/kmmLibraryTest/shared/src/androidMain/AndroidManifest.xml
+		ADDED from /Users/alkincakiralar/Desktop/kmmLibraryTest/shared/src/androidMain/AndroidManifest.xml
+		INJECTED from /Users/alkincakiralar/Desktop/kmmLibraryTest/shared/src/androidMain/AndroidManifest.xml

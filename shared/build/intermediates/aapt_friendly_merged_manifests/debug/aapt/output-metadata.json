@@ -4,7 +4,7 @@
     "type": "AAPT_FRIENDLY_MERGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "com.makswin.bifrost",
+  "applicationId": "com.eugurguner.kmmlibrarytest",
   "variantName": "debug",
   "elements": [
     {

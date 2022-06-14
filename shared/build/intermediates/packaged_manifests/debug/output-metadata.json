@@ -4,7 +4,7 @@
     "type": "PACKAGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "com.makswin.bifrost",
+  "applicationId": "com.eugurguner.kmmlibrarytest",
   "variantName": "debug",
   "elements": [
     {
