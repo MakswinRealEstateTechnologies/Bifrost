@@ -1,2 +1,0 @@
-com.eugurguner.kmmlibrarytest
-string androidx_startup

@@ -6,5 +6,5 @@ pluginManagement {
     }
 }
 
-rootProject.name = "kmmLibraryTest"
-include(":shared")
+rootProject.name = "Bifrost"
+include(":bifrost")
