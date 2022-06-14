@@ -1,5 +1,3 @@
-import com.android.build.gradle.internal.tasks.factory.dependsOn
-
 plugins {
     kotlin("multiplatform")
     id("com.chromaticnoise.multiplatform-swiftpackage") version "2.0.3"
@@ -65,7 +63,7 @@ kotlin {
 }
 
 android {
-    project.tasks.preBuild.dependsOn("graphqlSchemaDownloadTask")
+    //project.tasks.preBuild.dependsOn("graphqlSchemaDownloadTask")
     compileSdk = 32
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
     defaultConfig {
@@ -74,7 +72,7 @@ android {
     }
 }
 
-tasks.register("graphqlSchemaDownloadTask") {
+/*tasks.register("graphqlSchemaDownloadTask") {
     doFirst {
         exec {
             commandLine(
@@ -83,7 +81,7 @@ tasks.register("graphqlSchemaDownloadTask") {
             )
         }
     }
-}
+}*/
 
 apollo {
     packageName.set("com.makswin.bifrost")
