@@ -1,8 +1,0 @@
-fragment fragmentAuth on AuthPayload {
-    access_token
-    refresh_token
-    expires_in
-    user {
-        ...fragmentUser
-    }
-}

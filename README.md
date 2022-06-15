@@ -1,2 +1,0 @@
-# Bifrost
-Fizbot Mobile Library

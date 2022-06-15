@@ -1,6 +1,0 @@
-fragment fragmentLanguage on Language {
-    id
-    value
-    description
-    key
-}
