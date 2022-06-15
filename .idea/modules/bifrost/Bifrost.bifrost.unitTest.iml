@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":bifrost:unitTest" external.linked.project.path="$MODULE_DIR$/../../../bifrost" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.type="sourceSet" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="5" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false" isTestModule="true" externalProjectId=":bifrost" isHmppProject="true" pureKotlinSourceFolders="$MODULE_DIR$/../../../bifrost/src/androidDebug/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/bifrost/src/debug/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/bifrost/src/debug/java;/Users/alkincakiralar/Desktop/makswin/Bifrost/bifrost/src/androidDebugAndroidTest/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/bifrost/src/androidDebugUnitTest/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/bifrost/src/androidRelease/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/bifrost/src/release/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/bifrost/src/release/java;/Users/alkincakiralar/Desktop/makswin/Bifrost/bifrost/src/androidReleaseUnitTest/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/bifrost/src/iosArm64Main/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/bifrost/src/iosArm64Main/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/bifrost/src/iosX64Main/kotlin;/Users/alkincakiralar/Desktop/makswin/Bifrost/bifrost/src/iosX64Main/kotlin">
+        <dependsOnModuleNames>:bifrost:commonTest</dependsOnModuleNames>
+        <sourceSets>
+          <sourceSet>Bifrost.bifrost.commonTest</sourceSet>
+          <sourceSet>Bifrost.bifrost.androidTest</sourceSet>
+        </sourceSets>
+        <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files" />
+        </compilerSettings>
+        <compilerArguments>
+          <flagArguments>
+            <flagArg name="noStdlib" arg="true" />
+            <flagArg name="multiPlatform" arg="true" />
+          </flagArguments>
+          <stringArguments>
+            <stringArg name="classpath">
+              <args>
+                <arg>$MODULE_DIR$/../../../bifrost/build/intermediates/compile_library_classes_jar/debug/classes.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-junit/1.6.21/4e9b6211c4adf835cde803ef078c5adadc4ae3bb/kotlin-test-junit-1.6.21.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test/1.6.21/1e9d81b013e31b22da67464948869fc56c652527/kotlin-test-1.6.21.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.awaitility/awaitility-kotlin/4.1.1/87ee62efd6f113a8fa915479435e9d749b213668/awaitility-kotlin-4.1.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-runtime-jvm/3.3.0/d7cdfcb9a66083f9d4026cff0177995155f80f86/apollo-runtime-jvm-3.3.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/4.9.3/b0b14b3d12980912723fb8b66afb48dcda742fcb/okhttp-4.9.3.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-api-jvm/3.3.0/a4486dfef804e670630a32555c157484d302abcd/apollo-api-jvm-3.3.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.6.1/97fd74ccf54a863d221956ffcd21835e168e2aaa/kotlinx-coroutines-core-jvm-1.6.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/d2d288f7f2f9518cd9afe576947f524f/transformed/multiplatform-settings-no-arg-debug-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-mpp-utils-jvm/3.3.0/842a5438fcac261619e5ea43d61226120ea96fe4/apollo-mpp-utils-jvm-3.3.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio-jvm/3.1.0/ec352b5ea894772fbd9fce9d028c8cda06de0dab/okio-jvm-3.1.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.benasher44/uuid-jvm/0.3.1/13bb3e11588c88d22fe3d2bb5ed2837b42498584/uuid-jvm-0.3.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-annotations-jvm/3.3.0/48647ab0068ff2877bea5503deaeaad251d48070/apollo-annotations-jvm-3.3.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/dab817fc0cb824fcdb72ec0a4f84512e/transformed/multiplatform-settings-debug-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.6.21/eeb4d60d75e9ea9c11200d52974e522793b14fba/kotlin-stdlib-jdk8-1.6.21.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.6.21/568c1b78a8e17a4f35b31f0a74e2916095ed74c2/kotlin-stdlib-jdk7-1.6.21.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.6.21/11ef67f1900634fd951bad28c53ec957fabbe5b8/kotlin-stdlib-1.6.21.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-common/1.3.0-M2/c42b92e3c04417d1f7079fb1508c89fef106fa89/kotlinx-coroutines-core-common-1.3.0-M2.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.mockk/mockk-common/1.9.3/7f2d6bc3390a76edeba34947e0de6d2314645f25/mockk-common-1.9.3.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.mockk/mockk-dsl/1.9.3/4f158b4ed161bc4373356733088e09491ecd13da/mockk-dsl-1.9.3.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.awaitility/awaitility/4.1.1/6475db6694a81dfad967169f1561efa93fa92b84/awaitility-4.1.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest/2.1/9420ba32c29217b54eebd26ff7f9234d31c3fbb2/hamcrest-2.1.jar</arg>
+                <arg>$USER_HOME$/Library/Android/sdk/platforms/android-32/android.jar</arg>
+                <arg>$USER_HOME$/Library/Android/sdk/build-tools/30.0.3/core-lambda-stubs.jar</arg>
+              </args>
+            </stringArg>
+            <stringArg name="destination" arg="$MODULE_DIR$/../../../bifrost/build/tmp/kotlin-classes/debugUnitTest" />
+            <stringArg name="jvmTarget" arg="1.8" />
+            <stringArg name="moduleName" arg="bifrost_debug" />
+            <stringArg name="apiVersion" arg="1.6" />
+            <stringArg name="languageVersion" arg="1.6" />
+          </stringArguments>
+          <arrayArguments>
+            <arrayArg name="friendPaths">
+              <args>
+                <arg>$MODULE_DIR$/../../../bifrost/build/tmp/kotlin-classes/debug</arg>
+                <arg>$MODULE_DIR$/../../../bifrost/build/intermediates/javac/debug/classes</arg>
+                <arg>$MODULE_DIR$/../../../bifrost/build/intermediates/compile_library_classes_jar/debug/classes.jar</arg>
+              </args>
+            </arrayArg>
+            <arrayArg name="pluginClasspaths">
+              <args>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.6.21/ab52f6af29c00a8a9c89ea2b34b5f4d27960bd3f/kotlin-scripting-jvm-1.6.21.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.6.21/2e2e17b6e20c9c44f1d76d0df4f8f0b3fcfa944f/kotlin-scripting-common-1.6.21.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.6.21/11ef67f1900634fd951bad28c53ec957fabbe5b8/kotlin-stdlib-1.6.21.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.6.21/5e5b55c26dbc80372a920aef60eb774b714559b8/kotlin-stdlib-common-1.6.21.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.6.21/99c6675100da5d6d5b1c5a1032f27f28008d101b/kotlin-script-runtime-1.6.21.jar</arg>
+              </args>
+            </arrayArg>
+            <arrayArg name="pluginOptions" />
+          </arrayArguments>
+        </compilerArguments>
+      </configuration>
+    </facet>
+    <facet type="android" name="Android">
+      <configuration>
+        <option name="SELECTED_BUILD_VARIANT" value="debug" />
+        <option name="ASSEMBLE_TASK_NAME" value="assembleDebug" />
+        <option name="COMPILE_JAVA_TASK_NAME" value="compileDebugSources" />
+        <afterSyncTasks>
+          <task>generateDebugSources</task>
+        </afterSyncTasks>
+        <option name="ALLOW_USER_CONFIGURATION" value="false" />
+        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/androidMain/AndroidManifest.xml" />
+        <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../bifrost/src/main/res;file://$MODULE_DIR$/../../../bifrost/src/androidMain/res;file://$MODULE_DIR$/../../../bifrost/src/debug/res;file://$MODULE_DIR$/../../../bifrost/src/androidDebug/res;file://$MODULE_DIR$/../../../bifrost/build/generated/res/rs/debug;file://$MODULE_DIR$/../../../bifrost/build/generated/res/resValues/debug" />
+        <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../bifrost/src/androidTest/res;file://$MODULE_DIR$/../../../bifrost/src/androidAndroidTest/res;file://$MODULE_DIR$/../../../bifrost/src/androidTestDebug/res;file://$MODULE_DIR$/../../../bifrost/src/androidAndroidTestDebug/res;file://$MODULE_DIR$/../../../bifrost/build/generated/res/rs/androidTest/debug;file://$MODULE_DIR$/../../../bifrost/build/generated/res/resValues/androidTest/debug" />
+        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
+        <option name="PROJECT_TYPE" value="1" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../bifrost/build/generated/ap_generated_sources/debugUnitTest/out" />
+    <content url="file://$MODULE_DIR$/../../../bifrost/src/androidTest/aidl" />
+    <content url="file://$MODULE_DIR$/../../../bifrost/src/androidTest/assets" />
+    <content url="file://$MODULE_DIR$/../../../bifrost/src/androidTest/kotlin" />
+    <content url="file://$MODULE_DIR$/../../../bifrost/src/androidTest/res" />
+    <content url="file://$MODULE_DIR$/../../../bifrost/src/androidTest/resources" />
+    <content url="file://$MODULE_DIR$/../../../bifrost/src/androidTest/rs" />
+    <content url="file://$MODULE_DIR$/../../../bifrost/src/androidTest/shaders" />
+    <content url="file://$MODULE_DIR$/../../../bifrost/src/androidTestDebug/aidl" />
+    <content url="file://$MODULE_DIR$/../../../bifrost/src/androidTestDebug/assets" />
+    <content url="file://$MODULE_DIR$/../../../bifrost/src/androidTestDebug/kotlin" />
+    <content url="file://$MODULE_DIR$/../../../bifrost/src/androidTestDebug/res" />
+    <content url="file://$MODULE_DIR$/../../../bifrost/src/androidTestDebug/resources" />
+    <content url="file://$MODULE_DIR$/../../../bifrost/src/androidTestDebug/rs" />
+    <content url="file://$MODULE_DIR$/../../../bifrost/src/androidTestDebug/shaders" />
+    <content url="file://$MODULE_DIR$/../../../bifrost/src/test" />
+    <content url="file://$MODULE_DIR$/../../../bifrost/src/testDebug" />
+    <orderEntry type="jdk" jdkName="Android API 32 Platform" jdkType="Android SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Bifrost.bifrost.main" scope="TEST" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.21" level="project" />
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: org.jetbrains:annotations:13.0">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/73368c3b0887f3adc2c2730dd1b95d7c3781aaf3/annotations-13.0-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/5991ca87ef1fb5544943d9abc5a9a37583fabe03/annotations-13.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" scope="TEST" name="Gradle: com.apollographql.apollo3:apollo-runtime-jvm:3.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.okhttp3:okhttp:4.9.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.okio:okio-jvm:3.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.apollographql.apollo3:apollo-api-jvm:3.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.benasher44:uuid-jvm:0.3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.apollographql.apollo3:apollo-annotations-jvm:3.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.apollographql.apollo3:apollo-mpp-utils-jvm:3.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.1" level="project" />
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: org.awaitility:awaitility-kotlin:4.1.1">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.awaitility/awaitility-kotlin/4.1.1/87ee62efd6f113a8fa915479435e9d749b213668/awaitility-kotlin-4.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.awaitility/awaitility-kotlin/4.1.1/c9ab1982da1221f4cc3d073e0aa21fcd6a894eec/awaitility-kotlin-4.1.1-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.awaitility/awaitility-kotlin/4.1.1/9926bd3782024943dab3dcd0728035fa6eb49af/awaitility-kotlin-4.1.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: org.awaitility:awaitility:4.1.1">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.awaitility/awaitility/4.1.1/6475db6694a81dfad967169f1561efa93fa92b84/awaitility-4.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.awaitility/awaitility/4.1.1/ff69cc764785b65bb684906a4a67d8fe5bd0dee8/awaitility-4.1.1-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.awaitility/awaitility/4.1.1/6458475799eaf9c6c95048f8169556738a00c9c9/awaitility-4.1.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: org.hamcrest:hamcrest:2.1">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest/2.1/9420ba32c29217b54eebd26ff7f9234d31c3fbb2/hamcrest-2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest/2.1/ea4cd5042a237766ce809f96420f80f8d153bdb5/hamcrest-2.1-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest/2.1/aa6763235632b77fd9245c850b6a7dc09382314c/hamcrest-2.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test:1.6.21" level="project" />
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.6.21">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-junit/1.6.21/4e9b6211c4adf835cde803ef078c5adadc4ae3bb/kotlin-test-junit-1.6.21.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-junit/1.6.21/5b8f86fea035328fc9e8c660773037a3401ce25f/kotlin-test-junit-1.6.21-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-junit/1.6.21/34354d56793dcc40a58b960b3f9491c76cd685bf/kotlin-test-junit-1.6.21-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: junit:junit:4.13.2">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/f2f3f384dacd2ade2ddf7aa7e0f4360dfee38672/junit-4.13.2-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/33987872a811fe4d4001ed494b07854822257f42/junit-4.13.2-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: org.hamcrest:hamcrest-core:1.3">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/ad09811315f1d4f5756986575b0ea16b99cd686f/hamcrest-core-1.3-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-common:1.3.0-M2">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-common/1.3.0-M2/c42b92e3c04417d1f7079fb1508c89fef106fa89/kotlinx-coroutines-core-common-1.3.0-M2.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-common/1.3.0-M2/deb45a7fdf8efeb5b27780e551d0cddcc3d31441/kotlinx-coroutines-core-common-1.3.0-M2-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-common/1.3.0-M2/dd8344059b5371b06781b933765bd950432c2be6/kotlinx-coroutines-core-common-1.3.0-M2-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: io.mockk:mockk-common:1.9.3">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.mockk/mockk-common/1.9.3/7f2d6bc3390a76edeba34947e0de6d2314645f25/mockk-common-1.9.3.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.mockk/mockk-common/1.9.3/6bba06139ca76d3c7eef7ec2209a6f0045597476/mockk-common-1.9.3-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.mockk/mockk-common/1.9.3/7982379142311fc7754b010c4aaa7a875d8435c1/mockk-common-1.9.3-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: io.mockk:mockk-dsl:1.9.3">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.mockk/mockk-dsl/1.9.3/4f158b4ed161bc4373356733088e09491ecd13da/mockk-dsl-1.9.3.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.mockk/mockk-dsl/1.9.3/fd813eb54e0175a89b8ca2147a9490b1b8ce2e23/mockk-dsl-1.9.3-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.mockk/mockk-dsl/1.9.3/58f3065a608c3077bdfb54c66ac7cfcc9d088bce/mockk-dsl-1.9.3-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" scope="TEST" name="Gradle: com.russhwolf:multiplatform-settings-no-arg-android-debug:0.8.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.russhwolf:multiplatform-settings-android-debug:0.8.1@aar" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="Bifrost.bifrost.main" />
+</module>

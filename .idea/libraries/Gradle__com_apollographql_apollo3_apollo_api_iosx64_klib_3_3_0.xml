@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.apollographql.apollo3:apollo-api-iosx64:klib:3.3.0" type="kotlin.native">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-api-iosx64/3.3.0/1a8c240d0f26c30c942448487e963f4625577721/apollo-api.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-api-iosx64/3.3.0/63ba33a8f8995c2f1b6d3a6f4728287a7c8d442/apollo-api-iosx64-3.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

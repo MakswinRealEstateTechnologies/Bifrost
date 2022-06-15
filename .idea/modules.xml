@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Bifrost.iml" filepath="$PROJECT_DIR$/.idea/modules/Bifrost.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidTestApp/Bifrost.androidTestApp.iml" filepath="$PROJECT_DIR$/.idea/modules/androidTestApp/Bifrost.androidTestApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidTestApp/Bifrost.androidTestApp.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/androidTestApp/Bifrost.androidTestApp.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidTestApp/Bifrost.androidTestApp.main.iml" filepath="$PROJECT_DIR$/.idea/modules/androidTestApp/Bifrost.androidTestApp.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidTestApp/Bifrost.androidTestApp.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/androidTestApp/Bifrost.androidTestApp.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.iml" filepath="$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.androidAndroidTestRelease.iml" filepath="$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.androidAndroidTestRelease.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.androidTestFixtures.iml" filepath="$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.androidTestFixtures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.androidTestFixturesDebug.iml" filepath="$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.androidTestFixturesDebug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.androidTestFixturesRelease.iml" filepath="$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.androidTestFixturesRelease.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.commonMain.iml" filepath="$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.commonMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.commonTest.iml" filepath="$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.commonTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.iosArm64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.iosArm64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.iosArm64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.iosArm64Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.iosMain.iml" filepath="$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.iosMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.iosTest.iml" filepath="$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.iosTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.iosX64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.iosX64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.iosX64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.iosX64Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.unitTest.iml" />
+    </modules>
+  </component>
+</project>
