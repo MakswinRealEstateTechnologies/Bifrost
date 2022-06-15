@@ -1,7 +1,7 @@
 plugins {
+    id("com.android.library")
     kotlin("multiplatform")
     id("com.chromaticnoise.multiplatform-swiftpackage") version "2.0.3"
-    id("com.android.library")
     id("maven-publish")
     id("com.apollographql.apollo3").version("3.3.0")
 }
@@ -63,16 +63,20 @@ kotlin {
 }
 
 android {
+
     //project.tasks.preBuild.dependsOn("graphqlSchemaDownloadTask")
+
     compileSdk = 32
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
+
     defaultConfig {
         minSdk = 21
         targetSdk = 32
     }
+
 }
 
-/*tasks.register("graphqlSchemaDownloadTask") {
+tasks.register("graphqlSchemaDownloadTask") {
     doFirst {
         exec {
             commandLine(
@@ -81,7 +85,7 @@ android {
             )
         }
     }
-}*/
+}
 
 apollo {
     packageName.set("com.makswin.bifrost")

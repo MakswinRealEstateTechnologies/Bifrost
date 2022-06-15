@@ -26,7 +26,7 @@ class MiscellaneousRepository : BaseRepository() {
 
     }
 
-    fun test2() {
+    fun test23() {
 
     }
 
