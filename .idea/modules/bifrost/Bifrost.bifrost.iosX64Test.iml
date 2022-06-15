@@ -11,8 +11,8 @@
           <sourceSet>Bifrost.bifrost.commonTest</sourceSet>
           <sourceSet>Bifrost.bifrost.iosTest</sourceSet>
           <sourceSet>Bifrost.bifrost.iosX64Main</sourceSet>
-          <sourceSet>Bifrost.bifrost.iosMain</sourceSet>
           <sourceSet>Bifrost.bifrost.commonMain</sourceSet>
+          <sourceSet>Bifrost.bifrost.iosMain</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
         <externalSystemTestTasks>
