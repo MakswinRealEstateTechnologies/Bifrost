@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Bifrost.iml" filepath="$PROJECT_DIR$/.idea/modules/Bifrost.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidTestApp/Bifrost.androidTestApp.iml" filepath="$PROJECT_DIR$/.idea/modules/androidTestApp/Bifrost.androidTestApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidTestApp/Bifrost.androidTestApp.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/androidTestApp/Bifrost.androidTestApp.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidTestApp/Bifrost.androidTestApp.main.iml" filepath="$PROJECT_DIR$/.idea/modules/androidTestApp/Bifrost.androidTestApp.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidTestApp/Bifrost.androidTestApp.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/androidTestApp/Bifrost.androidTestApp.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.iml" filepath="$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.androidAndroidTestRelease.iml" filepath="$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.androidAndroidTestRelease.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.androidTest.iml" />

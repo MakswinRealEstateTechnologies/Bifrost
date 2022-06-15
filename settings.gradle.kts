@@ -7,4 +7,5 @@ pluginManagement {
 }
 
 rootProject.name = "Bifrost"
+include(":androidTestApp")
 include(":bifrost")
