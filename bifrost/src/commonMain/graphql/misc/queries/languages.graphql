@@ -1,7 +1,0 @@
-query languages {
-    languages(first: 50, page: 1) {
-        data {
-            ...fragmentLanguage
-        }
-    }
-}
