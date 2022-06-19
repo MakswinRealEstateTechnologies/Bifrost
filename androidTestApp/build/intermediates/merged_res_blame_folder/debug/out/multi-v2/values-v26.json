@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.makswin.androidtestapp.androidTestApp-mergeDebugResources-29:/values-v26/values-v26.xml",
+            "outputFile": "com.makswin.androidtestapp.androidTestApp-mergeDebugResources-31:/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "/Users/alkincakiralar/.gradle/caches/transforms-3/0fffd963cb14827e18b15e9d49676beb/transformed/appcompat-1.4.1/res/values-v26/values-v26.xml",
+                    "source": "/Users/alkincakiralar/.gradle/caches/transforms-3/d82c3ad78652913e2033e42fdcac4376/transformed/appcompat-1.4.1/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",

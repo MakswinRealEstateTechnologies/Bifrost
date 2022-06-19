@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.makswin.androidtestapp.androidTestApp-mergeDebugResources-29:/values-ldrtl-v17/values-ldrtl-v17.xml",
+            "outputFile": "com.makswin.androidtestapp.androidTestApp-mergeDebugResources-31:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "/Users/alkincakiralar/.gradle/caches/transforms-3/758634818976d5a043dfa638a05550ac/transformed/material-1.6.1/res/values-ldrtl-v17/values-ldrtl-v17.xml",
+                    "source": "/Users/alkincakiralar/.gradle/caches/transforms-3/4cb27c6f3f0446df6ecc485433d3bc21/transformed/material-1.6.1/res/values-ldrtl-v17/values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

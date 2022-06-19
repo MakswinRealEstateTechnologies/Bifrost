@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.makswin.androidtestapp.androidTestApp-mergeDebugResources-29:/values-v28/values-v28.xml",
+            "outputFile": "com.makswin.androidtestapp.androidTestApp-mergeDebugResources-31:/values-v28/values-v28.xml",
             "map": [
                 {
-                    "source": "/Users/alkincakiralar/.gradle/caches/transforms-3/0fffd963cb14827e18b15e9d49676beb/transformed/appcompat-1.4.1/res/values-v28/values-v28.xml",
+                    "source": "/Users/alkincakiralar/.gradle/caches/transforms-3/d82c3ad78652913e2033e42fdcac4376/transformed/appcompat-1.4.1/res/values-v28/values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,8",
                         "startColumns": "4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/alkincakiralar/.gradle/caches/transforms-3/758634818976d5a043dfa638a05550ac/transformed/material-1.6.1/res/values-v28/values-v28.xml",
+                    "source": "/Users/alkincakiralar/.gradle/caches/transforms-3/4cb27c6f3f0446df6ecc485433d3bc21/transformed/material-1.6.1/res/values-v28/values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
