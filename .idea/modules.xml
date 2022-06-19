@@ -21,6 +21,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.iosTest.iml" filepath="$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.iosTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.iosX64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.iosX64Main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.iosX64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.iosX64Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.jvmMain.iml" filepath="$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.jvmMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.jvmTest.iml" filepath="$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.jvmTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/bifrost/Bifrost.bifrost.unitTest.iml" />
     </modules>
