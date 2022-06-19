@@ -5,20 +5,12 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
-
+  slack:
     runs-on: macos-latest
-
     steps:
-      - uses: actions/checkout@v3
-      - name: set up JDK 11
-        uses: actions/setup-java@v3
-        with:
-          java-version: '11'
-          distribution: 'adopt'
-          cache: gradle
-
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
-      - name: Build with Gradle
-        run: ./gradlew clean
+      - name: Notify Slack
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          uses: pullreminders/slack-action@master
+          with:
+            args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Hello world\"}'
