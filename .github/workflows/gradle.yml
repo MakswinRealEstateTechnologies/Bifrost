@@ -6,11 +6,11 @@ on:
 
 jobs:
   slack:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Notify Slack
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-          uses: pullreminders/slack-action@master
-          with:
+        uses: pullreminders/slack-action@master
+        with:
             args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Hello world\"}'
