@@ -1,16 +1,12 @@
-name: Android CI
-
-on:
-  push:
-    branches: [ "main" ]
-
+on: push
+name: Slack Notification Demo
 jobs:
-  slack:
+  slackNotification:
+    name: Slack Notification
     runs-on: ubuntu-latest
     steps:
-      - name: Notify Slack
+      - uses: actions/checkout@v2
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v2
         env:
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-        uses: pullreminders/slack-action@master
-        with:
-            args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Hello world\"}'
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
