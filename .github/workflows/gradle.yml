@@ -1,12 +1,18 @@
 on: push
 name: Bifrost Test Run
 jobs:
-  slackNotification:
+  slack:
     name: Slack Notification
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Slack Notification
         uses: rtCamp/action-slack-notify@v2
+        with:
+          payload: |
+            {
+              "key": "value",
+              "foo": "bar"
+            }
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
