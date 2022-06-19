@@ -1,5 +1,5 @@
 on: push
-name: Slack Notification Demo
+name: Bifrost Test Run
 jobs:
   slackNotification:
     name: Slack Notification
