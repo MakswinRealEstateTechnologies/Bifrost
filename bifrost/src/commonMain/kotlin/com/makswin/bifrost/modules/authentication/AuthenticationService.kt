@@ -1,6 +1,12 @@
 package com.makswin.bifrost.modules.authentication
 
+import com.makswin.bifrost.ForgotPasswordOTPMutation
+import com.makswin.bifrost.LogOutMutation
+import com.makswin.bifrost.LoginMutation
+import com.makswin.bifrost.core.models.BaseResponseModel
 import com.makswin.bifrost.core.utils.BaseRepository
+import com.makswin.bifrost.modules.authentication.requestModels.Login
+import com.makswin.bifrost.modules.authentication.responseModels.Auth
 import com.russhwolf.settings.Settings
 
 class AuthenticationService : BaseRepository() {
@@ -11,7 +17,7 @@ class AuthenticationService : BaseRepository() {
      * @param token is user current API token
      * @author alkincakiralar
      */
-    fun configureToken(token: String) {
+    fun setToken(token: String) {
 
         val settings = Settings()
 
@@ -24,24 +30,23 @@ class AuthenticationService : BaseRepository() {
      * @param input has login parameters
      * @author alkincakiralar
      */
-    /*fun forgotPasswordOTP(input: Login, completion: (ResponseType) -> Unit) {
+    suspend fun forgotPasswordOTP(input: Login): BaseResponseModel<Any> {
 
-        scope.launch {
+        val mutation = ForgotPasswordOTPMutation(input.cellPhone)
 
-            val mutation = ForgotPasswordOTPMutation(input.cellPhone)
+        val response = executeMutation(mutation)
 
-            val response = executeMutation(mutation)
+        if (response.isFailed()) return onError()
 
-            if (!checkMutationResponse(response)) {
-                completion(ResponseType.Error)
-                return@launch
-            }
+        return onSuccess()
 
-            completion(ResponseType.Success)
+    }
 
-        }
+    fun test() {
+        throw RuntimeException("This is a crash")
+    }
 
-    }*/
+    suspend fun logOut() = executeMutation(LogOutMutation())
 
     /**
      * Used to login with sms code
@@ -49,37 +54,32 @@ class AuthenticationService : BaseRepository() {
      * @return The user model has logged in
      * @author alkincakiralar
      */
-    /*fun login(input: Login, completion: (ResponseType, Auth?) -> Unit) {
+    suspend fun login(input: Login): BaseResponseModel<Auth> {
 
-        scope.launch {
+        val mutation = LoginMutation(input.cellPhone, input.password)
 
-            val mutation = LoginMutation(input.cellPhone, input.password)
+        val response = executeMutation(mutation)
 
-            val response = executeMutation(mutation)
+        if (response.isFailed()) return onError()
 
-            if (!checkMutationResponse(response)) {
-                completion(ResponseType.Error, null)
-                return@launch
-            }
+        val fragmentAuth = response.data?.login?.fragmentAuth
 
-            val fragmentAuth = response.data?.login?.fragmentAuth
+        return if (fragmentAuth != null) {
 
-            if (fragmentAuth != null) {
+            val auth = Auth(fragmentAuth)
 
-                val auth = Auth(fragmentAuth)
+            //val settings = Settings()
 
-                val settings = Settings()
+            //settings.putString("token", auth.accessToken)
 
-                settings.putString("token", auth.accessToken)
+            onSuccess(auth)
 
-                completion(ResponseType.Success, Auth(fragmentAuth))
+        } else {
 
-            } else {
-                completion(ResponseType.Error, null)
-            }
+            onError()
 
         }
 
-    }*/
+    }
 
 }

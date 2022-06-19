@@ -22,38 +22,13 @@ open class BaseRepository {
         return getApolloClient().mutation(mutation).execute()
     }
 
-    fun <D : Query.Data> checkQueryResponse(response: ApolloResponse<D>): Boolean {
-
-        if (response.errors != null && response.data == null) {
-            return false
-        }
-
-        if (response.data == null) {
-            return false
-        }
-
-        return true
-
-    }
-
-    fun <D : Mutation.Data> checkMutationResponse(response: ApolloResponse<D>): Boolean {
-
-        if (response.errors != null && response.data == null) {
-            return false
-        }
-
-        if (response.data == null) {
-            return false
-        }
-
-        return true
-
-    }
+    fun <D : Operation.Data> ApolloResponse<D>.isFailed(): Boolean = this.hasErrors() || this.data == null
 
     fun <T> onError(): BaseResponseModel<T> = BaseResponseModel(ResponseStatus.Error, null)
 
     fun onSuccess(): BaseResponseModel<Any> = BaseResponseModel(ResponseStatus.Success, null)
 
-    fun <T> onSuccess(data: T): BaseResponseModel<T> = BaseResponseModel(ResponseStatus.Success, data)
+    fun <T> onSuccess(data: T): BaseResponseModel<T> =
+        BaseResponseModel(ResponseStatus.Success, data)
 
 }

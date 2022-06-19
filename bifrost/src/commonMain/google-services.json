@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "430837456836",
+    "firebase_url": "https://fizbot-firebase-tr.firebaseio.com",
+    "project_id": "fizbot-firebase-tr",
+    "storage_bucket": "fizbot-firebase-tr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430837456836:android:650d702f36c7bcef36ce91",
+        "android_client_info": {
+          "package_name": "com.makswin.fizbot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430837456836-sscc88hit1bm790lckgr7rbcjpmio8cj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.makswin.fizbot",
+            "certificate_hash": "53db691a19008b0a99fad22d7f44790c3640fbdd"
+          }
+        },
+        {
+          "client_id": "430837456836-rprh5osb789fk681h7qvseee3mahk21u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzWzUL1YVNX8KUGUrxDx0COVzUMBFwh8w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "430837456836-rprh5osb789fk681h7qvseee3mahk21u.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "430837456836-6p26afq5orfboq8n9b24ng7gvhf3jn0i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.makswin.fizbot",
+                "app_store_id": "1267959556"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
