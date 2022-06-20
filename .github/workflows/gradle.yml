@@ -1,36 +1,20 @@
-name: Bifrost Test Run
+name: First Cron Job
 
+# Controls when the workflow will run
 on:
+  # Triggers the workflow every 5 minutes
   schedule:
-    - cron: '*/2 * * * *'
+    - cron: "*/2 * * * *"
 
+    # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  bifrostTestRun:
-    name: Bifrost Test Run
-    runs-on: ubuntu-18.04
+  # This workflow contains a single job called "cron"
+  cron:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      ####- uses: actions/checkout@v3
-#      - name: set up JDK 11
-#        uses: actions/setup-java@v3
-#        with:
-#          distribution: 'zulu'
-#          java-version: 11
-#          cache: gradle
-#      - name: Bifrost Unit tests
-#        run: bash ./gradlew test --stacktrace
-      - name: Notify Slack Error Test Run
-        if: failure()
-        env:
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-        uses: abinoda/slack-action@master
-        with:
-          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Err\"}'
-      - name: Notify Slack Success Test Run
-        if: success()
-        env:
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-        uses: abinoda/slack-action@master
-        with:
-          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Success\"}'
-
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
