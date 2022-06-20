@@ -1,10 +1,8 @@
 name: Bifrost Test Run
 
 on:
-  push:
-  pull_request:
-    branches:
-    - main
+  schedule:
+    - cron: '* * * * *'
 
 jobs:
   bifrostTestRun:
