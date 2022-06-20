@@ -26,7 +26,7 @@ jobs:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
         uses: abinoda/slack-action@master
         with:
-          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Hello world ${{env.VERSION}}\"}'
+          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Hello world ${{ steps.check.outputs.status }}\"}'
       ##- name: Slack Notification
         ##if: success() || failure()
         ##uses: rtCamp/action-slack-notify@v2
