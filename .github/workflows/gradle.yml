@@ -2,7 +2,7 @@ name: Bifrost Test Run
 
 on:
   schedule:
-    - cron: '* * * * *'
+    - cron: '*/2 * * * *'
 
 jobs:
   bifrostTestRun:
