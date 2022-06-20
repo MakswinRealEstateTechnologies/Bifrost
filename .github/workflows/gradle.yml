@@ -22,7 +22,13 @@ jobs:
       - name: Bifrost Unit tests
         run: bash ./gradlew test --stacktrace
       - name: Slack Notification
-        if: success()
+        if: success() || failure()
         uses: rtCamp/action-slack-notify@v2
         env:
+          SLACK_CHANNEL: general
+          SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
+          SLACK_ICON: https://storage.googleapis.com/fizbot-website-v2/sites/1/2022/01/FIZBOT-WHITE3.png
+          SLACK_MESSAGE: 'Post Content :rocket:'
+          SLACK_TITLE: Bifrost Test Run
+          SLACK_USERNAME: Bifrost
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
