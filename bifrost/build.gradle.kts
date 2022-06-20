@@ -61,7 +61,7 @@ kotlin {
 
 android {
 
-    project.tasks.preBuild.dependsOn("graphqlSchemaDownloadTask")
+    //project.tasks.preBuild.dependsOn("graphqlSchemaDownloadTask")
 
     compileSdk = 32
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
@@ -73,7 +73,7 @@ android {
 
 }
 
-tasks.register("graphqlSchemaDownloadTask") {
+/*tasks.register("graphqlSchemaDownloadTask") {
     doFirst {
         exec {
             commandLine(
@@ -82,7 +82,7 @@ tasks.register("graphqlSchemaDownloadTask") {
             )
         }
     }
-}
+}*/
 
 publishing {
     publications {
