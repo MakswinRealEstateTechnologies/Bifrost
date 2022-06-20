@@ -21,6 +21,7 @@ jobs:
        ##   cache: gradle
       ##- name: Bifrost Unit tests
        ## run: bash ./gradlew test --stacktrace
+       ##
       - name: Notify slack
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
