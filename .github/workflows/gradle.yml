@@ -19,13 +19,13 @@ jobs:
           distribution: 'zulu'
           java-version: 11
           cache: gradle
-      - name: Bifrost Unit tests
-        run: bash ./gradlew test --stacktrace
+      ##- name: Bifrost Unit tests
+       ## run: bash ./gradlew test --stacktrace
       - name: Slack Notification
         if: success() || failure()
         uses: rtCamp/action-slack-notify@v2
         env:
-          SLACK_CHANNEL: general
+          SLACK_CHANNEL: mobile-logs
           SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
           SLACK_ICON: https://storage.googleapis.com/fizbot-website-v2/sites/1/2022/01/FIZBOT-WHITE3.png
           SLACK_MESSAGE: 'Post Content :rocket:'
