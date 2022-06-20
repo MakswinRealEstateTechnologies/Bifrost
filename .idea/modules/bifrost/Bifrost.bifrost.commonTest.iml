@@ -41,7 +41,7 @@
       <sourceFolder url="file://$MODULE_DIR$/../../../bifrost/build/generated/source/apolloTest/service" type="kotlin-test" />
     </content>
     <content url="file://$MODULE_DIR$/../../../bifrost/src/commonTest">
-      <sourceFolder url="file://$MODULE_DIR$/../../../bifrost/src/commonTest/kotlin" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../bifrost/src/commonTest/kotlin" type="kotlin-test" />
     </content>
     <orderEntry type="jdk" jdkName="Kotlin SDK" jdkType="KotlinSDK" />
     <orderEntry type="sourceFolder" forTests="false" />

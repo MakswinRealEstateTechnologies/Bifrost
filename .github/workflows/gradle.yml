@@ -1,18 +1,17 @@
-on: push
-name: Bifrost Test Run
+name: Notify in Slack Channels
+on: workflow_dispatch
 jobs:
-  slack:
-    name: Slack Notification
+  notify-slack:
     runs-on: ubuntu-latest
+    name: A job to notify in slack with my github actions
+    environment: Slackbot Notification
     steps:
       - uses: actions/checkout@v2
-      - name: Slack Notification
-        uses: rtCamp/action-slack-notify@v2
+      - name: Notify Slack Test Result
+        uses: sanjaykrishnanrs/slack-notify-junitxml-action@0.1.12-alpha
         with:
-          payload: |
-            {
-              "key": "value",
-              "foo": "bar"
-            }
-        env:
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          title: API Tests
+          slackbotid: ${{ secrets.SLACKBOTID }}
+          slackbottoken: ${{ secrets.SLACKBOTTOKEN }}
+          slackchannel: '${{ secrets.SLACKCHANNEL }}'
+          junitxml_filepath: junitreport.xml

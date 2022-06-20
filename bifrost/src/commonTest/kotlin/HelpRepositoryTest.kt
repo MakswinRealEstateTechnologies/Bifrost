@@ -12,7 +12,7 @@ class HelpRepositoryTest : BaseRepositoryTest() {
 
     private val helpRepository = HelpRepository()
 
-    @Test
+    @Ignore
     fun `Bug Feedback By User`() = runBlocking {
 
         val response =
@@ -22,7 +22,7 @@ class HelpRepositoryTest : BaseRepositoryTest() {
 
     }
 
-    @Test
+    @Ignore
     fun `Suggestion Feedback By User`() = runBlocking {
 
         val response = helpRepository.addFeedback(
@@ -54,9 +54,11 @@ class HelpRepositoryTest : BaseRepositoryTest() {
 
         assertEquals(response.status, ResponseStatus.Success)
 
-        assertNotNull(response.data) { }
+        assertNotNull(response.data) {
 
-        assertFalse(response.data?.trainings.isNullOrEmpty())
+            assertFalse(it.trainings.isEmpty())
+
+        }
 
     }
 
@@ -68,10 +70,10 @@ class HelpRepositoryTest : BaseRepositoryTest() {
         assertEquals(response.status, ResponseStatus.Success)
 
         assertNotNull(response.data) {
-            //    assertFalse(it.trainings.isEmpty())
-        }
 
-        assertFalse(response.data?.trainings.isNullOrEmpty())
+            assertFalse(it.trainings.isEmpty())
+
+        }
 
     }
 

@@ -14,6 +14,7 @@
             <stringArg name="classpath">
               <args>
                 <arg>$MODULE_DIR$/../../../androidTestApp/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar</arg>
+                <arg>$MODULE_DIR$/../../../androidTestApp/build/intermediates/compile_app_classes_jar/debug/classes.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/d5c2c166bb106dfd5871c1333d89ec27/transformed/lifecycle-runtime-ktx-2.4.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/b58820e2c61a6330c1a3525ee818781a/transformed/lifecycle-viewmodel-ktx-2.4.1-api.jar</arg>
                 <arg>$MODULE_DIR$/../../../bifrost/build/intermediates/compile_library_classes_jar/debug/classes.jar</arg>

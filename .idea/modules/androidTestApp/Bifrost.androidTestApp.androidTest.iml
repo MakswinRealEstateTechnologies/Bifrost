@@ -13,6 +13,7 @@
           <stringArguments>
             <stringArg name="classpath">
               <args>
+                <arg>$MODULE_DIR$/../../../androidTestApp/build/intermediates/compile_app_classes_jar/debug/classes.jar</arg>
                 <arg>$MODULE_DIR$/../../../bifrost/build/intermediates/compile_library_classes_jar/debug/classes.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-runtime-jvm/3.3.0/d7cdfcb9a66083f9d4026cff0177995155f80f86/apollo-runtime-jvm-3.3.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo3/apollo-api-jvm/3.3.0/a4486dfef804e670630a32555c157484d302abcd/apollo-api-jvm-3.3.0.jar</arg>
@@ -122,7 +123,9 @@
     <content url="file://$MODULE_DIR$/../../../androidTestApp/build/generated/aidl_source_output_dir/debugAndroidTest/out" />
     <content url="file://$MODULE_DIR$/../../../androidTestApp/build/generated/ap_generated_sources/debugAndroidTest/out" />
     <content url="file://$MODULE_DIR$/../../../androidTestApp/build/generated/renderscript_source_output_dir/debugAndroidTest/out" />
-    <content url="file://$MODULE_DIR$/../../../androidTestApp/build/generated/res/resValues/androidTest/debug" />
+    <content url="file://$MODULE_DIR$/../../../androidTestApp/build/generated/res/resValues/androidTest/debug">
+      <sourceFolder url="file://$MODULE_DIR$/../../../androidTestApp/build/generated/res/resValues/androidTest/debug" type="java-test-resource" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../androidTestApp/build/generated/res/rs/androidTest/debug" />
     <content url="file://$MODULE_DIR$/../../../androidTestApp/build/generated/source/buildConfig/androidTest/debug" />
     <content url="file://$MODULE_DIR$/../../../androidTestApp/src/androidTest" />
