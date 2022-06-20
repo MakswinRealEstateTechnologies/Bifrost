@@ -1,4 +1,4 @@
-name: Java CI with Gradle
+name: Bifrost Test Run
 
 on:
   push:
@@ -7,8 +7,8 @@ on:
     - main
 
 jobs:
-  test:
-    name: Bifrost Unit Tests
+  bifrostTestRun:
+    name: Bifrost Test Run
     runs-on: ubuntu-18.04
 
     steps:
@@ -19,5 +19,10 @@ jobs:
           distribution: 'zulu'
           java-version: 11
           cache: gradle
-      - name: Unit tests
+      - name: Bifrost Unit tests
         run: bash ./gradlew test --stacktrace
+      - name: Slack Notification
+        if: success()
+        uses: rtCamp/action-slack-notify@v2
+      env:
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
