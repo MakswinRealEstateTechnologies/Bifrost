@@ -21,16 +21,18 @@ jobs:
 #          cache: gradle
 #      - name: Bifrost Unit tests
 #        run: bash ./gradlew test --stacktrace
-      - name: Notify slack
+      - name: Notify Slack Error Test Run
         if: failure()
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
         uses: abinoda/slack-action@master
         with:
-          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Hello world ${{ steps.check.outputs.status }}\"}'
-      ##- name: Slack Notification
-        ##if: success() || failure()
-        ##uses: rtCamp/action-slack-notify@v2
-        ##env:
-          ##SLACK_CHANNEL: mobile-logs
+          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Err\"}'
+      - name: Notify Slack Success Test Run
+        if: success()
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        uses: abinoda/slack-action@master
+        with:
+          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Success\"}'
 
