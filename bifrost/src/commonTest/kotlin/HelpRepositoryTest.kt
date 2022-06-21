@@ -67,7 +67,7 @@ class HelpRepositoryTest : BaseRepositoryTest() {
 
         val response = helpRepository.getTrainingList(GetTrainingListRequest(TrainingsTimeType.Next))
 
-        assertEquals(response.status, ResponseStatus.Error)
+        assertEquals(response.status, ResponseStatus.Success)
 
         assertNotNull(response.data) {
 
