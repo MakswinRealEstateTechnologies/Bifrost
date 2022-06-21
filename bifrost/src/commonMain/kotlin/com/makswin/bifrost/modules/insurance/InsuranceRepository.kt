@@ -9,7 +9,6 @@ import com.makswin.bifrost.modules.insurance.models.request.CheckInsuranceReques
 import com.makswin.bifrost.modules.insurance.models.request.CreateInsuranceUserRequest
 import com.makswin.bifrost.modules.insurance.models.response.InsuranceResponse
 import com.makswin.bifrost.type.KoalayDefineDealerInput
-import okio.IOException
 
 class InsuranceRepository : BaseRepository() {
 
@@ -20,8 +19,6 @@ class InsuranceRepository : BaseRepository() {
     suspend fun checkInsurance(request: CheckInsuranceRequest): BaseResponseModel<InsuranceResponse> {
 
         val query = CheckInsuranceQuery(request.userId)
-
-        throw IOException()
 
         val response = executeQuery(query)
 
