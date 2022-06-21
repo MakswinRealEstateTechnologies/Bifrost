@@ -1,0 +1,6 @@
+fragment fragmentSummary on PageSummary {
+    summary {
+        key
+        value
+    }
+}

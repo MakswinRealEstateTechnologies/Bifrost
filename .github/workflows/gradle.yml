@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '* 9 * * *'
+    - cron: '* 7 * * *'
 
 jobs:
   bifrostTestRun:
@@ -36,4 +36,3 @@ jobs:
         uses: abinoda/slack-action@master
         with:
           args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Bifrost Test Run Has Completely Successful :white_check_mark:\"}'
-

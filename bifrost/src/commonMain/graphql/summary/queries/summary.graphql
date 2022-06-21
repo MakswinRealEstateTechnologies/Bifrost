@@ -1,0 +1,5 @@
+query pageSummary($page: SummaryPages!) {
+    page_summary(page: $page) {
+        ...fragmentSummary
+    }
+}

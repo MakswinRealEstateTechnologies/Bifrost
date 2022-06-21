@@ -17,10 +17,11 @@ class AuthenticationService : BaseRepository() {
      * @param token is user current API token
      * @author alkincakiralar
      */
-    fun setToken(token: String) {
+    fun setUserVariables(token: String, userId: String) {
 
         val settings = Settings()
 
+        settings.putString("userId", userId)
         settings.putString("token", token)
 
     }
