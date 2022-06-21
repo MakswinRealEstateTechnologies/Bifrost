@@ -4,7 +4,7 @@ import com.makswin.bifrost.fragment.FragmentSummary
 import com.makswin.bifrost.type.Summaries
 
 fun FragmentSummary?.getSummaryCount(type: Summaries): Int =
-    this?.summary?.first { it?.key == type }?.value?.toIntOrNull() ?: 0
+    this?.summary?.find { it?.key == type }?.value?.toIntOrNull() ?: 0
 
 data class HomePageSummary(
     var buyerCount: Int = 0,

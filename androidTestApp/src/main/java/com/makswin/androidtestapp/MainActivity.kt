@@ -9,6 +9,7 @@ import androidx.lifecycle.lifecycleScope
 import com.makswin.bifrost.core.models.ResponseStatus
 import com.makswin.bifrost.modules.authentication.AuthenticationService
 import com.makswin.bifrost.modules.authentication.requestModels.Login
+import com.makswin.bifrost.modules.summary.SummaryRepository
 import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
@@ -17,6 +18,10 @@ class MainActivity : AppCompatActivity() {
 
     var edt: EditText? = null
 
+    private val userId = "113563"
+
+    private val token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiOWUxNzQ1M2VhYzdiZTk3ODhiZTRmYjBkZGE4Y2MzNzA0MWNjMjhjYzYwZWJhYWYwMTlkMjFjMDdkM2NhYTc2YWQ4YWY4Mzk4M2RiYTkyYjYiLCJpYXQiOjE2NTU3MzIyODcuMDI1OTA2LCJuYmYiOjE2NTU3MzIyODcuMDI1OTEyLCJleHAiOjE2NTgzMjQyODYuODE4MTk1LCJzdWIiOiIxMTM1NjMiLCJzY29wZXMiOltdfQ.YDlzDZ64XMwgfS9xSTSqBpfdL1gJlUuasVgAUvm9fKWvFgEv4g1RoXLKLFv_9rqAL2NXQDwLJtgIPGAU-UYgbIFGE-zfx7dv5vTESyf80EyTvinU8TB69Xkkmmv7JHRdWXejnSRMcUK3JFb36EbjjDFSO_HpsVmbNPGd3KSt0WpDFKXzNJLgz0bxNCh69oiNlfs5PmjOJ3dBFpgvIrId1jkhurPOg0L1dmgn9SFmXWTaAgsui0KcrD0hIIsK1z_yCHnfQIYA-WtDfJVcKiuz7HO0mAf_v2Ym7Tiwe87BaqTNQlmRc48K4hCyEU90-7lzvRuMAaicS3HCZJN6SFXx5mvDNxT_hHZvpmk2F7VD3AuozFiTwzPfxm5Dm59ww_fHh6R_UC61-VrqMjUCAKKALdJN6_kJm0d-chvnsEqnczIH34lpKO-MB31wM7cRYyaApLC_p5GhsRmclNJ4NleUyOOvt_CIu1536VDKfQHGNqjaUAjd8X3zJL1lK799EmlsR6x1y6MysK-eDJAu3eLSROYpTJhYhGcX7sznVdKsuxKPsMsPhPrqSZtXTL1I5LEZttevVuIUKDn7CYpy2XrBKraaWpZiC23P6POhEpN1lHjqRUypQp7DyPI2MQ-i6rGYdKRb7ukNQy-vfbDARRmW3EQIt5qc3BZpr0HZXnsxEZg"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -24,37 +29,19 @@ class MainActivity : AppCompatActivity() {
         this.asd = findViewById(R.id.txt)
         this.edt = findViewById(R.id.edt)
 
-        //AuthenticationService().setToken("eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiNDJkZTAxYjkwMmNkYTQ4ZGY0ZDMyMTJhZGY4ZDZiNDAxOTI4NmYzMzUwZGQ4MGE1NTQxM2QxY2Q4NTNmNTM5MDgyZjYzNzIyNGJhYjBjNmQiLCJpYXQiOjE2NTU0MTIzMzIuMjU0NDY5LCJuYmYiOjE2NTU0MTIzMzIuMjU0NDcyLCJleHAiOjE2NTgwMDQzMzIuMTQ5ODU3LCJzdWIiOiIyMDMwMzEiLCJzY29wZXMiOltdfQ.GkGPiwRpGEJ7gPEEludI-_rU2F6LQj6wrC1Kfdhextr4AXsr3ZzIqxKLw0EJTSjcf9rxG4ZRV3fts7J_ki37Qju1olVRJRNC7R3eez15mOlZ3pmxTkXW6v-6HSsSzC9_rUraDy1yPAlBOBgIz6smjUHfzD-QbacHPN3PBN_W-6fwUifehoyCDo9oHUWxsv-KgY52kw4XVXlv_siXJBB0mmWZrjRoZ8nvA8CVeM7GfUUezSyUQW15VZWEHYU1X4Xaxxwczrh59760iMSw3XtgGVZTRANHWf4SGdUsTx76nVM-yJLXcHBjfNHuEbrmrkvnTEEl0DgkWWIxoMS_dGQKFZ62TJ-vh5Zw2ZexHABdBAhTEWp6d64nUhqdby1mMqYOWFkCPucC8HDq32usHKfDgchNe3tqmxixBB6iJ7J93oPonvrvajcrAogMGxsIqSwz03nxxH9Yhafma0z2WRuqkPH-8A6QLowTaeXREF619rxtqyrbTRp5jgu_UDTwIgSwTmp4ZRJXn7VnuHj9Rp8cJBdY3beNoOqBtnat8rSxLeAf1SItdNxQwymevvsc36ThtjIyUAUV6nRlb9hiWjyGY_i0A00elwUkgK6wPYJShTG_YiTWUOyaP11eDjT_LK-b0VnAD0t43ysRm6kzWp4JDqxpTex9w_mI3oDJhAxolMo")
+        AuthenticationService().setUserVariables(token, userId)
 
-        /*lifecycleScope.launch {
+        lifecycleScope.launch {
 
-            val asd = AuthenticationService().forgotPasswordOTP(Login("+905357394980", ""))
+            val rp1 = SummaryRepository().getNewMessageSummary()
 
-            if (asd.status == ResponseStatus.Success) {
-                Log.i("avs", "succ")
-            } else {
-                Log.i("avs", "non")
-            }
+            val rp2 = SummaryRepository().getBuyersCountSummary()
 
-            val responsea = AuthenticationService().login(Login("+905357394980", "394980"))
+            Log.i("avs", "${rp1.data?.summary?.messageCount ?: 0}")
 
-            /*val response = HelpRepository().getLastTraining()
+            Log.i("avs", "${rp2.data?.summary?.buyerCount ?: 0}")
 
-            response.data?.training?.let {
-
-                Log.i("avs", "${it.meetingLink} ${it.endAt} ${it.startsAt}")
-
-                Log.i("avs", DateHelper.parseDate(it.startsAt, DateFormatType.dd_MMMM_yyyy))
-
-                Log.i("avs", DateHelper.parseDate(it.startsAt, DateFormatType.HH_mm))
-
-            }*/
-
-            Log.i("avs", responsea.data?.accessToken ?: "null token")
-
-        }*/
-
-        AuthenticationService().test()
+        }
 
     }
 
