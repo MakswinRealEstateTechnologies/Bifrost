@@ -43,8 +43,6 @@ kotlin {
             api("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1")
             api("com.russhwolf:multiplatform-settings-no-arg:0.8.1")
             api("com.soywiz.korlibs.klock:klock:2.2.0")
-            implementation("com.google.firebase:firebase-crashlytics:18.2.11")
-
         }
 
         sourceSets["androidMain"].dependencies {

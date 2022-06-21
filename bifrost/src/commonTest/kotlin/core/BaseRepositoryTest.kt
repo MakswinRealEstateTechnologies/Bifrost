@@ -4,27 +4,15 @@ import com.makswin.bifrost.core.graphql.GraphQLAuthorizationInterceptor
 import com.makswin.bifrost.modules.authentication.AuthenticationService
 import com.makswin.bifrost.modules.authentication.requestModels.Login
 import kotlinx.coroutines.runBlocking
-import kotlin.test.AfterTest
 import kotlin.test.BeforeTest
 
 open class BaseRepositoryTest {
 
-    private val environment: TestEnvironment = TestEnvironment.Turkey
+    private val testEnvironment = TestEnvironment.getTestEnvironment()
 
     @BeforeTest
-    open fun onSetup() = runBlocking {
-
-        when (environment) {
-            TestEnvironment.Turkey -> getToken("+905357394980", "394980")
-            TestEnvironment.Portuguese -> getToken("+351999022584", "022584")
-        }
-
-    }
-
-    @AfterTest
-    open fun onFinish() = runBlocking {
-        //logOut()
-    }
+    open fun onSetup() =
+        runBlocking { getToken(testEnvironment.user.cellPhone, testEnvironment.user.password) }
 
     private suspend fun getToken(cellPhone: String, password: String) {
 
@@ -39,10 +27,6 @@ open class BaseRepositoryTest {
 
         GraphQLAuthorizationInterceptor.testToken = response.data?.accessToken ?: ""
 
-    }
-
-    private suspend fun logOut() {
-        AuthenticationService().logOut()
     }
 
 }

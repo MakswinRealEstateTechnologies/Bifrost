@@ -18,6 +18,7 @@ class HelpRepositoryTest : BaseRepositoryTest() {
         val response =
             helpRepository.addFeedback(AddFeedBackRequest(AddFeedBackType.Bug, "FeedBack Bug Test"))
 
+
         assertEquals(response.status, ResponseStatus.Success)
 
     }
