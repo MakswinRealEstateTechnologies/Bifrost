@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '* 9 * * *'
 
 jobs:
   bifrostTestRun:
@@ -13,27 +13,27 @@ jobs:
     runs-on: ubuntu-18.04
 
     steps:
-      ####- uses: actions/checkout@v3
-#      - name: set up JDK 11
-#        uses: actions/setup-java@v3
-#        with:
-#          distribution: 'zulu'
-#          java-version: 11
-#          cache: gradle
-#      - name: Bifrost Unit tests
-#        run: bash ./gradlew test --stacktrace
-#      - name: Notify Slack Error Test Run
-#        if: failure()
-#        env:
-#          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-#        uses: abinoda/slack-action@master
-#        with:
-#          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Err\"}'
-      - name: Notify Slack Success Test Run
-        ##if: success()
+      - uses: actions/checkout@v3
+      - name: set up JDK 11
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'
+          java-version: 11
+          cache: gradle
+      - name: Bifrost Unit tests
+        run: bash ./gradlew test --stacktrace
+      - name: Notify Slack Error Test Run
+        if: failure()
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
         uses: abinoda/slack-action@master
         with:
-          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Success\"}'
+          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Bifrost Test Run failed :x:\"}'
+      - name: Notify Slack Success Test Run
+        if: success()
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        uses: abinoda/slack-action@master
+        with:
+          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Bifrost Test Run Has Completely Successful :white_check_mark:\"}'
 
