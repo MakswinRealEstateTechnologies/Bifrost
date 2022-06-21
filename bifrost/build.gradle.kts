@@ -71,7 +71,7 @@ android {
 
 }
 
-/*tasks.register("graphqlSchemaDownloadTask") {
+tasks.register("graphqlSchemaDownloadTask") {
     doFirst {
         exec {
             commandLine(
@@ -80,7 +80,7 @@ android {
             )
         }
     }
-}*/
+}
 
 publishing {
     publications {
