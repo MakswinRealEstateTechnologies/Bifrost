@@ -1,1 +1,1 @@
-degisiklik
+degisiklika
