@@ -30,7 +30,7 @@ kotlin {
             iOS { v("10") }
         }
         outputDirectory(File("/Users/alkincakiralar/Desktop/makswin/Bifrost-IOS-SDK", ""))
-        buildConfiguration { debug() }
+        buildConfiguration { release() }
     }
 
     sourceSets {
@@ -43,6 +43,8 @@ kotlin {
             api("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1")
             api("com.russhwolf:multiplatform-settings-no-arg:0.8.1")
             api("com.soywiz.korlibs.klock:klock:2.2.0")
+            api("com.badoo.reaktive:reaktive:1.2.2")
+            api("com.badoo.reaktive:coroutines-interop:1.2.2")
         }
 
         sourceSets["androidMain"].dependencies {
