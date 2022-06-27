@@ -37,20 +37,22 @@
 #        with:
 #          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Bifrost Test Run Has Completely Successful :white_check_mark:\"}'
 
-name: Bump version
+name: Releases
+
 on:
   push:
     branches:
       - develop
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
+      - uses: ncipollo/release-action@v1
         with:
-          fetch-depth: '0'
-      - name: Bump version and push tag
-        uses: anothrNick/github-tag-action@1.17.2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          WITH_V: false
+          artifacts: "release.tar.gz,foo/*.txt"
+          bodyFile: "body.md"
+          token: ${{ secrets.GITHUB_TOKEN }}
