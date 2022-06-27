@@ -29,7 +29,7 @@
 #        uses: abinoda/slack-action@master
 #        with:s
 #          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Bifrost Test Run failed :x:\"}'
-#      - name: Notify Slack Success Test Run
+#      - name: Notify Slack Success Test Runc
 #        if: success()
 #        env:
 #          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
