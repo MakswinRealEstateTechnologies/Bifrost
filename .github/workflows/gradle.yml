@@ -37,22 +37,15 @@
 #        with:
 #          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Bifrost Test Run Has Completely Successful :white_check_mark:\"}'
 
-name: Releases
-
-on:
-  push:
-    branches:
-      - develop
+name: Main
+on: push
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      - uses: actions/checkout@v2
-      - uses: ncipollo/release-action@v1
-        with:
-          artifacts: "release.tar.gz,foo/*.txt"
-          bodyFile: "body.md"
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
