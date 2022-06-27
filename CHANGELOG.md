@@ -5,3 +5,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 - Fixed a typo in the README
 - Bugfix for #24
+
+## v1.0.1
+### Changed
+- Fixed a typo in the README TEST
