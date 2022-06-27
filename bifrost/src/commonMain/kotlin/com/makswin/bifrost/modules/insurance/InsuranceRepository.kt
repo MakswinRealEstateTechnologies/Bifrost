@@ -5,10 +5,11 @@ import com.makswin.bifrost.CreateInsuranceMutation
 import com.makswin.bifrost.core.models.BaseResponseModel
 import com.makswin.bifrost.core.utils.BaseRepository
 import com.makswin.bifrost.modules.insurance.models.data.Insurance
-import com.makswin.bifrost.modules.insurance.models.request.CheckInsuranceRequest
 import com.makswin.bifrost.modules.insurance.models.request.CreateInsuranceUserRequest
 import com.makswin.bifrost.modules.insurance.models.response.InsuranceResponse
 import com.makswin.bifrost.type.KoalayDefineDealerInput
+import com.russhwolf.settings.Settings
+import com.russhwolf.settings.get
 
 class InsuranceRepository : BaseRepository() {
 
@@ -16,9 +17,11 @@ class InsuranceRepository : BaseRepository() {
      * Checking user has insurance account or returning insurance url
      * @author alkincakiralar
      */
-    suspend fun checkInsurance(request: CheckInsuranceRequest): BaseResponseModel<InsuranceResponse> {
+    suspend fun checkInsurance(): BaseResponseModel<InsuranceResponse> {
 
-        val query = CheckInsuranceQuery(request.userId)
+        val userId = Settings()["userId"] ?: ""
+
+        val query = CheckInsuranceQuery(userId)
 
         val response = executeQuery(query)
 

@@ -1,4 +1,4 @@
-import com.android.build.gradle.internal.tasks.factory.dependsOn
+//import com.android.build.gradle.internal.tasks.factory.dependsOn
 
 plugins {
     kotlin("multiplatform")
@@ -6,7 +6,6 @@ plugins {
     id("maven-publish")
     id("com.chromaticnoise.multiplatform-swiftpackage") version "2.0.3"
     id("com.apollographql.apollo3").version("3.3.0")
-    id("com.google.firebase.crashlytics")
 }
 
 kotlin {

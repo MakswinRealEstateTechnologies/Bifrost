@@ -1,38 +1,63 @@
-name: Bifrost Test Run
+#name: Bifrost Test Run
+#
+#on:
+#  push:
+#    branches:
+#      - main
+#  schedule:
+#    - cron: '* 6 * * *'
+#
+#jobs:
+#  bifrostTestRun:
+#    name: Bifrost Test Run
+#    runs-on: ubuntu-18.04
+#
+#    steps:
+#      - uses: actions/checkout@v3
+#      - name: set up JDK 11
+#        uses: actions/setup-java@v3
+#        with:
+#          distribution: 'zulu'
+#          java-version: 11
+#          cache: gradle
+#      - name: Bifrost Unit tests
+#        run: bash ./gradlew test --stacktrace
+#      - name: Notify Slack Error Test Run
+#        if: failure()
+#        env:
+#          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+#        uses: abinoda/slack-action@master
+#        with:
+#          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Bifrost Test Run failed :x:\"}'
+#      - name: Notify Slack Success Test Run
+#        if: success()
+#        env:
+#          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+#        uses: abinoda/slack-action@master
+#        with:
+#          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Bifrost Test Run Has Completely Successful :white_check_mark:\"}'
+
+name: AutoRelease
 
 on:
   push:
-    branches:
-      - main
-  schedule:
-    - cron: '* 6 * * *'
+    branches: [ develop ]
 
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  bifrostTestRun:
-    name: Bifrost Test Run
-    runs-on: ubuntu-18.04
+  # This workflow contains a single job called "build"
+  release:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: actions/checkout@v3
-      - name: set up JDK 11
-        uses: actions/setup-java@v3
+      - uses: actions/checkout@v2
+      - uses: CupOfTea696/gh-action-auto-release@v1.0.0
         with:
-          distribution: 'zulu'
-          java-version: 11
-          cache: gradle
-      - name: Bifrost Unit tests
-        run: bash ./gradlew test --stacktrace
-      - name: Notify Slack Error Test Run
-        if: failure()
+          title: "Release: $version"
+          tag: "v$semver"
+          draft: false
+          regex: "/^Release: #{semver}$/i"
         env:
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-        uses: abinoda/slack-action@master
-        with:
-          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Bifrost Test Run failed :x:\"}'
-      - name: Notify Slack Success Test Run
-        if: success()
-        env:
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-        uses: abinoda/slack-action@master
-        with:
-          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Bifrost Test Run Has Completely Successful :white_check_mark:\"}'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

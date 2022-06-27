@@ -1,6 +1,5 @@
 import com.makswin.bifrost.core.models.ResponseStatus
 import com.makswin.bifrost.modules.insurance.InsuranceRepository
-import com.makswin.bifrost.modules.insurance.models.request.CheckInsuranceRequest
 import core.BaseRepositoryTest
 import kotlinx.coroutines.runBlocking
 import kotlin.test.*
