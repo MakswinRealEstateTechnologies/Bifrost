@@ -37,23 +37,26 @@
 #        with:
 #          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Bifrost Test Run Has Completely Successful :white_check_mark:\"}'
 
-name: Release Drafter
+# This is a basic workflow to help you get started with the GitHub Auto-Release on Commit Action.
+
+name: AutoRelease
 
 on:
   push:
     branches:
       - develop
 
-permissions:
-  contents: read
-
 jobs:
-  update_release_draft:
-    permissions:
-      contents: write  # for release-drafter/release-drafter to create a github release
-      pull-requests: write  # for release-drafter/release-drafter to add label to PR
+  release:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: release-drafter/release-drafter@v5
+      - uses: actions/checkout@v2
+      - uses: CupOfTea696/gh-action-auto-release@v1.0.0
+        with:
+          title: "Release: $version"
+          tag: "v$semver"
+          draft: false
+          regex: "/^Release: #{semver}$/i"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
