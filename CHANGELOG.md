@@ -14,3 +14,5 @@ All notable changes to this project will be documented in this file.
 - Summary Repository Completed With These API
   - getNewMessageSummary
   - getBuyersCountSummary
+- Utils Class
+  - DateHelper
