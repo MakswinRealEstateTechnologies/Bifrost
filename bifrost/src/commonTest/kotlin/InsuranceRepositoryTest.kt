@@ -1,3 +1,4 @@
+import com.makswin.bifrost.core.graphql.GraphQLAuthorizationInterceptor
 import com.makswin.bifrost.core.models.ResponseStatus
 import com.makswin.bifrost.modules.insurance.InsuranceRepository
 import core.BaseRepositoryTest
@@ -11,7 +12,9 @@ class InsuranceRepositoryTest : BaseRepositoryTest() {
     @Test
     fun `Checking User Who Has Insurance Account`() = runBlocking {
 
-        val response = insuranceRepository.checkInsurance(CheckInsuranceRequest("113563"))
+        GraphQLAuthorizationInterceptor.testUserId = "113563"
+
+        val response = insuranceRepository.checkInsurance()
 
         assertEquals(response.status, ResponseStatus.Success)
 
@@ -26,21 +29,6 @@ class InsuranceRepositoryTest : BaseRepositoryTest() {
             assertTrue(it.insurance.urlResidencial.isNotEmpty())
 
             assertTrue(it.insurance.urlResidencial.startsWith("http"))
-
-        }
-
-    }
-
-    @Ignore
-    fun `Checking User Who Has Not Insurance Account`() = runBlocking {
-
-        val response = insuranceRepository.checkInsurance(CheckInsuranceRequest("203031"))
-
-        assertEquals(response.status, ResponseStatus.Success)
-
-        assertNotNull(response.data) {
-
-            assertFalse(it.hasAccount)
 
         }
 

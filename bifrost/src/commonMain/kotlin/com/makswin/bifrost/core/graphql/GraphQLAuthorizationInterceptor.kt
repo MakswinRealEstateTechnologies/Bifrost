@@ -10,6 +10,7 @@ class GraphQLAuthorizationInterceptor : HttpInterceptor {
 
     companion object {
         var testToken = ""
+        var testUserId = ""
     }
 
     override suspend fun intercept(
