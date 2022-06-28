@@ -5,7 +5,8 @@ plugins {
     id("com.android.library")
     id("maven-publish")
     id("com.chromaticnoise.multiplatform-swiftpackage") version "2.0.3"
-    id("com.apollographql.apollo3").version("3.3.0")
+    id("com.apollographql.apollo3").version("3.3.2")
+    id("com.rickclephas.kmp.nativecoroutines").version("0.12.2")
 }
 
 kotlin {
@@ -36,8 +37,8 @@ kotlin {
 
         sourceSets["commonMain"].dependencies {
             implementation("org.jetbrains.kotlin:kotlin-stdlib-common")
-            api("com.apollographql.apollo3:apollo-runtime:3.3.0")
-            api("com.apollographql.apollo3:apollo-api:3.3.0")
+            api("com.apollographql.apollo3:apollo-runtime:3.3.2")
+            api("com.apollographql.apollo3:apollo-api:3.3.2")
             api("org.awaitility:awaitility-kotlin:4.1.1")
             api("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1")
             api("com.russhwolf:multiplatform-settings-no-arg:0.8.1")

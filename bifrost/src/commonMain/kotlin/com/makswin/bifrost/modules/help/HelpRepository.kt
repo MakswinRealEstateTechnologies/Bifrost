@@ -4,7 +4,7 @@ import com.apollographql.apollo3.api.Optional
 import com.makswin.bifrost.AddFeedbackMutation
 import com.makswin.bifrost.TrainingsQuery
 import com.makswin.bifrost.core.models.BaseResponseModel
-import com.makswin.bifrost.core.utils.BaseRepository
+import com.makswin.bifrost.modules.core.BaseRepository
 import com.makswin.bifrost.modules.help.models.request.enums.AddFeedBackType
 import com.makswin.bifrost.modules.help.models.request.enums.TrainingsTimeType
 import com.makswin.bifrost.modules.help.models.data.Trainings

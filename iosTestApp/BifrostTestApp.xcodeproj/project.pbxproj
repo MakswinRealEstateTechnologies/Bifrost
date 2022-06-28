@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44831DAC286A707C003EBF97 /* KMPNativeCoroutinesAsync in Frameworks */ = {isa = PBXBuildFile; productRef = 44831DAB286A707C003EBF97 /* KMPNativeCoroutinesAsync */; };
+		44831DAE286A707C003EBF97 /* KMPNativeCoroutinesCombine in Frameworks */ = {isa = PBXBuildFile; productRef = 44831DAD286A707C003EBF97 /* KMPNativeCoroutinesCombine */; };
+		44831DB0286A707C003EBF97 /* KMPNativeCoroutinesCore in Frameworks */ = {isa = PBXBuildFile; productRef = 44831DAF286A707C003EBF97 /* KMPNativeCoroutinesCore */; };
+		44831DB2286A707C003EBF97 /* KMPNativeCoroutinesRxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 44831DB1286A707C003EBF97 /* KMPNativeCoroutinesRxSwift */; };
 		44B842342849266400E590DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B842332849266400E590DD /* AppDelegate.swift */; };
 		44B842362849266400E590DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B842352849266400E590DD /* SceneDelegate.swift */; };
 		44B842382849266400E590DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B842372849266400E590DD /* ViewController.swift */; };
@@ -31,6 +35,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44831DAC286A707C003EBF97 /* KMPNativeCoroutinesAsync in Frameworks */,
+				44831DAE286A707C003EBF97 /* KMPNativeCoroutinesCombine in Frameworks */,
+				44831DB0286A707C003EBF97 /* KMPNativeCoroutinesCore in Frameworks */,
+				44831DB2286A707C003EBF97 /* KMPNativeCoroutinesRxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +101,10 @@
 			);
 			name = BifrostTestApp;
 			packageProductDependencies = (
+				44831DAB286A707C003EBF97 /* KMPNativeCoroutinesAsync */,
+				44831DAD286A707C003EBF97 /* KMPNativeCoroutinesCombine */,
+				44831DAF286A707C003EBF97 /* KMPNativeCoroutinesCore */,
+				44831DB1286A707C003EBF97 /* KMPNativeCoroutinesRxSwift */,
 			);
 			productName = BifrostTestApp;
 			productReference = 44B842302849266400E590DD /* BifrostTestApp.app */;
@@ -123,6 +135,7 @@
 			);
 			mainGroup = 44B842272849266400E590DD;
 			packageReferences = (
+				44831DAA286A707C003EBF97 /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */,
 			);
 			productRefGroup = 44B842312849266400E590DD /* Products */;
 			projectDirPath = "";
@@ -403,6 +416,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		44831DAA286A707C003EBF97 /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rickclephas/KMP-NativeCoroutines.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		44831DAB286A707C003EBF97 /* KMPNativeCoroutinesAsync */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44831DAA286A707C003EBF97 /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */;
+			productName = KMPNativeCoroutinesAsync;
+		};
+		44831DAD286A707C003EBF97 /* KMPNativeCoroutinesCombine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44831DAA286A707C003EBF97 /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */;
+			productName = KMPNativeCoroutinesCombine;
+		};
+		44831DAF286A707C003EBF97 /* KMPNativeCoroutinesCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44831DAA286A707C003EBF97 /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */;
+			productName = KMPNativeCoroutinesCore;
+		};
+		44831DB1286A707C003EBF97 /* KMPNativeCoroutinesRxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44831DAA286A707C003EBF97 /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */;
+			productName = KMPNativeCoroutinesRxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 44B842282849266400E590DD /* Project object */;
 }

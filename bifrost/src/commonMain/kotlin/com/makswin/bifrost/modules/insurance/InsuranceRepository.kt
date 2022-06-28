@@ -4,8 +4,7 @@ import com.makswin.bifrost.CheckInsuranceQuery
 import com.makswin.bifrost.CreateInsuranceMutation
 import com.makswin.bifrost.core.graphql.GraphQLAuthorizationInterceptor
 import com.makswin.bifrost.core.models.BaseResponseModel
-import com.makswin.bifrost.core.utils.BaseRepository
-import com.makswin.bifrost.modules.authentication.AuthenticationService
+import com.makswin.bifrost.modules.core.BaseRepository
 import com.makswin.bifrost.modules.insurance.models.data.Insurance
 import com.makswin.bifrost.modules.insurance.models.request.CreateInsuranceUserRequest
 import com.makswin.bifrost.modules.insurance.models.response.InsuranceResponse
@@ -21,9 +20,7 @@ class InsuranceRepository : BaseRepository() {
      */
     suspend fun checkInsurance(): BaseResponseModel<InsuranceResponse> {
 
-        val userId = if (GraphQLAuthorizationInterceptor.testUserId.isNotEmpty()) {
-            GraphQLAuthorizationInterceptor.testUserId
-        } else {
+        val userId = GraphQLAuthorizationInterceptor.testUserId.ifEmpty {
             Settings()["userId"] ?: ""
         }
 

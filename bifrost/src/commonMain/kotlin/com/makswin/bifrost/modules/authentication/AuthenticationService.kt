@@ -4,7 +4,7 @@ import com.makswin.bifrost.ForgotPasswordOTPMutation
 import com.makswin.bifrost.LogOutMutation
 import com.makswin.bifrost.LoginMutation
 import com.makswin.bifrost.core.models.BaseResponseModel
-import com.makswin.bifrost.core.utils.BaseRepository
+import com.makswin.bifrost.modules.core.BaseRepository
 import com.makswin.bifrost.modules.authentication.requestModels.Login
 import com.makswin.bifrost.modules.authentication.responseModels.Auth
 import com.russhwolf.settings.Settings

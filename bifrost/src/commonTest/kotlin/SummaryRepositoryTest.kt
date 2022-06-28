@@ -17,13 +17,15 @@ class SummaryRepositoryTest : BaseRepositoryTest() {
 
         assertNotNull(response.data) {
 
+            println(it.summary.messageCount)
+
             assertTrue(it.summary.messageCount > 0)
 
         }
 
     }
 
-    @Test
+    @Ignore
     fun `Checking Buyer Count Summary`() = runBlocking {
 
         val response = summaryRepository.getBuyersCountSummary()

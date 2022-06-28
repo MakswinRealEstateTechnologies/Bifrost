@@ -3,7 +3,7 @@ package com.makswin.bifrost.modules.summary
 import com.makswin.bifrost.PageSummaryQuery
 import com.makswin.bifrost.core.models.BaseResponseModel
 import com.makswin.bifrost.core.models.ResponseStatus
-import com.makswin.bifrost.core.utils.BaseRepository
+import com.makswin.bifrost.modules.core.BaseRepository
 import com.makswin.bifrost.fragment.FragmentSummary
 import com.makswin.bifrost.modules.summary.models.data.HomePageSummary
 import com.makswin.bifrost.modules.summary.models.response.HomePageSummaryResponse

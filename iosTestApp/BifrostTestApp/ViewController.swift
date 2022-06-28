@@ -7,6 +7,9 @@
 
 import UIKit
 import Bifrost
+import Combine
+import Foundation
+import KMPNativeCoroutinesRxSwift
 
 class ViewController: UIViewController {
     
@@ -14,23 +17,46 @@ class ViewController: UIViewController {
             
     override func viewDidLoad() {
         super.viewDidLoad()
+               
+        let rep = HelpRepository()
         
-        MiscellaneousRepository.init().languages { response, err in
-            
-            response?.data?.languages.forEach({ item in
-                print(item.key)
-            })
-            
-        }
+        let req = AddFeedBackRequest(type: .bug, note: "")
         
-        MiscellaneousRepository.init().test2()
+        let observable = createObservable(for: rep.testNative(request: req))
         
-    }
+        let disposable = observable.subscribe(onNext: { value in
+            print("Received value: \(value)")
+        }, onError: { error in
+            print("Received error: \(error)")
+        }, onCompleted: {
+            print("Observable completed")
+        }, onDisposed: {
+            print("Observable disposed")
+        })
+        
+        disposable.dispose()
 
-    @IBAction func btnClicked(_ sender: UIButton) {
+        
     }
     
-    override func didMove(toParent parent: UIViewController?) {
+    /*
+     // Create a single for the suspend function
+     let single = createSingle(for: randomLettersGenerator.getRandomLettersNative())
+
+     // Now use this single as you would any other
+     let disposable = single.subscribe(onSuccess: { value in
+         print("Received value: \(value)")
+     }, onFailure: { error in
+         print("Received error: \(error)")
+     }, onDisposed: {
+         print("Single disposed")
+     })
+
+     // To cancel the suspend function just dispose the subscription
+     disposable.dispose()
+     */
+
+    @IBAction func btnClicked(_ sender: UIButton) {
     }
     
 }

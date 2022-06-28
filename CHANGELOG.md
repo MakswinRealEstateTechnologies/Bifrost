@@ -16,3 +16,8 @@ All notable changes to this project will be documented in this file.
   - getBuyersCountSummary
 - Utils Class
   - DateHelper
+
+## v0.1.1
+### Changed
+- Bug Fixes
+- API errors listener added
