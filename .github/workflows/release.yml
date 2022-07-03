@@ -19,8 +19,9 @@ jobs:
           regex: "/^Release: #{semver}$/i"
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - uses: abinoda/slack-action@master
-        with:
-          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Bifrost ${{ github.event.head_commit.message }} Has Published :rocket:\"}'
-        env:
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+       if: success()
+          env:
+            SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          uses: abinoda/slack-action@master
+          with:
+            args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Bifrost :flag-tr: Turkey Test Run Has Failed :x:\"}'
