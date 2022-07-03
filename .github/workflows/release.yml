@@ -17,12 +17,9 @@ jobs:
           tag: "v$semver"
           draft: false
           regex: "/^Release: #{semver}$/i"
+      - uses: abinoda/slack-action@master
+        with:
+          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Bifrost $version Has Published :rocket:\"}'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        - name: Notify Slack About New Release Of Bifrost
-            if: failure()
-            env:
-              SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-            uses: abinoda/slack-action@master
-            with:
-              args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Bifrost $version Has Published :rocket:\"}'
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
