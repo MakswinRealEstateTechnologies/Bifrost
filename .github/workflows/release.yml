@@ -17,9 +17,10 @@ jobs:
           tag: "v$semver"
           draft: false
           regex: "/^Release: #{semver}$/i"
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: abinoda/slack-action@master
         with:
           args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Bifrost $version Has Published :rocket:\"}'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
