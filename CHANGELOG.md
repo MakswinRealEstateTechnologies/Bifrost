@@ -37,3 +37,7 @@ All notable changes to this project will be documented in this file.
 ## v0.2.3
 ### Changed
 - Notify Slack When Create New Bifrost Release
+
+## v0.2.4
+### Changed
+- Configured Gradle Dependencies With Build SRC

@@ -1,26 +1,16 @@
 import com.android.build.gradle.internal.tasks.factory.dependsOn
+import com.codingfeline.buildkonfig.compiler.FieldSpec.Type
+import org.apache.tools.ant.taskdefs.condition.Os
+import org.gradle.api.tasks.testing.logging.TestLogEvent
 
 plugins {
-    kotlin("multiplatform")
-    id("com.android.library")
-    id("maven-publish")
-    id("com.chromaticnoise.multiplatform-swiftpackage") version "2.0.3"
-    id("com.apollographql.apollo3").version("3.3.2")
-    id("com.rickclephas.kmp.nativecoroutines").version("0.12.2")
-    id("io.kotest.multiplatform") version "5.0.2"
-    id("com.codingfeline.buildkonfig").version("0.12.0")
-}
-
-buildkonfig {
-    packageName = "com.makswin.bifrost"
-
-    defaultConfigs {
-        buildConfigField(
-            com.codingfeline.buildkonfig.compiler.FieldSpec.Type.STRING,
-            "country",
-            (project.properties["country"]?.toString() ?: "TR")
-        )
-    }
+    kotlin(Plugins.multiPlatform)
+    id(Plugins.androidLibrary)
+    id(Plugins.mavenPublish)
+    id(Plugins.swiftPackage) version Versions.swiftPackage
+    id(Plugins.apollo) version Versions.apollo
+    id(Plugins.koTest) version Versions.koTest
+    id(Plugins.buildConfig) version Versions.buildConfig
 }
 
 kotlin {
@@ -30,8 +20,8 @@ kotlin {
             useJUnitPlatform()
             testLogging {
                 events(
-                    org.gradle.api.tasks.testing.logging.TestLogEvent.PASSED,
-                    org.gradle.api.tasks.testing.logging.TestLogEvent.FAILED
+                    TestLogEvent.PASSED,
+                    TestLogEvent.FAILED
                 )
                 showStandardStreams = true
             }
@@ -45,49 +35,46 @@ kotlin {
     ios {
         binaries {
             framework {
-                baseName = "Bifrost"
+                baseName = Config.projectName
             }
         }
     }
 
     multiplatformSwiftPackage {
-        packageName("Bifrost")
-        swiftToolsVersion("5.3")
+        packageName(Config.projectName)
+        swiftToolsVersion(Config.swiftToolsVersion)
         targetPlatforms {
-            iOS { v("10") }
+            iOS { v(Config.minIosVersion) }
         }
-        outputDirectory(File("/Users/alkincakiralar/Desktop/makswin/Bifrost-IOS-SDK", ""))
-        buildConfiguration { release() }
+        outputDirectory(File(Config.iosSdkOutFile, ""))
+        buildConfiguration { debug() }
     }
 
     sourceSets {
 
         sourceSets["commonMain"].dependencies {
-            implementation("org.jetbrains.kotlin:kotlin-stdlib-common")
-            api("com.apollographql.apollo3:apollo-runtime:3.3.2")
-            api("com.apollographql.apollo3:apollo-api:3.3.2")
-            api("org.awaitility:awaitility-kotlin:4.1.1")
-            api("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1")
-            api("com.russhwolf:multiplatform-settings-no-arg:1.0.0-alpha01")
-            api("com.soywiz.korlibs.klock:klock:2.2.0")
-            api("com.badoo.reaktive:reaktive:1.2.2")
-            api("com.badoo.reaktive:coroutines-interop:1.2.2")
+            implementation(Dependencies.stdlibCommon)
+            api(Dependencies.apolloRunTime)
+            api(Dependencies.apolloApi)
+            api(Dependencies.coroutinesCore)
+            api(Dependencies.settings)
+            api(Dependencies.klockDate)
         }
 
         sourceSets["androidMain"].dependencies {
-            implementation("org.jetbrains.kotlin:kotlin-stdlib")
+            implementation(Dependencies.stdlib)
         }
 
         sourceSets["commonTest"].dependencies {
             implementation(kotlin("test"))
-            implementation("io.kotest:kotest-framework-engine:5.0.2")
-            implementation("io.kotest:kotest-assertions-core:5.0.2")
-            implementation("io.kotest:kotest-property:5.0.2")
-            implementation("io.kotest:kotest-framework-datatest:5.0.2")
+            implementation(Dependencies.koTestEngine)
+            implementation(Dependencies.koTestAssertionsCore)
+            implementation(Dependencies.koTestProperty)
+            implementation(Dependencies.koTestDataTest)
         }
 
         sourceSets["jvmTest"].dependencies {
-            implementation("io.kotest:kotest-runner-junit5-jvm:5.0.2")
+            implementation(Dependencies.jUnit5)
         }
 
         val androidAndroidTestRelease by getting
@@ -106,37 +93,25 @@ kotlin {
 
 android {
 
-    if (org.apache.tools.ant.taskdefs.condition.Os.isFamily(org.apache.tools.ant.taskdefs.condition.Os.FAMILY_MAC)) {
+    if (Os.isFamily(Os.FAMILY_MAC)) {
         project.tasks.preBuild.dependsOn("graphqlSchemaDownloadTask")
     }
 
-    compileSdk = 32
+    compileSdk = Config.compileSdk
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
 
     defaultConfig {
-        minSdk = 21
-        targetSdk = 32
+        minSdk = Config.minSdk
+        targetSdk = Config.targetSdk
     }
 
-}
-
-tasks.register("graphqlSchemaDownloadTask") {
-    doFirst {
-        exec {
-            commandLine(
-                "sh", "-c",
-                "apollo schema:download --endpoint=https://zeus.fizbot.net/graphql $workingDir/src/commonMain/graphql/schema.json"
-            )
-        }
-    }
 }
 
 publishing {
     publications {
         create<MavenPublication>("maven") {
-            groupId = "com.makswin.bifrost"
-            artifactId = "bifrost"
-            version = "14.0.8"
+            groupId = Config.packageName
+            artifactId = Config.projectName
             from(components["kotlin"])
             withBuildIdentifier()
         }
@@ -144,6 +119,39 @@ publishing {
 }
 
 apollo {
-    packageName.set("com.makswin.bifrost")
+    packageName.set(Config.packageName)
     generateKotlinModels.set(true)
+}
+
+buildkonfig {
+    packageName = Config.packageName
+
+    defaultConfigs {
+        buildConfigField(
+            Type.STRING,
+            "country",
+            (project.properties["country"]?.toString() ?: "TR")
+        )
+        buildConfigField(
+            Type.STRING,
+            "prodApiUrl",
+            Config.prodApiUrl
+        )
+        buildConfigField(
+            Type.STRING,
+            "testApiUrl",
+            Config.testApiUrl
+        )
+    }
+}
+
+tasks.register("graphqlSchemaDownloadTask") {
+    doFirst {
+        exec {
+            commandLine(
+                "sh", "-c",
+                "apollo schema:download --endpoint=${Config.prodApiUrl} $workingDir/src/commonMain/graphql/schema.json"
+            )
+        }
+    }
 }

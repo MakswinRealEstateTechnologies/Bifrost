@@ -1,6 +1,7 @@
 package com.makswin.bifrost.core.graphql
 
 import com.apollographql.apollo3.ApolloClient
+import com.makswin.bifrost.BuildKonfig
 
 open class GraphQLNetwork {
 
@@ -13,7 +14,7 @@ open class GraphQLNetwork {
         }
 
         instance = ApolloClient.Builder()
-            .serverUrl("https://zeus.fizbot.net/graphql")
+            .serverUrl(BuildKonfig.prodApiUrl)
             .addHttpInterceptor(GraphQLAuthorizationInterceptor())
             .build()
 
