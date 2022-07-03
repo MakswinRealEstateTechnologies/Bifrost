@@ -1,0 +1,38 @@
+name: Bifrost Portugal Test Run
+
+on:
+  push:
+    branches:
+      - develop
+#  schedule:
+#    - cron: '* 6 * * *'
+
+jobs:
+  bifrostPortugalTestRun:
+    name: Bifrost Portugal Test Run
+    runs-on: ubuntu-18.04
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: set up JDK 11
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'
+          java-version: 11
+          cache: gradle
+      - name: Bifrost Unit Tests PT
+        run: bash ./gradlew jvmTest -Pcountry=PT
+      - name: Notify Slack Error Portugal Test Run
+        if: failure()
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        uses: abinoda/slack-action@master
+        with:
+          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Bifrost 🇵🇹 Portugal Test Run Has Failed :x:\"}'
+      - name: Notify Slack Success Portugal Test Run
+        if: success()
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        uses: abinoda/slack-action@master
+        with:
+          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Bifrost 🇵🇹 Portugal Test Run Has Completely Successful :white_check_mark:\"}'
