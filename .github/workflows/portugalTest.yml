@@ -3,9 +3,9 @@ name: Bifrost Portugal Test Run
 on:
   push:
     branches:
-      - develop
-#  schedule:
-#    - cron: '* 6 * * *'
+      - master
+  schedule:
+    - cron: '0 6 * * *'
 
 jobs:
   bifrostPortugalTestRun:
