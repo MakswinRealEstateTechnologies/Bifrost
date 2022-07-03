@@ -21,3 +21,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 - Bug Fixes
 - API errors listener added
+
+## v0.2.0
+### Changed
+- Test Layer Structure Has Changed
