@@ -47,7 +47,7 @@ class HelpRepositoryTest : FunSpec({
 
         when (TestEnvironment.getTestCountry()) {
             TestCountry.Turkey -> response.data shouldNotBe  null
-            TestCountry.Portugal -> response.data shouldNotBe  null
+            TestCountry.Portugal -> response.data shouldBe   null
         }
 
     }
