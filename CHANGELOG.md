@@ -25,3 +25,7 @@ All notable changes to this project will be documented in this file.
 ## v0.2.0
 ### Changed
 - Test Layer Structure Has Changed
+
+## v0.2.1
+### Changed
+- Notify Slack When Create New Bifrost Release
