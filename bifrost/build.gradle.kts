@@ -1,4 +1,4 @@
-//import com.android.build.gradle.internal.tasks.factory.dependsOn
+import com.android.build.gradle.internal.tasks.factory.dependsOn
 
 plugins {
     kotlin("multiplatform")
@@ -106,7 +106,9 @@ kotlin {
 
 android {
 
-    //project.tasks.preBuild.dependsOn("graphqlSchemaDownloadTask")
+    if (org.apache.tools.ant.taskdefs.condition.Os.isFamily(org.apache.tools.ant.taskdefs.condition.Os.FAMILY_MAC)) {
+        project.tasks.preBuild.dependsOn("graphqlSchemaDownloadTask")
+    }
 
     compileSdk = 32
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
