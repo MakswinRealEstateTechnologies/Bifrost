@@ -24,6 +24,7 @@ class DateHelper {
         fun parseDate(date: String, format: DateFormatType): String =
             DateFormat(apiDateFormatType).parse(date).format(format.value)
 
+
     }
 
 }

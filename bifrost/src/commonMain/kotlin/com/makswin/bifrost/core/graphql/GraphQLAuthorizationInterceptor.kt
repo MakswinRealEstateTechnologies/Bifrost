@@ -4,14 +4,11 @@ import com.apollographql.apollo3.api.http.HttpRequest
 import com.apollographql.apollo3.api.http.HttpResponse
 import com.apollographql.apollo3.network.http.HttpInterceptor
 import com.apollographql.apollo3.network.http.HttpInterceptorChain
-import com.russhwolf.settings.Settings
+import com.makswin.bifrost.core.utils.LocalStorage
 
 class GraphQLAuthorizationInterceptor : HttpInterceptor {
 
-    companion object {
-        var testToken = ""
-        var testUserId = ""
-    }
+    private val localStorage = LocalStorage()
 
     override suspend fun intercept(
         request: HttpRequest,
@@ -20,16 +17,12 @@ class GraphQLAuthorizationInterceptor : HttpInterceptor {
 
         try {
 
-            if (testToken == "-1") {
-                return chain.proceed(request)
-            }
-
-            val token: String = testToken.ifEmpty {
-                Settings().getString("token", "")
-            }
+            val token = localStorage.getToken()
 
             return if (token.isNotEmpty()) {
-                chain.proceed(request.newBuilder().addHeader("Authorization", "Bearer $token").build())
+                chain.proceed(
+                    request.newBuilder().addHeader("Authorization", "Bearer $token").build()
+                )
             } else {
                 chain.proceed(request)
             }

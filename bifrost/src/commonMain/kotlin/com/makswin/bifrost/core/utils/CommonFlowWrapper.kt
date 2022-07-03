@@ -11,7 +11,7 @@ import okio.Closeable
 fun <T> Flow<T>.asCommonFlow(): CommonFlow<T> = CommonFlow(this)
 
 class CommonFlow<T>(private val origin: Flow<T>) : Flow<T> by origin {
-    fun listen(block: (T) -> Unit): Closeable {
+    fun fetch(block: (T) -> Unit): Closeable {
         val job = Job()
 
         onEach {
@@ -25,3 +25,5 @@ class CommonFlow<T>(private val origin: Flow<T>) : Flow<T> by origin {
         }
     }
 }
+
+fun <T> Flow<T>.wrap(): CommonFlow<T> = CommonFlow(this)

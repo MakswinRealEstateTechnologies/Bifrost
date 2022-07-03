@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.gradle.plugin.statistics.ReportStatisticsToElasticSearch.url
-
 buildscript {
     repositories {
         gradlePluginPortal()

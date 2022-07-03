@@ -2,17 +2,17 @@ package com.makswin.bifrost.modules.insurance
 
 import com.makswin.bifrost.CheckInsuranceQuery
 import com.makswin.bifrost.CreateInsuranceMutation
-import com.makswin.bifrost.core.graphql.GraphQLAuthorizationInterceptor
 import com.makswin.bifrost.core.models.BaseResponseModel
+import com.makswin.bifrost.core.utils.LocalStorage
 import com.makswin.bifrost.modules.core.BaseRepository
 import com.makswin.bifrost.modules.insurance.models.data.Insurance
 import com.makswin.bifrost.modules.insurance.models.request.CreateInsuranceUserRequest
 import com.makswin.bifrost.modules.insurance.models.response.InsuranceResponse
 import com.makswin.bifrost.type.KoalayDefineDealerInput
-import com.russhwolf.settings.Settings
-import com.russhwolf.settings.get
 
 class InsuranceRepository : BaseRepository() {
+
+    val localStorage = LocalStorage()
 
     /**
      * Checking user has insurance account or returning insurance url
@@ -20,13 +20,11 @@ class InsuranceRepository : BaseRepository() {
      */
     suspend fun checkInsurance(): BaseResponseModel<InsuranceResponse> {
 
-        val userId = GraphQLAuthorizationInterceptor.testUserId.ifEmpty {
-            Settings()["userId"] ?: ""
-        }
+        val userId = localStorage.getUserId()
 
-        if (userId.isEmpty()) return onError()
+        if (userId == -1) return onError()
 
-        val query = CheckInsuranceQuery(userId)
+        val query = CheckInsuranceQuery(userId.toString())
 
         val response = executeQuery(query)
 

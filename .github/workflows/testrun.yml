@@ -3,9 +3,9 @@ name: Bifrost Test Run
 on:
   push:
     branches:
-      - main
-  schedule:
-    - cron: '* 6 * * *'
+      - develop
+#  schedule:
+#    - cron: '* 6 * * *'
 
 jobs:
   bifrostTestRun:
@@ -21,18 +21,18 @@ jobs:
           java-version: 11
           cache: gradle
       - name: Bifrost Unit tests
-        run: bash ./gradlew test --stacktrace
+        run: bash ./gradlew jvmTest -Pcountry=PT
       - name: Notify Slack Error Test Run
         if: failure()
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
         uses: abinoda/slack-action@master
         with:
-          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Bifrost Test Run failed :x:\"}'
+          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Bifrost Test Run failed PT :x:\"}'
       - name: Notify Slack Success Test Run
         if: success()
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
         uses: abinoda/slack-action@master
         with:
-          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Bifrost Test Run Has Completely Successful :white_check_mark:\"}'
+          args: '{\"channel\":\"C030FC8PY0N\",\"text\":\"Bifrost Test Run Has Completely PT Successful :white_check_mark:\"}'

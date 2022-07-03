@@ -1,19 +1,37 @@
 package core
 
-data class TestEnvironment(val user: TestUser) {
+import com.makswin.bifrost.BuildKonfig
 
-    companion object {
+object TestEnvironment {
 
-        fun getTestEnvironment(): TestEnvironment {
+    fun getTestUser(): TestUser {
 
-            val user = TestUser("+905357394980", "113563", "394980")
-
-            return TestEnvironment(user)
-
+        return when (BuildKonfig.country) {
+            "TR" -> TestUser("+905357394980", "394980", "17837282806", "113563")
+            "PT" -> TestUser("+351999022584", "022584", "17837282805", "203031")
+            else -> TestUser("+905357394980", "394980", "17837282806", "113563")
         }
 
     }
 
+    fun getTestCountry(): TestCountry {
+        return when (BuildKonfig.country) {
+            "TR" -> TestCountry.Turkey
+            "PT" -> TestCountry.Portugal
+            else -> TestCountry.Turkey
+        }
+    }
+
 }
 
-data class TestUser(val cellPhone: String, val userId: String, val password: String)
+enum class TestCountry {
+    Turkey,
+    Portugal
+}
+
+data class TestUser(
+    val cellPhone: String,
+    val password: String,
+    val identity: String,
+    val userId: String
+)

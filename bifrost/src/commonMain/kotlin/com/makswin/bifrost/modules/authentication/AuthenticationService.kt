@@ -4,12 +4,15 @@ import com.makswin.bifrost.ForgotPasswordOTPMutation
 import com.makswin.bifrost.LogOutMutation
 import com.makswin.bifrost.LoginMutation
 import com.makswin.bifrost.core.models.BaseResponseModel
+import com.makswin.bifrost.core.utils.LocalStorage
 import com.makswin.bifrost.modules.core.BaseRepository
 import com.makswin.bifrost.modules.authentication.requestModels.Login
 import com.makswin.bifrost.modules.authentication.responseModels.Auth
 import com.russhwolf.settings.Settings
 
 class AuthenticationService : BaseRepository() {
+
+    val localStorage = LocalStorage()
 
     /**
      * Stores the user current token
@@ -43,11 +46,15 @@ class AuthenticationService : BaseRepository() {
 
     }
 
-    fun test() {
-        throw RuntimeException("This is a crash")
-    }
+    suspend fun logOut() : BaseResponseModel<Any> {
 
-    suspend fun logOut() = executeMutation(LogOutMutation())
+        val response = executeMutation(LogOutMutation())
+
+        if (response.isFailed()) return onError()
+
+        return onSuccess()
+
+    }
 
     /**
      * Used to login with sms code
@@ -69,9 +76,11 @@ class AuthenticationService : BaseRepository() {
 
             val auth = Auth(fragmentAuth)
 
-            //val settings = Settings()
+            localStorage.setToken(auth.accessToken)
 
-            //settings.putString("token", auth.accessToken)
+            localStorage.setUserId(auth.user.id)
+
+            localStorage.setCellPhone(auth.user.cellPhone)
 
             onSuccess(auth)
 
