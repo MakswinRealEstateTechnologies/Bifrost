@@ -70,7 +70,7 @@ class HelpRepositoryTest : FunSpec({
 
     }
 
-    test("Getting Next 10 Trainingsg") {
+    test("Getting Next 10 Trainings") {
 
         val response =
             helpRepository.getTrainingList(GetTrainingListRequest(TrainingsTimeType.Next))
