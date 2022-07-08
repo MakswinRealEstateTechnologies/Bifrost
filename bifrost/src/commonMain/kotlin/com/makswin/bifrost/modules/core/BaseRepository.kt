@@ -2,6 +2,7 @@ package com.makswin.bifrost.modules.core
 
 import com.apollographql.apollo3.ApolloClient
 import com.apollographql.apollo3.api.*
+import com.benasher44.uuid.Uuid
 import com.makswin.bifrost.core.graphql.GraphQLNetwork
 import com.makswin.bifrost.core.graphql.Listeners
 import com.makswin.bifrost.core.models.BaseResponseModel
@@ -17,19 +18,38 @@ open class BaseRepository {
     }
 
     suspend fun <D : Query.Data> executeQuery(query: Query<D>): ApolloResponse<D> {
-        val response = getApolloClient().query(query).execute()
 
-        checkOperation(response)
+        return try {
 
-        return response
+            val response = getApolloClient().query(query).execute()
+
+            checkOperation(response)
+
+            response
+
+        } catch (ex: Throwable) {
+
+            ApolloResponse.Builder(query, Uuid(0, 8), null).build()
+
+        }
+
     }
 
     suspend fun <D : Mutation.Data> executeMutation(mutation: Mutation<D>): ApolloResponse<D> {
-        val response = getApolloClient().mutation(mutation).execute()
 
-        checkOperation(response)
+        return try {
+            val response = getApolloClient().mutation(mutation).execute()
 
-        return response
+            checkOperation(response)
+
+            response
+
+        } catch (ex: Throwable) {
+
+            ApolloResponse.Builder(mutation, Uuid(0, 8), null).build()
+
+        }
+
     }
 
     private suspend fun <D : Operation.Data> checkOperation(response: ApolloResponse<D>) {
